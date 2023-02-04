@@ -140,6 +140,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1value.html">boost::sqlite::value</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A holder for a sqlite values used for internal APIs.  <a href="structboost_1_1sqlite_1_1value.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1vtab__in.html">boost::sqlite::vtab_in</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function that can be used in <code>xFilter</code> for the <code>in</code> operator.  <a href="structboost_1_1sqlite_1_1vtab__in.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1vtab__module__prototype.html">boost::sqlite::vtab_module_prototype</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The prototype used by <a class="el" href="group__reference.html#gac9556090ab5cc76f3dc54f36f0125f0c">create_module</a>.  <a href="structboost_1_1sqlite_1_1vtab__module__prototype.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -175,6 +181,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gac5fc68e3b64fcc1dba476735799e62df"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reference.html#gac5fc68e3b64fcc1dba476735799e62df">boost::sqlite::create_collation</a> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, const std::string &amp;name, Func &amp;&amp;func)</td></tr>
 <tr class="memdesc:gac5fc68e3b64fcc1dba476735799e62df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a custom collation function.  <a href="group__reference.html#gac5fc68e3b64fcc1dba476735799e62df">More...</a><br /></td></tr>
 <tr class="separator:gac5fc68e3b64fcc1dba476735799e62df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9556090ab5cc76f3dc54f36f0125f0c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:gac9556090ab5cc76f3dc54f36f0125f0c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reference.html#gac9556090ab5cc76f3dc54f36f0125f0c">boost::sqlite::create_module</a> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, const char *name, T &amp;&amp;module, system::error_code &amp;ec, <a class="el" href="classboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;ei) -&gt; typename std::decay&lt; T &gt;::type &amp;</td></tr>
+<tr class="memdesc:gac9556090ab5cc76f3dc54f36f0125f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a vtable.  <a href="group__reference.html#gac9556090ab5cc76f3dc54f36f0125f0c">More...</a><br /></td></tr>
+<tr class="separator:gac9556090ab5cc76f3dc54f36f0125f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadaa638eab7f7af9d3005e318023366ac"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
 <tr class="memitem:gadaa638eab7f7af9d3005e318023366ac"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reference.html#gadaa638eab7f7af9d3005e318023366ac">boost::sqlite::rollback_hook</a> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, Func &amp;&amp;func)</td></tr>
 <tr class="memdesc:gadaa638eab7f7af9d3005e318023366ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install a rollback hook.  <a href="group__reference.html#gadaa638eab7f7af9d3005e318023366ac">More...</a><br /></td></tr>
@@ -197,10 +207,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2530f85fbb5305556dde5b9f3200589a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reference.html#ga2530f85fbb5305556dde5b9f3200589a">boost::sqlite::create_scalar_function</a> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, const std::string &amp;name, Func &amp;&amp;func) -&gt; typename std::enable_if&lt; std::is_same&lt; decltype(detail::create_scalar_function(static_cast&lt; sqlite3 * &gt;(nullptr), name, std::declval&lt; Func &gt;())), int &gt;::value &gt;::type</td></tr>
 <tr class="memdesc:ga2530f85fbb5305556dde5b9f3200589a"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a scalar function  <a href="group__reference.html#ga2530f85fbb5305556dde5b9f3200589a">More...</a><br /></td></tr>
 <tr class="separator:ga2530f85fbb5305556dde5b9f3200589a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa10c29fd5b50c69ccbcaf8d37224b10b"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
-<tr class="memitem:gaa10c29fd5b50c69ccbcaf8d37224b10b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reference.html#gaa10c29fd5b50c69ccbcaf8d37224b10b">boost::sqlite::create_aggregate_function</a> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, const std::string &amp;name, Func &amp;&amp;func, system::error_code &amp;ec)</td></tr>
-<tr class="memdesc:gaa10c29fd5b50c69ccbcaf8d37224b10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a aggregate function  <a href="group__reference.html#gaa10c29fd5b50c69ccbcaf8d37224b10b">More...</a><br /></td></tr>
-<tr class="separator:gaa10c29fd5b50c69ccbcaf8d37224b10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9884740e92cd336e07ac43cc8f001764"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
+<tr class="memitem:ga9884740e92cd336e07ac43cc8f001764"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reference.html#ga9884740e92cd336e07ac43cc8f001764">boost::sqlite::create_aggregate_function</a> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, const std::string &amp;name, Func &amp;&amp;func, system::error_code &amp;ec, <a class="el" href="classboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;ei)</td></tr>
+<tr class="memdesc:ga9884740e92cd336e07ac43cc8f001764"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a aggregate function  <a href="group__reference.html#ga9884740e92cd336e07ac43cc8f001764">More...</a><br /></td></tr>
+<tr class="separator:ga9884740e92cd336e07ac43cc8f001764"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf76e9ae69b5b4029c50bde53b2a94230"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
 <tr class="memitem:gaf76e9ae69b5b4029c50bde53b2a94230"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reference.html#gaf76e9ae69b5b4029c50bde53b2a94230">boost::sqlite::create_aggregate_function</a> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, const std::string &amp;name, Func &amp;&amp;func)</td></tr>
 <tr class="memdesc:gaf76e9ae69b5b4029c50bde53b2a94230"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a aggregate function  <a href="group__reference.html#gaf76e9ae69b5b4029c50bde53b2a94230">More...</a><br /></td></tr>
@@ -223,7 +233,7 @@ Functions</h2></td></tr>
 <tr class="separator:gafbdfd1c62e8a60280c46078e7688bc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p >This page contains the documentation of the Aedis high-level API. </p>
+<p >This page contains the documentation of the sqlite high-level API. </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="gaba1532d41143f9845ee7b60b09196dd8" name="gaba1532d41143f9845ee7b60b09196dd8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaba1532d41143f9845ee7b60b09196dd8">&#9670;&#160;</a></span>error</h2>
@@ -694,12 +704,12 @@ template&lt;typename Func &gt; </div>
 <div class="line">  conn, <span class="stringliteral">&quot;char_counter&quot;</span>,</div>
 <div class="line">  aggregate_func{});</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00671">671</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00576">576</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
-<a id="gaa10c29fd5b50c69ccbcaf8d37224b10b" name="gaa10c29fd5b50c69ccbcaf8d37224b10b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa10c29fd5b50c69ccbcaf8d37224b10b">&#9670;&#160;</a></span>create_aggregate_function() <span class="overload">[2/2]</span></h2>
+<a id="ga9884740e92cd336e07ac43cc8f001764" name="ga9884740e92cd336e07ac43cc8f001764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9884740e92cd336e07ac43cc8f001764">&#9670;&#160;</a></span>create_aggregate_function() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -728,7 +738,13 @@ template&lt;typename Func &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">system::error_code &amp;&#160;</td>
-          <td class="paramname"><em>ec</em>&#160;</td>
+          <td class="paramname"><em>ec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;&#160;</td>
+          <td class="paramname"><em>ei</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -779,7 +795,7 @@ template&lt;typename Func &gt; </div>
 <div class="line">  conn, <span class="stringliteral">&quot;char_counter&quot;</span>,</div>
 <div class="line">  aggregate_func{});</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00659">659</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00560">560</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
@@ -829,7 +845,7 @@ template&lt;typename Func &gt; </div>
 <p>The function must be callable with two <code>string_view</code> and return an int, indicating the comparison results.</p>
 <dl class="section user"><dt>Example</dt><dd></dd></dl>
 <div class="fragment"><div class="line"><span class="comment">// a case insensitive string omparison, e.g. from boost.urls</span></div>
-<div class="line"><span class="keywordtype">int</span> ci_compare(string_view s0, string_view s1);</div>
+<div class="line"><span class="keywordtype">int</span> ci_compare(string_view s0, string_view s1) <span class="keyword">noexcept</span>;</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
 <div class="line"> </div>
@@ -843,7 +859,73 @@ template&lt;typename Func &gt; </div>
 <div class="line">conn.<a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a7cb9f9a0f5a74bc51384ba8ab9c4ff2b">query</a>(<span class="stringliteral">&quot;select * from people order by last_name collate iequal asc;&quot;</span>);</div>
 <div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a7cb9f9a0f5a74bc51384ba8ab9c4ff2b"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a7cb9f9a0f5a74bc51384ba8ab9c4ff2b">boost::sqlite::connection::query</a></div><div class="ttdeci">resultset query(core::string_view q, error_code &amp;ec, error_info &amp;ei)</div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="collation_8hpp_source.html#l00080">80</a> of file <a class="el" href="collation_8hpp_source.html">collation.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="collation_8hpp_source.html#l00083">83</a> of file <a class="el" href="collation_8hpp_source.html">collation.hpp</a>.</p>
+
+</div>
+</div>
+<a id="gac9556090ab5cc76f3dc54f36f0125f0c" name="gac9556090ab5cc76f3dc54f36f0125f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9556090ab5cc76f3dc54f36f0125f0c">&#9670;&#160;</a></span>create_module()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto boost::sqlite::create_module </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T &amp;&amp;&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">system::error_code &amp;&#160;</td>
+          <td class="paramname"><em>ec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;&#160;</td>
+          <td class="paramname"><em>ei</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; typename std::decay&lt;T&gt;::type &amp;
+</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a vtable. </p>
+<dl class="section see"><dt>See also</dt><dd>Sqlite vtab <a class="el" href="group__reference.html">Reference</a> <a href="https://www.sqlite.org/vtab.html">vtab</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conn</td><td>The connection to install the vtable into </td></tr>
+    <tr><td class="paramname">name</td><td>The name for the vtable </td></tr>
+    <tr><td class="paramname">module</td><td>The module to install as a vtable. See <a class="el" href="structboost_1_1sqlite_1_1vtab__module__prototype.html">vtab_module_prototype</a> for the structure required </td></tr>
+    <tr><td class="paramname">ec</td><td>The error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="classboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions.">error_info</a> used to deliver errors for the exception less overload.</td></tr>
+    <tr><td class="paramname">The</td><td>requirements for <code>module</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the module as stored in the database. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="vtable_8hpp_source.html#l00916">916</a> of file <a class="el" href="vtable_8hpp_source.html">vtable.hpp</a>.</p>
 
 </div>
 </div>
@@ -920,10 +1002,10 @@ template&lt;typename Func &gt; </div>
 <div class="line">                     [](<span class="keywordtype">char</span> c){return std::toupper(c);});</div>
 <div class="line">      <span class="keywordflow">return</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1value.html">value</a>;</div>
 <div class="line">  });</div>
-<div class="ttc" id="astructboost_1_1sqlite_1_1context_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1context.html">boost::sqlite::context</a></div><div class="ttdoc">A context that can be passed into scalar functions.</div><div class="ttdef"><b>Definition:</b> <a href="function_8hpp_source.html#l00051">function.hpp:52</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1context_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1context.html">boost::sqlite::context</a></div><div class="ttdoc">A context that can be passed into scalar functions.</div><div class="ttdef"><b>Definition:</b> <a href="function_8hpp_source.html#l00052">function.hpp:53</a></div></div>
 <div class="ttc" id="astructboost_1_1sqlite_1_1value_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1value.html">boost::sqlite::value</a></div><div class="ttdoc">A holder for a sqlite values used for internal APIs.</div><div class="ttdef"><b>Definition:</b> <a href="value_8hpp_source.html#l00038">value.hpp:39</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00589">589</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00490">490</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
@@ -1000,11 +1082,11 @@ template&lt;typename Func &gt; </div>
 <div class="line">          ctx.<a class="code hl_function" href="structboost_1_1sqlite_1_1context.html#a65d1c2d7fed2db2f63e03a2cc744d1dc">set</a>&lt;0&gt;(<a class="code hl_struct" href="structboost_1_1sqlite_1_1value.html">value</a>);</div>
 <div class="line">      <span class="keywordflow">return</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1value.html">value</a>;</div>
 <div class="line">  });</div>
-<div class="ttc" id="astructboost_1_1sqlite_1_1context_html_a5f94d292a29e0913e46c3fdf89b316c3"><div class="ttname"><a href="structboost_1_1sqlite_1_1context.html#a5f94d292a29e0913e46c3fdf89b316c3">boost::sqlite::context::get_if</a></div><div class="ttdeci">auto get_if() -&gt; element&lt; Idx &gt; *</div><div class="ttdoc">Get the value in the context at position Idx. Returns nullptr .value isn't set.</div><div class="ttdef"><b>Definition:</b> <a href="function_8hpp_source.html#l00081">function.hpp:81</a></div></div>
-<div class="ttc" id="astructboost_1_1sqlite_1_1context_html_a65d1c2d7fed2db2f63e03a2cc744d1dc"><div class="ttname"><a href="structboost_1_1sqlite_1_1context.html#a65d1c2d7fed2db2f63e03a2cc744d1dc">boost::sqlite::context::set</a></div><div class="ttdeci">void set(element&lt; Idx &gt; value)</div><div class="ttdoc">Set the value in the context at position Idx</div><div class="ttdef"><b>Definition:</b> <a href="function_8hpp_source.html#l00058">function.hpp:58</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1context_html_a5f94d292a29e0913e46c3fdf89b316c3"><div class="ttname"><a href="structboost_1_1sqlite_1_1context.html#a5f94d292a29e0913e46c3fdf89b316c3">boost::sqlite::context::get_if</a></div><div class="ttdeci">auto get_if() -&gt; element&lt; Idx &gt; *</div><div class="ttdoc">Get the value in the context at position Idx. Returns nullptr .value isn't set.</div><div class="ttdef"><b>Definition:</b> <a href="function_8hpp_source.html#l00082">function.hpp:82</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1context_html_a65d1c2d7fed2db2f63e03a2cc744d1dc"><div class="ttname"><a href="structboost_1_1sqlite_1_1context.html#a65d1c2d7fed2db2f63e03a2cc744d1dc">boost::sqlite::context::set</a></div><div class="ttdeci">void set(element&lt; Idx &gt; value)</div><div class="ttdoc">Set the value in the context at position Idx</div><div class="ttdef"><b>Definition:</b> <a href="function_8hpp_source.html#l00059">function.hpp:59</a></div></div>
 <div class="ttc" id="astructboost_1_1sqlite_1_1value_html_a35bc60e28267479253a9d9f1343eef9b"><div class="ttname"><a href="structboost_1_1sqlite_1_1value.html#a35bc60e28267479253a9d9f1343eef9b">boost::sqlite::value::get_int64</a></div><div class="ttdeci">sqlite3_int64 get_int64() const</div><div class="ttdoc">Get the value as an int64.</div><div class="ttdef"><b>Definition:</b> <a href="value_8hpp_source.html#l00066">value.hpp:66</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00534">534</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00435">435</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
@@ -1089,7 +1171,7 @@ template&lt;typename Func &gt; </div>
 <div class="line">  conn, <span class="stringliteral">&quot;win_char_counter&quot;</span>,</div>
 <div class="line">  aggregate_func{});</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00750">750</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00656">656</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
@@ -1180,7 +1262,7 @@ template&lt;typename Func &gt; </div>
 <div class="line">  conn, <span class="stringliteral">&quot;win_char_counter&quot;</span>,</div>
 <div class="line">  aggregate_func{});</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00738">738</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00644">644</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
@@ -1209,7 +1291,7 @@ template&lt;typename Func &gt; </div>
 </div><div class="memdoc">
 <p >Qbrief Check if the value or field is a json. </p>
 
-<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l00039">39</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l00036">36</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
 
 </div>
 </div>
@@ -1238,7 +1320,7 @@ template&lt;typename Func &gt; </div>
 </div><div class="memdoc">
 <p >Qbrief Check if the value or field is a json. </p>
 
-<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l00038">38</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l00035">35</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
 
 </div>
 </div>
@@ -1338,7 +1420,7 @@ template&lt;typename Func &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Feb 2 2023 23:03:33 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Feb 4 2023 23:08:44 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

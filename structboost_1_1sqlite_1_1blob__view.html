@@ -113,11 +113,11 @@ $(document).ready(function(){initNavTree('structboost_1_1sqlite_1_1blob__view.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1ebfa227f27da0feec3a3606f236eb92"><td class="memTemplParams" colspan="2"><a id="a1ebfa227f27da0feec3a3606f236eb92" name="a1ebfa227f27da0feec3a3606f236eb92"></a>
-template&lt;typename T , typename  = std::enable_if_t&lt;std::is_pointer&lt;decltype(std::declval&lt;T&gt;().data())&gt;::value&gt; </td></tr>
-<tr class="memitem:a1ebfa227f27da0feec3a3606f236eb92"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>blob_view</b> (const T &amp;<a class="el" href="structboost_1_1sqlite_1_1value.html">value</a>)</td></tr>
-<tr class="memdesc:a1ebfa227f27da0feec3a3606f236eb92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a blob from some other blob-like structure. <br /></td></tr>
-<tr class="separator:a1ebfa227f27da0feec3a3606f236eb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff9f1adaa153906e229e30b567dd4f70"><td class="memTemplParams" colspan="2"><a id="aff9f1adaa153906e229e30b567dd4f70" name="aff9f1adaa153906e229e30b567dd4f70"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aff9f1adaa153906e229e30b567dd4f70"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>blob_view</b> (const T &amp;<a class="el" href="structboost_1_1sqlite_1_1value.html">value</a>, typename std::enable_if&lt; std::is_pointer&lt; decltype(std::declval&lt; T &gt;().<a class="el" href="structboost_1_1sqlite_1_1blob__view.html#ab97b0dfcec8ec0624ab5723a968d8606">data</a>())&gt;::value &amp;&amp;std::is_convertible&lt; decltype(std::declval&lt; T &gt;().<a class="el" href="structboost_1_1sqlite_1_1blob__view.html#a9da18126fe15658f1c80e3b54accc86c">size</a>()), std::size_t &gt;::value &gt;::type *=nullptr)</td></tr>
+<tr class="memdesc:aff9f1adaa153906e229e30b567dd4f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a blob from some other blob-like structure. <br /></td></tr>
+<tr class="separator:aff9f1adaa153906e229e30b567dd4f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3a49b8f426e31729038208c1281ae5a"><td class="memItemLeft" align="right" valign="top"><a id="af3a49b8f426e31729038208c1281ae5a" name="af3a49b8f426e31729038208c1281ae5a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>blob_view</b> (const void *<a class="el" href="structboost_1_1sqlite_1_1blob__view.html#ab97b0dfcec8ec0624ab5723a968d8606">data</a>, std::size_t <a class="el" href="structboost_1_1sqlite_1_1blob__view.html#a9da18126fe15658f1c80e3b54accc86c">size</a>)</td></tr>
 <tr class="memdesc:af3a49b8f426e31729038208c1281ae5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a blob. <br /></td></tr>
@@ -134,7 +134,7 @@ std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () co
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >a view to a binary large object </p>
 
-<p class="definition">Definition at line <a class="el" href="blob_8hpp_source.html#l00016">16</a> of file <a class="el" href="blob_8hpp_source.html">blob.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="blob_8hpp_source.html#l00017">17</a> of file <a class="el" href="blob_8hpp_source.html">blob.hpp</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>boost/sqlite/<a class="el" href="blob_8hpp_source.html">blob.hpp</a></li>
 </ul>
@@ -144,7 +144,7 @@ std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () co
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1blob__view.html">blob_view</a></li>
-    <li class="footer">Generated on Thu Feb 2 2023 23:03:33 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Feb 4 2023 23:08:44 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

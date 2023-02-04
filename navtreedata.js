@@ -25,10 +25,8 @@
 var NAVTREE =
 [
   [ "boost_sqlite", "index.html", [
-    [ "boost.sqlite", "index.html", [
-      [ "Tutorial", "index.html#autotoc_md1", null ],
-      [ "Reference", "index.html#autotoc_md2", null ]
-    ] ]
+    [ "Tutorial", "index.html#autotoc_md1", null ],
+    [ "Reference", "index.html#autotoc_md2", null ]
   ] ]
 ];
 

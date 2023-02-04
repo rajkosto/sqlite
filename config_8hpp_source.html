@@ -143,10 +143,10 @@ $(document).ready(function(){initNavTree('config_8hpp_source.html',''); initResi
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">  return ::boost::system::error_code(static_cast&lt;error&gt;(ev), &amp;loc##__LINE__);   \</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">}</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#define BOOST_SQLITE_ASSIGN_EC(ec, ev)                            \</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">{                                                                 \</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">  static constexpr auto loc##__LINE__((BOOST_CURRENT_LOCATION));  \</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">  ec.assign(static_cast&lt;error&gt;(ev), &amp;loc##__LINE__);              \</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#define BOOST_SQLITE_ASSIGN_EC(ec, ev)                              \</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">{                                                                   \</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">  static constexpr auto loc##__LINE__((BOOST_CURRENT_LOCATION));    \</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">  ec.assign(static_cast&lt;boost::sqlite::error&gt;(ev), &amp;loc##__LINE__); \</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">}</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">// BOOST_SQLITE_DETAIL_HPP</span></div>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('config_8hpp_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c8984f1860c11f62f47abb6761e46c1e.html">boost</a></li><li class="navelem"><a class="el" href="dir_3e3942c4c59d28918e46de9324b21cf7.html">sqlite</a></li><li class="navelem"><a class="el" href="dir_da74c484e01c32055656013da34d40df.html">detail</a></li><li class="navelem"><b>config.hpp</b></li>
-    <li class="footer">Generated on Thu Feb 2 2023 23:03:33 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Feb 4 2023 23:08:44 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

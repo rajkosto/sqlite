@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['boost_2esqlite_0',['boost.sqlite',['../index.html',1,'']]]
+  ['boost_5fsqlite_0',['boost_sqlite',['../index.html',1,'']]]
 ];

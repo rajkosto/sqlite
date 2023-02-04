@@ -127,8 +127,8 @@ $(document).ready(function(){initNavTree('collation_8hpp_source.html',''); initR
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    Func &amp;&amp; func,</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">typename</span> std::enable_if&lt;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        std::is_convertible&lt;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>          <span class="keyword">decltype</span>(func(string_view(), string_view())),</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>          <span class="keywordtype">int</span>&gt;::value,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keyword">decltype</span>(func(string_view(), string_view())),</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordtype">int</span>&gt;::value,</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        system::error_code&gt;::type &amp; ec)</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">using </span>func_type = <span class="keyword">typename</span> std::decay&lt;Func&gt;::type;</div>
@@ -141,37 +141,40 @@ $(document).ready(function(){initNavTree('collation_8hpp_source.html',''); initR
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        {</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>          string_view l(<span class="keyword">static_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(str_l), len_l);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>          string_view r(<span class="keyword">static_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(str_r), len_r);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>          <span class="keywordflow">return</span> (*<span class="keyword">static_cast&lt;</span>func_type*<span class="keyword">&gt;</span>(data))(l, r);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        },</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        +[](<span class="keywordtype">void</span> * p) { <span class="keyword">delete</span> <span class="keyword">static_cast&lt;</span>func_type*<span class="keyword">&gt;</span>(p); }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      );</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">if</span> (res != SQLITE_OK)</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      BOOST_SQLITE_ASSIGN_EC(ec, res);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Func&gt;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="group__reference.html#gac5fc68e3b64fcc1dba476735799e62df">   80</a></span><span class="keyword">auto</span> create_collation(</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp; conn,</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">const</span> std::string &amp; name,</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    Func &amp;&amp; func)</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#if !defined(BOOST_SQLITE_GENERATING_DOCS)</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    -&gt; <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>          std::is_convertible&lt;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>              <span class="keyword">decltype</span>(func(string_view(), string_view())),</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>              <span class="keywordtype">int</span>&gt;::value&gt;::type</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>#endif</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>{</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    system::error_code ec;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    create_collation(conn, name, std::forward&lt;Func&gt;(func), ec);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">if</span> (ec)</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        throw_exception(system::system_error(ec));</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>          <span class="keyword">auto</span> &amp; impl = (*<span class="keyword">static_cast&lt;</span>func_type*<span class="keyword">&gt;</span>(data));</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>          <span class="keyword">static_assert</span>(<span class="keyword">noexcept</span>(impl(l, r)),</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                        <span class="stringliteral">&quot;Collation function must be noexcept&quot;</span>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>          <span class="keywordflow">return</span> impl(l, r);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        },</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        +[](<span class="keywordtype">void</span> * p) { <span class="keyword">delete</span> <span class="keyword">static_cast&lt;</span>func_type*<span class="keyword">&gt;</span>(p); }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      );</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">if</span> (res != SQLITE_OK)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      BOOST_SQLITE_ASSIGN_EC(ec, res);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Func&gt;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="group__reference.html#gac5fc68e3b64fcc1dba476735799e62df">   83</a></span><span class="keyword">auto</span> create_collation(</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp; conn,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">const</span> std::string &amp; name,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    Func &amp;&amp; func)</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#if !defined(BOOST_SQLITE_GENERATING_DOCS)</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    -&gt; <span class="keyword">typename</span> std::enable_if&lt;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>          std::is_convertible&lt;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>              <span class="keyword">decltype</span>(func(string_view(), string_view())),</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>              <span class="keywordtype">int</span>&gt;::value&gt;::type</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>#endif</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>{</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    system::error_code ec;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    create_collation(conn, name, std::forward&lt;Func&gt;(func), ec);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">if</span> (ec)</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        throw_exception(system::system_error(ec));</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif </span><span class="comment">//BOOST_SQLITE_COLLATION_HPP</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#endif </span><span class="comment">//BOOST_SQLITE_COLLATION_HPP</span></div>
 <div class="ttc" id="astructboost_1_1sqlite_1_1connection_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html">boost::sqlite::connection</a></div><div class="ttdoc">main object for a connection to a database.</div><div class="ttdef"><b>Definition:</b> <a href="connection_8hpp_source.html#l00031">connection.hpp:32</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -179,7 +182,7 @@ $(document).ready(function(){initNavTree('collation_8hpp_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c8984f1860c11f62f47abb6761e46c1e.html">boost</a></li><li class="navelem"><a class="el" href="dir_3e3942c4c59d28918e46de9324b21cf7.html">sqlite</a></li><li class="navelem"><b>collation.hpp</b></li>
-    <li class="footer">Generated on Thu Feb 2 2023 23:03:33 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Feb 4 2023 23:08:44 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

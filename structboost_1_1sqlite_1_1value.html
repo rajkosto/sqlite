@@ -141,6 +141,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>get_int</b> () const</
 sqlite3_int64&#160;</td><td class="memItemRight" valign="bottom"><b>get_int64</b> () const</td></tr>
 <tr class="memdesc:a35bc60e28267479253a9d9f1343eef9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value as an <code>int64</code>. <br /></td></tr>
 <tr class="separator:a35bc60e28267479253a9d9f1343eef9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e9542ba7a9aae851f86594ffbd36061"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7e9542ba7a9aae851f86594ffbd36061"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1value.html#a7e9542ba7a9aae851f86594ffbd36061">get_pointer</a> ()</td></tr>
+<tr class="separator:a7e9542ba7a9aae851f86594ffbd36061"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35aa6e645b7151201d2a7aeb65395030"><td class="memItemLeft" align="right" valign="top"><a id="a35aa6e645b7151201d2a7aeb65395030" name="a35aa6e645b7151201d2a7aeb65395030"></a>
 core::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>get_text</b> () const</td></tr>
 <tr class="memdesc:a35aa6e645b7151201d2a7aeb65395030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value as text, i.e. a string_view. Note that this value may be invalidated`. <br /></td></tr>
@@ -170,7 +173,38 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>subtype</b> () const</
 <div class="textblock"><p >A holder for a sqlite values used for internal APIs. </p>
 
 <p class="definition">Definition at line <a class="el" href="value_8hpp_source.html#l00038">38</a> of file <a class="el" href="value_8hpp_source.html">value.hpp</a>.</p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7e9542ba7a9aae851f86594ffbd36061" name="a7e9542ba7a9aae851f86594ffbd36061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e9542ba7a9aae851f86594ffbd36061">&#9670;&#160;</a></span>get_pointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T * boost::sqlite::value::get_pointer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Get a value that was passed through the pointer interface. A value can be set as a pointer by binding/returning a unique_ptr. </p>
+
+<p class="definition">Definition at line <a class="el" href="value_8hpp_source.html#l00115">115</a> of file <a class="el" href="value_8hpp_source.html">value.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>boost/sqlite/<a class="el" href="value_8hpp_source.html">value.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -179,7 +213,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>subtype</b> () const</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1value.html">value</a></li>
-    <li class="footer">Generated on Thu Feb 2 2023 23:03:33 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sat Feb 4 2023 23:08:44 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>
