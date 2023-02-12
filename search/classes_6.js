@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['statement_0',['statement',['../structboost_1_1sqlite_1_1statement.html',1,'boost::sqlite']]]
+  ['param_5fref_0',['param_ref',['../structboost_1_1sqlite_1_1param__ref.html',1,'boost::sqlite']]],
+  ['preupdate_5fcontext_1',['preupdate_context',['../structboost_1_1sqlite_1_1preupdate__context.html',1,'boost::sqlite']]]
 ];

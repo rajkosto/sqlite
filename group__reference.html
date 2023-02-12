@@ -36,7 +36,7 @@ MathJax.Hub.Config({
   <td id="projectalign">
    <div id="projectname">boost_sqlite<span id="projectnumber">&#160;1</span>
    </div>
-   <div id="projectbrief">A sqlite wrapper library</div>
+   <div id="projectbrief">A sqlite C++ library</div>
   </td>
  </tr>
  </tbody>
@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('group__reference.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -111,7 +112,10 @@ $(document).ready(function(){initNavTree('group__reference.html',''); initResiza
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1blob.html">boost::sqlite::blob</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">an object that holds a binary large object  <a href="structboost_1_1sqlite_1_1blob.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An object that owns a binary large object.  <a href="structboost_1_1sqlite_1_1blob.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1blob__handle.html">boost::sqlite::blob_handle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">an object that holds a binary large object. Can be obtained by using <a class="el" href="structboost_1_1sqlite_1_1blob__handle.html">blob_handle</a>.  <a href="structboost_1_1sqlite_1_1blob__handle.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1blob__view.html">boost::sqlite::blob_view</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a view to a binary large object  <a href="structboost_1_1sqlite_1_1blob__view.html#details">More...</a><br /></td></tr>
@@ -127,6 +131,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1field.html">boost::sqlite::field</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A holder for a sqlite field, i.e. something returned from a query.  <a href="structboost_1_1sqlite_1_1field.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1param__ref.html">boost::sqlite::param_ref</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference to a value to temporary bind for an execute statement. Most values are captures by reference.  <a href="structboost_1_1sqlite_1_1param__ref.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">boost::sqlite::resultset</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representation of a result from a database.  <a href="structboost_1_1sqlite_1_1resultset.html#details">More...</a><br /></td></tr>
@@ -147,6 +154,12 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The prototype used by <a class="el" href="group__reference.html#gac9556090ab5cc76f3dc54f36f0125f0c">create_module</a>.  <a href="structboost_1_1sqlite_1_1vtab__module__prototype.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga5fcce434a49622839d917d3c41b3c513"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reference.html#ga5fcce434a49622839d917d3c41b3c513">BOOST_SQLITE_EXTENSION</a>(Name,  Conn)</td></tr>
+<tr class="memdesc:ga5fcce434a49622839d917d3c41b3c513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declare a sqlite module.  <a href="group__reference.html#ga5fcce434a49622839d917d3c41b3c513">More...</a><br /></td></tr>
+<tr class="separator:ga5fcce434a49622839d917d3c41b3c513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga67fd40e0265e2fc9ea43d8f3c2d59b35"><td class="memItemLeft" align="right" valign="top"><a id="ga67fd40e0265e2fc9ea43d8f3c2d59b35" name="ga67fd40e0265e2fc9ea43d8f3c2d59b35"></a>
@@ -164,12 +177,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>boost::sqlite::syste
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:gaba1532d41143f9845ee7b60b09196dd8"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reference.html#gaba1532d41143f9845ee7b60b09196dd8">boost::sqlite::error</a> </td></tr>
-<tr class="memdesc:gaba1532d41143f9845ee7b60b09196dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error codes returned from library operations.  <a href="group__reference.html#gaba1532d41143f9845ee7b60b09196dd8">More...</a><br /></td></tr>
-<tr class="separator:gaba1532d41143f9845ee7b60b09196dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga54803a0f6eb577b3e3938ca6dc3f6818"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reference.html#ga54803a0f6eb577b3e3938ca6dc3f6818">boost::sqlite::value_type</a> </td></tr>
 <tr class="memdesc:ga54803a0f6eb577b3e3938ca6dc3f6818"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of a value.  <a href="group__reference.html#ga54803a0f6eb577b3e3938ca6dc3f6818">More...</a><br /></td></tr>
 <tr class="separator:ga54803a0f6eb577b3e3938ca6dc3f6818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3210fa5fa6bd536bb7f13c3395acb37d"><td class="memItemLeft" align="right" valign="top"><a id="ga3210fa5fa6bd536bb7f13c3395acb37d" name="ga3210fa5fa6bd536bb7f13c3395acb37d"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reference.html#ga3210fa5fa6bd536bb7f13c3395acb37d">boost::sqlite::zero_blob</a> : sqlite3_uint64 </td></tr>
+<tr class="memdesc:ga3210fa5fa6bd536bb7f13c3395acb37d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper type to pass a blob full of zeroes without allocating extra memory. <br /></td></tr>
+<tr class="separator:ga3210fa5fa6bd536bb7f13c3395acb37d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -185,6 +198,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gac9556090ab5cc76f3dc54f36f0125f0c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reference.html#gac9556090ab5cc76f3dc54f36f0125f0c">boost::sqlite::create_module</a> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, const char *name, T &amp;&amp;module, system::error_code &amp;ec, <a class="el" href="classboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;ei) -&gt; typename std::decay&lt; T &gt;::type &amp;</td></tr>
 <tr class="memdesc:gac9556090ab5cc76f3dc54f36f0125f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a vtable.  <a href="group__reference.html#gac9556090ab5cc76f3dc54f36f0125f0c">More...</a><br /></td></tr>
 <tr class="separator:gac9556090ab5cc76f3dc54f36f0125f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb2b1e121d60ef948e56bd49c551cbd5"><td class="memTemplParams" colspan="2">template&lt;typename Table &gt; </td></tr>
+<tr class="memitem:gaeb2b1e121d60ef948e56bd49c551cbd5"><td class="memTemplItemLeft" align="right" valign="top">Table &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reference.html#gaeb2b1e121d60ef948e56bd49c551cbd5">boost::sqlite::get_vtable</a> (detail::vtab::cursor_type&lt; Table &gt; *const cursor)</td></tr>
+<tr class="separator:gaeb2b1e121d60ef948e56bd49c551cbd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc5e42f969f2e40a628bf38b0019977e"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
+<tr class="memitem:gafc5e42f969f2e40a628bf38b0019977e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reference.html#gafc5e42f969f2e40a628bf38b0019977e">boost::sqlite::preupdate_hook</a> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, Func &amp;&amp;func)</td></tr>
+<tr class="separator:gafc5e42f969f2e40a628bf38b0019977e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadaa638eab7f7af9d3005e318023366ac"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
 <tr class="memitem:gadaa638eab7f7af9d3005e318023366ac"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reference.html#gadaa638eab7f7af9d3005e318023366ac">boost::sqlite::rollback_hook</a> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, Func &amp;&amp;func)</td></tr>
 <tr class="memdesc:gadaa638eab7f7af9d3005e318023366ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install a rollback hook.  <a href="group__reference.html#gadaa638eab7f7af9d3005e318023366ac">More...</a><br /></td></tr>
@@ -223,109 +242,101 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3dcf6449551c842735b574db74f3b055"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reference.html#ga3dcf6449551c842735b574db74f3b055">boost::sqlite::create_window_function</a> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, const std::string &amp;name, Func &amp;&amp;func)</td></tr>
 <tr class="memdesc:ga3dcf6449551c842735b574db74f3b055"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a aggregate window function  <a href="group__reference.html#ga3dcf6449551c842735b574db74f3b055">More...</a><br /></td></tr>
 <tr class="separator:ga3dcf6449551c842735b574db74f3b055"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3facf3a9aa92c5f27d195131ff824248"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reference.html#ga3facf3a9aa92c5f27d195131ff824248">boost::sqlite::is_json</a> (const <a class="el" href="structboost_1_1sqlite_1_1value.html">value</a> &amp;v)</td></tr>
+<tr class="memitem:ga3facf3a9aa92c5f27d195131ff824248"><td class="memItemLeft" align="right" valign="top"><a id="ga3facf3a9aa92c5f27d195131ff824248" name="ga3facf3a9aa92c5f27d195131ff824248"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>boost::sqlite::is_json</b> (const <a class="el" href="structboost_1_1sqlite_1_1value.html">value</a> &amp;v)</td></tr>
+<tr class="memdesc:ga3facf3a9aa92c5f27d195131ff824248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the value or field is a json. <br /></td></tr>
 <tr class="separator:ga3facf3a9aa92c5f27d195131ff824248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga34786d37ee936540a702d9a59555bd3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reference.html#ga34786d37ee936540a702d9a59555bd3b">boost::sqlite::is_json</a> (const <a class="el" href="structboost_1_1sqlite_1_1field.html">field</a> &amp;f)</td></tr>
+<tr class="memitem:ga34786d37ee936540a702d9a59555bd3b"><td class="memItemLeft" align="right" valign="top"><a id="ga34786d37ee936540a702d9a59555bd3b" name="ga34786d37ee936540a702d9a59555bd3b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>boost::sqlite::is_json</b> (const <a class="el" href="structboost_1_1sqlite_1_1field.html">field</a> &amp;f)</td></tr>
+<tr class="memdesc:ga34786d37ee936540a702d9a59555bd3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the value or field is a json. <br /></td></tr>
 <tr class="separator:ga34786d37ee936540a702d9a59555bd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2a9b377a749d90f66de60a4eba475aa4"><td class="memItemLeft" align="right" valign="top">json::value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reference.html#ga2a9b377a749d90f66de60a4eba475aa4">boost::sqlite::as_json</a> (const <a class="el" href="structboost_1_1sqlite_1_1value.html">value</a> &amp;v, json::storage_ptr ptr={})</td></tr>
+<tr class="memitem:ga2a9b377a749d90f66de60a4eba475aa4"><td class="memItemLeft" align="right" valign="top"><a id="ga2a9b377a749d90f66de60a4eba475aa4" name="ga2a9b377a749d90f66de60a4eba475aa4"></a>
+json::value&#160;</td><td class="memItemRight" valign="bottom"><b>boost::sqlite::as_json</b> (const <a class="el" href="structboost_1_1sqlite_1_1value.html">value</a> &amp;v, json::storage_ptr ptr={})</td></tr>
+<tr class="memdesc:ga2a9b377a749d90f66de60a4eba475aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the value or field to a json. <br /></td></tr>
 <tr class="separator:ga2a9b377a749d90f66de60a4eba475aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafbdfd1c62e8a60280c46078e7688bc50"><td class="memItemLeft" align="right" valign="top">json::value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reference.html#gafbdfd1c62e8a60280c46078e7688bc50">boost::sqlite::as_json</a> (const <a class="el" href="structboost_1_1sqlite_1_1field.html">field</a> &amp;f, json::storage_ptr ptr={})</td></tr>
+<tr class="memitem:gafbdfd1c62e8a60280c46078e7688bc50"><td class="memItemLeft" align="right" valign="top"><a id="gafbdfd1c62e8a60280c46078e7688bc50" name="gafbdfd1c62e8a60280c46078e7688bc50"></a>
+json::value&#160;</td><td class="memItemRight" valign="bottom"><b>boost::sqlite::as_json</b> (const <a class="el" href="structboost_1_1sqlite_1_1field.html">field</a> &amp;f, json::storage_ptr ptr={})</td></tr>
+<tr class="memdesc:gafbdfd1c62e8a60280c46078e7688bc50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the value or field to a json. <br /></td></tr>
 <tr class="separator:gafbdfd1c62e8a60280c46078e7688bc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >This page contains the documentation of the sqlite high-level API. </p>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="gaba1532d41143f9845ee7b60b09196dd8" name="gaba1532d41143f9845ee7b60b09196dd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaba1532d41143f9845ee7b60b09196dd8">&#9670;&#160;</a></span>error</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga5fcce434a49622839d917d3c41b3c513" name="ga5fcce434a49622839d917d3c41b3c513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5fcce434a49622839d917d3c41b3c513">&#9670;&#160;</a></span>BOOST_SQLITE_EXTENSION</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="group__reference.html#gaba1532d41143f9845ee7b60b09196dd8">boost::sqlite::error</a></td>
+          <td class="memname">#define BOOST_SQLITE_EXTENSION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Conn&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> sqlite_##Name##_impl (<a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">boost::sqlite::connection</a> Conn);       \</div>
+<div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> BOOST_SYMBOL_EXPORT                                    \</div>
+<div class="line">int sqlite3_##Name##_init(                                        \</div>
+<div class="line">    sqlite3 *db,                                                  \</div>
+<div class="line">    <span class="keywordtype">char</span> **pzErrMsg,                                              \</div>
+<div class="line">    <span class="keyword">const</span> sqlite3_api_routines *pApi)                             \</div>
+<div class="line">{                                                                 \</div>
+<div class="line">  <span class="keyword">using </span>boost::sqlite::sqlite3_api;                               \</div>
+<div class="line">  <span class="keywordflow">try</span>                                                             \</div>
+<div class="line">  {                                                               \</div>
+<div class="line">      <span class="keyword">using </span>boost::sqlite::sqlite3_api;                           \</div>
+<div class="line">      SQLITE_EXTENSION_INIT2(pApi);                               \</div>
+<div class="line">      sqlite_##Name##_impl(<a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">boost::sqlite::connection</a>{db, <span class="keyword">false</span>}); \</div>
+<div class="line">  }                                                               \</div>
+<div class="line">  BOOST_SQLITE_CATCH_ASSIGN_STR_AND_RETURN(*pzErrMsg)             \</div>
+<div class="line">  <span class="keywordflow">return</span> SQLITE_OK;                                               \</div>
+<div class="line">}                                                                 \</div>
+<div class="line"><span class="keywordtype">void</span> sqlite_##Name##_impl(<a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">boost::sqlite::connection</a> Conn)</div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html">boost::sqlite::connection</a></div><div class="ttdoc">main object for a connection to a database.</div><div class="ttdef"><b>Definition:</b> <a href="connection_8hpp_source.html#l00029">connection.hpp:30</a></div></div>
+</div><!-- fragment -->
+<p>Declare a sqlite module. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Name</td><td>The name of the module </td></tr>
+    <tr><td class="paramname">Conn</td><td>The parameter name of the connection</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This macro can be used to create an sqlite extension.</p>
+<dl class="section note"><dt>Note</dt><dd>When defining BOOST_SQLITE_COMPILE_EXTENSION (was is done in <a class="el" href="extension_8hpp_source.html">extension.hpp</a>) sqlite will use an inline namespace to avoid symbol clashes.</dd></dl>
+<dl class="section user"><dt>Examples</dt><dd></dd></dl>
+<div class="fragment"><div class="line"><a class="code hl_define" href="group__reference.html#ga5fcce434a49622839d917d3c41b3c513">BOOST_SQLITE_EXTENSION</a>(extension, conn)</div>
+<div class="line">{</div>
+<div class="line">   create_scalar_function(</div>
+<div class="line">       conn, <span class="stringliteral">&quot;assert&quot;</span>,</div>
+<div class="line">       [](<a class="code hl_struct" href="structboost_1_1sqlite_1_1context.html">boost::sqlite::context&lt;&gt;</a>, boost::span&lt;boost::sqlite::value, 1u&gt; sp)</div>
+<div class="line">       {</div>
+<div class="line">           <span class="keywordflow">if</span> (sp.front().get_int() == 0)</div>
+<div class="line">             <span class="keywordflow">throw</span> std::logic_error(<span class="stringliteral">&quot;assertion failed&quot;</span>);</div>
+<div class="line">       });</div>
+<div class="line">}</div>
+<div class="ttc" id="agroup__reference_html_ga5fcce434a49622839d917d3c41b3c513"><div class="ttname"><a href="group__reference.html#ga5fcce434a49622839d917d3c41b3c513">BOOST_SQLITE_EXTENSION</a></div><div class="ttdeci">#define BOOST_SQLITE_EXTENSION(Name, Conn)</div><div class="ttdoc">Declare a sqlite module.</div><div class="ttdef"><b>Definition:</b> <a href="extension_8hpp_source.html#l00047">extension.hpp:47</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1context_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1context.html">boost::sqlite::context</a></div><div class="ttdoc">A context that can be passed into scalar functions.</div><div class="ttdef"><b>Definition:</b> <a href="function_8hpp_source.html#l00049">function.hpp:50</a></div></div>
+</div><!-- fragment --><p>{.cpp} </p>
 
-<p>Error codes returned from library operations. </p>
-<p ><a href="https://www.sqlite.org/rescode.html">related sqlite documentation</a> </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a444bcb3a3fcf8389296c49467f27e1d6" name="ggaba1532d41143f9845ee7b60b09196dd8a444bcb3a3fcf8389296c49467f27e1d6"></a>ok&#160;</td><td class="fielddoc"><p >Successful result </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8acb5e100e5a9a3e7f6d1fd97512215282" name="ggaba1532d41143f9845ee7b60b09196dd8acb5e100e5a9a3e7f6d1fd97512215282"></a>error&#160;</td><td class="fielddoc"><p >Generic error </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8ad1efad72dc5b17dc66a46767c32fff40" name="ggaba1532d41143f9845ee7b60b09196dd8ad1efad72dc5b17dc66a46767c32fff40"></a>internal&#160;</td><td class="fielddoc"><p >Internal logic error in SQLite </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8aca659200663cf654dc4410ed494451ee" name="ggaba1532d41143f9845ee7b60b09196dd8aca659200663cf654dc4410ed494451ee"></a>perm&#160;</td><td class="fielddoc"><p >Access permission denied </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a5bb94a1c12413a2e5d14deabab29f2aa" name="ggaba1532d41143f9845ee7b60b09196dd8a5bb94a1c12413a2e5d14deabab29f2aa"></a>abort&#160;</td><td class="fielddoc"><p >Callback routine requested an abort </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a8bc1b2f84252c3df4edd53e4aad097a7" name="ggaba1532d41143f9845ee7b60b09196dd8a8bc1b2f84252c3df4edd53e4aad097a7"></a>busy&#160;</td><td class="fielddoc"><p >The database file is locked </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a4cef2f30ac7d33419d00c1d93a090095" name="ggaba1532d41143f9845ee7b60b09196dd8a4cef2f30ac7d33419d00c1d93a090095"></a>locked&#160;</td><td class="fielddoc"><p >A table in the database is locked </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a48462bf68223692233cb4c435857b51c" name="ggaba1532d41143f9845ee7b60b09196dd8a48462bf68223692233cb4c435857b51c"></a>nomem&#160;</td><td class="fielddoc"><p >A malloc() failed </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a336ebbb2179beaa7340a4f1620f3af40" name="ggaba1532d41143f9845ee7b60b09196dd8a336ebbb2179beaa7340a4f1620f3af40"></a>readonly&#160;</td><td class="fielddoc"><p >Attempt to write a readonly database </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a2414c252176310b2c04547257948c7b7" name="ggaba1532d41143f9845ee7b60b09196dd8a2414c252176310b2c04547257948c7b7"></a>interrupt&#160;</td><td class="fielddoc"><p >Operation terminated by sqlite3_interrupt() </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a9d6990b718ccadf45c3833989af7984d" name="ggaba1532d41143f9845ee7b60b09196dd8a9d6990b718ccadf45c3833989af7984d"></a>ioerr&#160;</td><td class="fielddoc"><p >Some kind of disk I/O error occurred </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8abc2f39d437ff13dff05f5cfda14327cc" name="ggaba1532d41143f9845ee7b60b09196dd8abc2f39d437ff13dff05f5cfda14327cc"></a>corrupt&#160;</td><td class="fielddoc"><p >The database disk image is malformed </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8ac2adf6ecc220f2711801d6e466340183" name="ggaba1532d41143f9845ee7b60b09196dd8ac2adf6ecc220f2711801d6e466340183"></a>notfound&#160;</td><td class="fielddoc"><p >Unknown opcode in sqlite3_file_control() </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8ae9dc924f238fa6cc29465942875fe8f0" name="ggaba1532d41143f9845ee7b60b09196dd8ae9dc924f238fa6cc29465942875fe8f0"></a>full&#160;</td><td class="fielddoc"><p >Insertion failed because database is full </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a88a0198b4bcd0140562fc573be76db37" name="ggaba1532d41143f9845ee7b60b09196dd8a88a0198b4bcd0140562fc573be76db37"></a>cantopen&#160;</td><td class="fielddoc"><p >Unable to open the database file </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a81788ba0d7d02d81c063dbca621ba11b" name="ggaba1532d41143f9845ee7b60b09196dd8a81788ba0d7d02d81c063dbca621ba11b"></a>protocol&#160;</td><td class="fielddoc"><p >Database lock protocol error </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8aa2e4822a98337283e39f7b60acf85ec9" name="ggaba1532d41143f9845ee7b60b09196dd8aa2e4822a98337283e39f7b60acf85ec9"></a>empty&#160;</td><td class="fielddoc"><p >Internal use only </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8ac9550d5fad73447fc24ba47f95d1c6b7" name="ggaba1532d41143f9845ee7b60b09196dd8ac9550d5fad73447fc24ba47f95d1c6b7"></a>schema&#160;</td><td class="fielddoc"><p >The database schema changed </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a9ea2775b1773fa0da76b89fc33c6d148" name="ggaba1532d41143f9845ee7b60b09196dd8a9ea2775b1773fa0da76b89fc33c6d148"></a>toobig&#160;</td><td class="fielddoc"><p >String or BLOB exceeds size limit </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a3677ab7adaf00725e9fdbaed503a94e3" name="ggaba1532d41143f9845ee7b60b09196dd8a3677ab7adaf00725e9fdbaed503a94e3"></a>constraint&#160;</td><td class="fielddoc"><p >Abort due to constraint violation </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a1d1c5b76da944b44db42c9d0558021c5" name="ggaba1532d41143f9845ee7b60b09196dd8a1d1c5b76da944b44db42c9d0558021c5"></a>mismatch&#160;</td><td class="fielddoc"><p >Data type mismatch </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a020b0bf9a7e1f715ccf4739c19ea6002" name="ggaba1532d41143f9845ee7b60b09196dd8a020b0bf9a7e1f715ccf4739c19ea6002"></a>misuse&#160;</td><td class="fielddoc"><p >Library used incorrectly </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8afc92673f7108e44d54229b16507e1ac8" name="ggaba1532d41143f9845ee7b60b09196dd8afc92673f7108e44d54229b16507e1ac8"></a>nolfs&#160;</td><td class="fielddoc"><p >Uses OS features not supported on host </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8afa53b91ccc1b78668d5af58e1ed3a485" name="ggaba1532d41143f9845ee7b60b09196dd8afa53b91ccc1b78668d5af58e1ed3a485"></a>auth&#160;</td><td class="fielddoc"><p >Authorization denied </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a1ddcb92ade31c8fbd370001f9b29a7d9" name="ggaba1532d41143f9845ee7b60b09196dd8a1ddcb92ade31c8fbd370001f9b29a7d9"></a>format&#160;</td><td class="fielddoc"><p >Not used </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a37b19816109a32106d109e83bbb3c97d" name="ggaba1532d41143f9845ee7b60b09196dd8a37b19816109a32106d109e83bbb3c97d"></a>range&#160;</td><td class="fielddoc"><p >2nd parameter to sqlite3_bind out of range </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8ae002b15e6a7e20c33fa3da811da463ba" name="ggaba1532d41143f9845ee7b60b09196dd8ae002b15e6a7e20c33fa3da811da463ba"></a>notadb&#160;</td><td class="fielddoc"><p >File opened that is not a database file </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8aefd2af60c8501931cb9c736b5ad74f65" name="ggaba1532d41143f9845ee7b60b09196dd8aefd2af60c8501931cb9c736b5ad74f65"></a>notice&#160;</td><td class="fielddoc"><p >Notifications from sqlite3_log() </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a7b83d3f08fa392b79e3f553b585971cd" name="ggaba1532d41143f9845ee7b60b09196dd8a7b83d3f08fa392b79e3f553b585971cd"></a>warning&#160;</td><td class="fielddoc"><p >Warnings from sqlite3_log() </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8af1965a857bc285d26fe22023aa5ab50d" name="ggaba1532d41143f9845ee7b60b09196dd8af1965a857bc285d26fe22023aa5ab50d"></a>row&#160;</td><td class="fielddoc"><p >sqlite3_step() has another row ready </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ggaba1532d41143f9845ee7b60b09196dd8a6b2ded51d81a4403d8a4bd25fa1e57ee" name="ggaba1532d41143f9845ee7b60b09196dd8a6b2ded51d81a4403d8a4bd25fa1e57ee"></a>done&#160;</td><td class="fielddoc"><p >sqlite3_step() has finished executing </p>
-</td></tr>
-</table>
-
-<p class="definition">Definition at line <a class="el" href="error_8hpp_source.html#l00035">35</a> of file <a class="el" href="error_8hpp_source.html">error.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="extension_8hpp_source.html#l00047">47</a> of file <a class="el" href="extension_8hpp_source.html">extension.hpp</a>.</p>
 
 </div>
 </div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga54803a0f6eb577b3e3938ca6dc3f6818" name="ga54803a0f6eb577b3e3938ca6dc3f6818"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga54803a0f6eb577b3e3938ca6dc3f6818">&#9670;&#160;</a></span>value_type</h2>
 
@@ -366,64 +377,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gafbdfd1c62e8a60280c46078e7688bc50" name="gafbdfd1c62e8a60280c46078e7688bc50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafbdfd1c62e8a60280c46078e7688bc50">&#9670;&#160;</a></span>as_json() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">json::value boost::sqlite::as_json </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structboost_1_1sqlite_1_1field.html">field</a> &amp;&#160;</td>
-          <td class="paramname"><em>f</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">json::storage_ptr&#160;</td>
-          <td class="paramname"><em>ptr</em> = <code>{}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Qbrief Convert the value or field to a json. </p>
-
-</div>
-</div>
-<a id="ga2a9b377a749d90f66de60a4eba475aa4" name="ga2a9b377a749d90f66de60a4eba475aa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2a9b377a749d90f66de60a4eba475aa4">&#9670;&#160;</a></span>as_json() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">json::value boost::sqlite::as_json </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structboost_1_1sqlite_1_1value.html">value</a> &amp;&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">json::storage_ptr&#160;</td>
-          <td class="paramname"><em>ptr</em> = <code>{}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Qbrief Convert the value or field to a json. </p>
-
-</div>
-</div>
 <a id="ga350f34e63f44aae08e08ac88de04f846" name="ga350f34e63f44aae08e08ac88de04f846"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga350f34e63f44aae08e08ac88de04f846">&#9670;&#160;</a></span>backup() <span class="overload">[1/2]</span></h2>
 
@@ -507,7 +460,6 @@ Functions</h2></td></tr>
 <div class="line">   <a class="code hl_function" href="group__reference.html#ga350f34e63f44aae08e08ac88de04f846">backup</a>(read, target);</div>
 <div class="line">}</div>
 <div class="ttc" id="agroup__reference_html_ga350f34e63f44aae08e08ac88de04f846"><div class="ttname"><a href="group__reference.html#ga350f34e63f44aae08e08ac88de04f846">boost::sqlite::backup</a></div><div class="ttdeci">void backup(connection &amp;source, connection &amp;target, const std::string &amp;source_name, const std::string &amp;target_name, system::error_code &amp;ec, error_info &amp;ei)</div><div class="ttdoc">Backup a database.</div></div>
-<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html">boost::sqlite::connection</a></div><div class="ttdoc">main object for a connection to a database.</div><div class="ttdef"><b>Definition:</b> <a href="connection_8hpp_source.html#l00031">connection.hpp:32</a></div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -615,7 +567,9 @@ template&lt;typename Func &gt; </div>
 <p>Install a commit hook. </p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://www.sqlite.org/c3ref/commit_hook.html">related sqlite documentation</a></dd></dl>
 <p>The commit hook gets called before a commit gets performed. If <code>func</code> returns true, the commit goes, otherwise it gets rolled back.</p>
-<dl class="section note"><dt>Note</dt><dd>If the function is not a free function pointer, this function will <em>NOT</em> take ownership.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the function is not a free function pointer, this function will <em>NOT</em> take ownership.</dd>
+<dd>
+If <code>func</code> is a <code>nullptr</code> the hook gets reset.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">conn</td><td>The database connection to install the hook in </td></tr>
@@ -623,9 +577,9 @@ template&lt;typename Func &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if an hook has been replaced. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if an hook has been replaced. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="hooks_8hpp_source.html#l00270">270</a> of file <a class="el" href="hooks_8hpp_source.html">hooks.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hooks_8hpp_source.html#l00280">280</a> of file <a class="el" href="hooks_8hpp_source.html">hooks.hpp</a>.</p>
 
 </div>
 </div>
@@ -704,7 +658,7 @@ template&lt;typename Func &gt; </div>
 <div class="line">  conn, <span class="stringliteral">&quot;char_counter&quot;</span>,</div>
 <div class="line">  aggregate_func{});</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00576">576</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00574">574</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
@@ -795,7 +749,7 @@ template&lt;typename Func &gt; </div>
 <div class="line">  conn, <span class="stringliteral">&quot;char_counter&quot;</span>,</div>
 <div class="line">  aggregate_func{});</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00560">560</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00558">558</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
@@ -859,7 +813,7 @@ template&lt;typename Func &gt; </div>
 <div class="line">conn.<a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a7cb9f9a0f5a74bc51384ba8ab9c4ff2b">query</a>(<span class="stringliteral">&quot;select * from people order by last_name collate iequal asc;&quot;</span>);</div>
 <div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a7cb9f9a0f5a74bc51384ba8ab9c4ff2b"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a7cb9f9a0f5a74bc51384ba8ab9c4ff2b">boost::sqlite::connection::query</a></div><div class="ttdeci">resultset query(core::string_view q, error_code &amp;ec, error_info &amp;ei)</div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="collation_8hpp_source.html#l00083">83</a> of file <a class="el" href="collation_8hpp_source.html">collation.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="collation_8hpp_source.html#l00079">79</a> of file <a class="el" href="collation_8hpp_source.html">collation.hpp</a>.</p>
 
 </div>
 </div>
@@ -925,7 +879,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the module as stored in the database. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vtable_8hpp_source.html#l00916">916</a> of file <a class="el" href="vtable_8hpp_source.html">vtable.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtable_8hpp_source.html#l00953">953</a> of file <a class="el" href="vtable_8hpp_source.html">vtable.hpp</a>.</p>
 
 </div>
 </div>
@@ -1002,10 +956,9 @@ template&lt;typename Func &gt; </div>
 <div class="line">                     [](<span class="keywordtype">char</span> c){return std::toupper(c);});</div>
 <div class="line">      <span class="keywordflow">return</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1value.html">value</a>;</div>
 <div class="line">  });</div>
-<div class="ttc" id="astructboost_1_1sqlite_1_1context_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1context.html">boost::sqlite::context</a></div><div class="ttdoc">A context that can be passed into scalar functions.</div><div class="ttdef"><b>Definition:</b> <a href="function_8hpp_source.html#l00052">function.hpp:53</a></div></div>
 <div class="ttc" id="astructboost_1_1sqlite_1_1value_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1value.html">boost::sqlite::value</a></div><div class="ttdoc">A holder for a sqlite values used for internal APIs.</div><div class="ttdef"><b>Definition:</b> <a href="value_8hpp_source.html#l00038">value.hpp:39</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00490">490</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00488">488</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
@@ -1082,11 +1035,11 @@ template&lt;typename Func &gt; </div>
 <div class="line">          ctx.<a class="code hl_function" href="structboost_1_1sqlite_1_1context.html#a65d1c2d7fed2db2f63e03a2cc744d1dc">set</a>&lt;0&gt;(<a class="code hl_struct" href="structboost_1_1sqlite_1_1value.html">value</a>);</div>
 <div class="line">      <span class="keywordflow">return</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1value.html">value</a>;</div>
 <div class="line">  });</div>
-<div class="ttc" id="astructboost_1_1sqlite_1_1context_html_a5f94d292a29e0913e46c3fdf89b316c3"><div class="ttname"><a href="structboost_1_1sqlite_1_1context.html#a5f94d292a29e0913e46c3fdf89b316c3">boost::sqlite::context::get_if</a></div><div class="ttdeci">auto get_if() -&gt; element&lt; Idx &gt; *</div><div class="ttdoc">Get the value in the context at position Idx. Returns nullptr .value isn't set.</div><div class="ttdef"><b>Definition:</b> <a href="function_8hpp_source.html#l00082">function.hpp:82</a></div></div>
-<div class="ttc" id="astructboost_1_1sqlite_1_1context_html_a65d1c2d7fed2db2f63e03a2cc744d1dc"><div class="ttname"><a href="structboost_1_1sqlite_1_1context.html#a65d1c2d7fed2db2f63e03a2cc744d1dc">boost::sqlite::context::set</a></div><div class="ttdeci">void set(element&lt; Idx &gt; value)</div><div class="ttdoc">Set the value in the context at position Idx</div><div class="ttdef"><b>Definition:</b> <a href="function_8hpp_source.html#l00059">function.hpp:59</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1context_html_a5f94d292a29e0913e46c3fdf89b316c3"><div class="ttname"><a href="structboost_1_1sqlite_1_1context.html#a5f94d292a29e0913e46c3fdf89b316c3">boost::sqlite::context::get_if</a></div><div class="ttdeci">auto get_if() -&gt; element&lt; Idx &gt; *</div><div class="ttdoc">Get the value in the context at position Idx. Returns nullptr .value isn't set.</div><div class="ttdef"><b>Definition:</b> <a href="function_8hpp_source.html#l00079">function.hpp:79</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1context_html_a65d1c2d7fed2db2f63e03a2cc744d1dc"><div class="ttname"><a href="structboost_1_1sqlite_1_1context.html#a65d1c2d7fed2db2f63e03a2cc744d1dc">boost::sqlite::context::set</a></div><div class="ttdeci">void set(element&lt; Idx &gt; value)</div><div class="ttdoc">Set the value in the context at position Idx</div><div class="ttdef"><b>Definition:</b> <a href="function_8hpp_source.html#l00056">function.hpp:56</a></div></div>
 <div class="ttc" id="astructboost_1_1sqlite_1_1value_html_a35bc60e28267479253a9d9f1343eef9b"><div class="ttname"><a href="structboost_1_1sqlite_1_1value.html#a35bc60e28267479253a9d9f1343eef9b">boost::sqlite::value::get_int64</a></div><div class="ttdeci">sqlite3_int64 get_int64() const</div><div class="ttdoc">Get the value as an int64.</div><div class="ttdef"><b>Definition:</b> <a href="value_8hpp_source.html#l00066">value.hpp:66</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00435">435</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00433">433</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
@@ -1171,7 +1124,7 @@ template&lt;typename Func &gt; </div>
 <div class="line">  conn, <span class="stringliteral">&quot;win_char_counter&quot;</span>,</div>
 <div class="line">  aggregate_func{});</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00656">656</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00654">654</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
@@ -1262,65 +1215,86 @@ template&lt;typename Func &gt; </div>
 <div class="line">  conn, <span class="stringliteral">&quot;win_char_counter&quot;</span>,</div>
 <div class="line">  aggregate_func{});</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00644">644</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00642">642</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
-<a id="ga34786d37ee936540a702d9a59555bd3b" name="ga34786d37ee936540a702d9a59555bd3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga34786d37ee936540a702d9a59555bd3b">&#9670;&#160;</a></span>is_json() <span class="overload">[1/2]</span></h2>
+<a id="gaeb2b1e121d60ef948e56bd49c551cbd5" name="gaeb2b1e121d60ef948e56bd49c551cbd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb2b1e121d60ef948e56bd49c551cbd5">&#9670;&#160;</a></span>get_vtable()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+<div class="memtemplate">
+template&lt;typename Table &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool boost::sqlite::is_json </td>
+          <td class="memname">Table &amp; boost::sqlite::get_vtable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structboost_1_1sqlite_1_1field.html">field</a> &amp;&#160;</td>
-          <td class="paramname"><em>f</em></td><td>)</td>
+          <td class="paramtype">detail::vtab::cursor_type&lt; Table &gt; *const&#160;</td>
+          <td class="paramname"><em>cursor</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p >Qbrief Check if the value or field is a json. </p>
+<p >Get the table associated with the cursor </p>
 
-<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l00036">36</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtable_8hpp_source.html#l00994">994</a> of file <a class="el" href="vtable_8hpp_source.html">vtable.hpp</a>.</p>
 
 </div>
 </div>
-<a id="ga3facf3a9aa92c5f27d195131ff824248" name="ga3facf3a9aa92c5f27d195131ff824248"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3facf3a9aa92c5f27d195131ff824248">&#9670;&#160;</a></span>is_json() <span class="overload">[2/2]</span></h2>
+<a id="gafc5e42f969f2e40a628bf38b0019977e" name="gafc5e42f969f2e40a628bf38b0019977e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafc5e42f969f2e40a628bf38b0019977e">&#9670;&#160;</a></span>preupdate_hook()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+<div class="memtemplate">
+template&lt;typename Func &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool boost::sqlite::is_json </td>
+          <td class="memname">bool boost::sqlite::preupdate_hook </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structboost_1_1sqlite_1_1value.html">value</a> &amp;&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;&#160;</td>
+          <td class="paramname"><em>conn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Func &amp;&amp;&#160;</td>
+          <td class="paramname"><em>func</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p >Qbrief Check if the value or field is a json. </p>
-
-<p class="definition">Definition at line <a class="el" href="json_8hpp_source.html#l00035">35</a> of file <a class="el" href="json_8hpp_source.html">json.hpp</a>.</p>
+<p >A hook for pre-update events.</p>
+<dl class="section note"><dt>Note</dt><dd>This is only available if sqlite was compiled with <code>SQLITE_ENABLE_PREUPDATE_HOOK</code> enabled.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://sqlite.org/c3ref/preupdate_count.html">related sqlite documentation</a></dd></dl>
+<p>The function will get called</p>
+<dl class="section note"><dt>Note</dt><dd>If the function is not a free function pointer, this function will <em>NOT</em> take ownership.</dd>
+<dd>
+If <code>func</code> is a <code>nullptr</code> the hook gets reset.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conn</td><td>The database connection to install the hook in </td></tr>
+    <tr><td class="paramname">func</td><td>The hook function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if an hook has been replaced.</dd></dl>
+<p>The signature of the handler is as following (it must noexcept):</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="group__reference.html#gafc5e42f969f2e40a628bf38b0019977e">preupdate_hook</a>(<a class="code hl_struct" href="structboost_1_1sqlite_1_1preupdate__context.html">sqlite::preupdate_context</a> ctx,</div>
+<div class="line">                    <span class="keywordtype">int</span> op,</div>
+<div class="line">                    <span class="keyword">const</span> <span class="keywordtype">char</span> * db_name,</div>
+<div class="line">                    <span class="keyword">const</span> <span class="keywordtype">char</span> * table_name,</div>
+<div class="line">                    sqlite3_int64 current_key,</div>
+<div class="line">                    sqlite3_int64 new_key);</div>
+<div class="ttc" id="agroup__reference_html_gafc5e42f969f2e40a628bf38b0019977e"><div class="ttname"><a href="group__reference.html#gafc5e42f969f2e40a628bf38b0019977e">boost::sqlite::preupdate_hook</a></div><div class="ttdeci">bool preupdate_hook(connection &amp;conn, Func &amp;&amp;func)</div><div class="ttdef"><b>Definition:</b> <a href="hooks_8hpp_source.html#l00340">hooks.hpp:340</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1preupdate__context_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1preupdate__context.html">boost::sqlite::preupdate_context</a></div><div class="ttdef"><b>Definition:</b> <a href="hooks_8hpp_source.html#l00024">hooks.hpp:25</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="hooks_8hpp_source.html#l00340">340</a> of file <a class="el" href="hooks_8hpp_source.html">hooks.hpp</a>.</p>
 
 </div>
 </div>
@@ -1355,7 +1329,9 @@ template&lt;typename Func &gt; </div>
 <p>Install a rollback hook. </p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://www.sqlite.org/c3ref/commit_hook.html">related sqlite documentation</a></dd></dl>
 <p>The rollback hook gets called when a rollback gets performed.</p>
-<dl class="section note"><dt>Note</dt><dd>If the function is not a free function pointer, this function will <em>NOT</em> take ownership.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If the function is not a free function pointer, this function will <em>NOT</em> take ownership.</dd>
+<dd>
+If <code>func</code> is a <code>nullptr</code> the hook gets reset.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">conn</td><td>The database connection to install the hook in </td></tr>
@@ -1363,9 +1339,9 @@ template&lt;typename Func &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if an hook has been replaced. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if an hook has been replaced. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="hooks_8hpp_source.html#l00290">290</a> of file <a class="el" href="hooks_8hpp_source.html">hooks.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hooks_8hpp_source.html#l00302">302</a> of file <a class="el" href="hooks_8hpp_source.html">hooks.hpp</a>.</p>
 
 </div>
 </div>
@@ -1402,6 +1378,7 @@ template&lt;typename Func &gt; </div>
 <p>The update hook gets called when an update was performed.</p>
 <dl class="section note"><dt>Note</dt><dd>If the function is not a free function pointer, this function will <em>NOT</em> take ownership.</dd></dl>
 <p>The signature of the function is <code>void(int op, core::string_view db, core::string_view table, sqlite3_int64 id)</code>. <code>op</code> is either <code>SQLITE_INSERT</code>, <code>SQLITE_DELETE</code> and <code>SQLITE_UPDATE</code>.</p>
+<dl class="section note"><dt>Note</dt><dd>If <code>func</code> is a <code>nullptr</code> the hook gets reset.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">conn</td><td>The database connection to install the hook in </td></tr>
@@ -1409,9 +1386,9 @@ template&lt;typename Func &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if an hook has been replaced. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if an hook has been replaced. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="hooks_8hpp_source.html#l00323">323</a> of file <a class="el" href="hooks_8hpp_source.html">hooks.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hooks_8hpp_source.html#l00367">367</a> of file <a class="el" href="hooks_8hpp_source.html">hooks.hpp</a>.</p>
 
 </div>
 </div>
@@ -1420,7 +1397,7 @@ template&lt;typename Func &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Feb 4 2023 23:08:44 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Mon Feb 13 2023 02:38:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

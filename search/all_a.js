@@ -1,12 +1,9 @@
 var searchData=
 [
-  ['native_5fhandle_0',['native_handle',['../structboost_1_1sqlite_1_1connection.html#a1c34160dffabcb8b24e548dca701f1f5',1,'boost::sqlite::connection::native_handle()'],['../structboost_1_1sqlite_1_1value.html#ad274ddb2bc2fc3e033da287ff2beaadb',1,'boost::sqlite::value::native_handle()']]],
-  ['native_5fhandle_5ftype_1',['native_handle_type',['../structboost_1_1sqlite_1_1connection.html#a6786a2e5984acb0a7b87611974e09cc2',1,'boost::sqlite::connection::native_handle_type()'],['../structboost_1_1sqlite_1_1value.html#a375884535943e7dc26a214d531de0324',1,'boost::sqlite::value::native_handle_type()']]],
-  ['next_2',['next',['../structboost_1_1sqlite_1_1vtab__module__prototype_1_1table__type_1_1cursor__type.html#a1ef3780a096e73e2d1244068ec1891c3',1,'boost::sqlite::vtab_module_prototype::table_type::cursor_type']]],
-  ['nolfs_3',['nolfs',['../group__reference.html#ggaba1532d41143f9845ee7b60b09196dd8afc92673f7108e44d54229b16507e1ac8',1,'boost::sqlite']]],
-  ['nomem_4',['nomem',['../group__reference.html#ggaba1532d41143f9845ee7b60b09196dd8a48462bf68223692233cb4c435857b51c',1,'boost::sqlite']]],
-  ['notadb_5',['notadb',['../group__reference.html#ggaba1532d41143f9845ee7b60b09196dd8ae002b15e6a7e20c33fa3da811da463ba',1,'boost::sqlite']]],
-  ['notfound_6',['notfound',['../group__reference.html#ggaba1532d41143f9845ee7b60b09196dd8ac2adf6ecc220f2711801d6e466340183',1,'boost::sqlite']]],
-  ['notice_7',['notice',['../group__reference.html#ggaba1532d41143f9845ee7b60b09196dd8aefd2af60c8501931cb9c736b5ad74f65',1,'boost::sqlite']]],
-  ['null_8',['null',['../group__reference.html#gga54803a0f6eb577b3e3938ca6dc3f6818a37a6259cc0c1dae299a7866489dff0bd',1,'boost::sqlite']]]
+  ['new_5f_0',['new_',['../structboost_1_1sqlite_1_1preupdate__context.html#adb342d1b03444f7cc6ca908a5c0da422',1,'boost::sqlite::preupdate_context']]],
+  ['next_1',['next',['../structboost_1_1sqlite_1_1vtab__module__prototype_1_1table__type_1_1cursor__type.html#a1ef3780a096e73e2d1244068ec1891c3',1,'boost::sqlite::vtab_module_prototype::table_type::cursor_type']]],
+  ['nochange_2',['nochange',['../structboost_1_1sqlite_1_1value.html#a479bf102a1ef9a3e6528fa1aea8e164f',1,'boost::sqlite::value']]],
+  ['not_5fnull_3',['not_null',['../structboost_1_1sqlite_1_1column__meta__data.html#a9152945f07a824b40e7310672e94107a',1,'boost::sqlite::column_meta_data']]],
+  ['null_4',['null',['../group__reference.html#gga54803a0f6eb577b3e3938ca6dc3f6818a37a6259cc0c1dae299a7866489dff0bd',1,'boost::sqlite']]],
+  ['numeric_5ftype_5',['numeric_type',['../structboost_1_1sqlite_1_1value.html#a5eb39de9167926c9ade1d500eb7085c6',1,'boost::sqlite::value']]]
 ];

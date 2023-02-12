@@ -36,7 +36,7 @@ MathJax.Hub.Config({
   <td id="projectalign">
    <div id="projectname">boost_sqlite<span id="projectnumber">&#160;1</span>
    </div>
-   <div id="projectbrief">A sqlite wrapper library</div>
+   <div id="projectbrief">A sqlite C++ library</div>
   </td>
  </tr>
  </tbody>
@@ -114,17 +114,21 @@ $(document).ready(function(){initNavTree('structboost_1_1sqlite_1_1value.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a375884535943e7dc26a214d531de0324"><td class="memItemLeft" align="right" valign="top"><a id="a375884535943e7dc26a214d531de0324" name="a375884535943e7dc26a214d531de0324"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>native_handle_type</b> = sqlite3_value *</td></tr>
-<tr class="memdesc:a375884535943e7dc26a214d531de0324"><td class="mdescLeft">&#160;</td><td class="mdescRight">The native handle of the value. <br /></td></tr>
-<tr class="separator:a375884535943e7dc26a214d531de0324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5652e21fa847c8464b2798a2c12ab914"><td class="memItemLeft" align="right" valign="top"><a id="a5652e21fa847c8464b2798a2c12ab914" name="a5652e21fa847c8464b2798a2c12ab914"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>handle_type</b> = sqlite3_value *</td></tr>
+<tr class="memdesc:a5652e21fa847c8464b2798a2c12ab914"><td class="mdescLeft">&#160;</td><td class="mdescRight">The handle of the value. <br /></td></tr>
+<tr class="separator:a5652e21fa847c8464b2798a2c12ab914"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abdf3e268f66a902825f3266b05a9c531"><td class="memItemLeft" align="right" valign="top"><a id="abdf3e268f66a902825f3266b05a9c531" name="abdf3e268f66a902825f3266b05a9c531"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>value</b> (sqlite3_value *value_) noexcept</td></tr>
-<tr class="memdesc:abdf3e268f66a902825f3266b05a9c531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct value from a native_handle. <br /></td></tr>
+<tr class="memdesc:abdf3e268f66a902825f3266b05a9c531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct value from a handle. <br /></td></tr>
 <tr class="separator:abdf3e268f66a902825f3266b05a9c531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30339700920e82923296595c85160c60"><td class="memItemLeft" align="right" valign="top"><a id="a30339700920e82923296595c85160c60" name="a30339700920e82923296595c85160c60"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>from_bind</b> () const</td></tr>
+<tr class="memdesc:a30339700920e82923296595c85160c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if value originated from a bound parameter. <br /></td></tr>
+<tr class="separator:a30339700920e82923296595c85160c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0c6545a877c06518ae10715d1db83af"><td class="memItemLeft" align="right" valign="top"><a id="ac0c6545a877c06518ae10715d1db83af" name="ac0c6545a877c06518ae10715d1db83af"></a>
 <a class="el" href="structboost_1_1sqlite_1_1blob__view.html">blob_view</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_blob</b> () const</td></tr>
 <tr class="memdesc:ac0c6545a877c06518ae10715d1db83af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value as blob, i.e. raw memory. Note that this value may be invalidated`. <br /></td></tr>
@@ -148,14 +152,22 @@ sqlite3_int64&#160;</td><td class="memItemRight" valign="bottom"><b>get_int64</b
 core::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>get_text</b> () const</td></tr>
 <tr class="memdesc:a35aa6e645b7151201d2a7aeb65395030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the value as text, i.e. a string_view. Note that this value may be invalidated`. <br /></td></tr>
 <tr class="separator:a35aa6e645b7151201d2a7aeb65395030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0dc0f5b5d35307bbe728574b11ce899"><td class="memItemLeft" align="right" valign="top"><a id="ac0dc0f5b5d35307bbe728574b11ce899" name="ac0dc0f5b5d35307bbe728574b11ce899"></a>
+<a class="el" href="structboost_1_1sqlite_1_1value.html#a5652e21fa847c8464b2798a2c12ab914">handle_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> () const</td></tr>
+<tr class="memdesc:ac0dc0f5b5d35307bbe728574b11ce899"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the handle. <br /></td></tr>
+<tr class="separator:ac0dc0f5b5d35307bbe728574b11ce899"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe39cf2768ebdb1cb35fa47d9a611d8f"><td class="memItemLeft" align="right" valign="top"><a id="abe39cf2768ebdb1cb35fa47d9a611d8f" name="abe39cf2768ebdb1cb35fa47d9a611d8f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_null</b> () const</td></tr>
 <tr class="memdesc:abe39cf2768ebdb1cb35fa47d9a611d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the held value null. <br /></td></tr>
 <tr class="separator:abe39cf2768ebdb1cb35fa47d9a611d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad274ddb2bc2fc3e033da287ff2beaadb"><td class="memItemLeft" align="right" valign="top"><a id="ad274ddb2bc2fc3e033da287ff2beaadb" name="ad274ddb2bc2fc3e033da287ff2beaadb"></a>
-<a class="el" href="structboost_1_1sqlite_1_1value.html#a375884535943e7dc26a214d531de0324">native_handle_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>native_handle</b> () const</td></tr>
-<tr class="memdesc:ad274ddb2bc2fc3e033da287ff2beaadb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the native_handle. <br /></td></tr>
-<tr class="separator:ad274ddb2bc2fc3e033da287ff2beaadb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479bf102a1ef9a3e6528fa1aea8e164f"><td class="memItemLeft" align="right" valign="top"><a id="a479bf102a1ef9a3e6528fa1aea8e164f" name="a479bf102a1ef9a3e6528fa1aea8e164f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>nochange</b> () const</td></tr>
+<tr class="memdesc:a479bf102a1ef9a3e6528fa1aea8e164f"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the column is unchanged in an UPDATE against a virtual table. <br /></td></tr>
+<tr class="separator:a479bf102a1ef9a3e6528fa1aea8e164f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eb39de9167926c9ade1d500eb7085c6"><td class="memItemLeft" align="right" valign="top"><a id="a5eb39de9167926c9ade1d500eb7085c6" name="a5eb39de9167926c9ade1d500eb7085c6"></a>
+<a class="el" href="group__reference.html#ga54803a0f6eb577b3e3938ca6dc3f6818">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>numeric_type</b> () const</td></tr>
+<tr class="memdesc:a5eb39de9167926c9ade1d500eb7085c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Best numeric datatype of the value. <br /></td></tr>
+<tr class="separator:a5eb39de9167926c9ade1d500eb7085c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7035a45661fbb59f1c86df45cfb3e377"><td class="memItemLeft" align="right" valign="top"><a id="a7035a45661fbb59f1c86df45cfb3e377" name="a7035a45661fbb59f1c86df45cfb3e377"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>operator bool</b> () const</td></tr>
 <tr class="memdesc:a7035a45661fbb59f1c86df45cfb3e377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the held value is not null. <br /></td></tr>
@@ -200,7 +212,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p >Get a value that was passed through the pointer interface. A value can be set as a pointer by binding/returning a unique_ptr. </p>
 
-<p class="definition">Definition at line <a class="el" href="value_8hpp_source.html#l00115">115</a> of file <a class="el" href="value_8hpp_source.html">value.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="value_8hpp_source.html#l00125">125</a> of file <a class="el" href="value_8hpp_source.html">value.hpp</a>.</p>
 
 </div>
 </div>
@@ -213,7 +225,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1value.html">value</a></li>
-    <li class="footer">Generated on Sat Feb 4 2023 23:08:44 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Mon Feb 13 2023 02:38:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['valid_0',['valid',['../structboost_1_1sqlite_1_1connection.html#a6fe681d06faba81b65fd95e642e1cc6c',1,'boost::sqlite::connection']]],
-  ['value_1',['value',['../structboost_1_1sqlite_1_1value.html#abdf3e268f66a902825f3266b05a9c531',1,'boost::sqlite::value']]]
+  ['update_0',['update',['../structboost_1_1sqlite_1_1vtab__module__prototype_1_1table__type.html#a0a92a7febdeb8da41efa8aae9a752c71',1,'boost::sqlite::vtab_module_prototype::table_type']]],
+  ['update_5fhook_1',['update_hook',['../group__reference.html#gad92994a103b679f4ba893e7aacc9b5d1',1,'boost::sqlite']]]
 ];

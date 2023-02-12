@@ -36,7 +36,7 @@ MathJax.Hub.Config({
   <td id="projectalign">
    <div id="projectname">boost_sqlite<span id="projectnumber">&#160;1</span>
    </div>
-   <div id="projectbrief">A sqlite wrapper library</div>
+   <div id="projectbrief">A sqlite C++ library</div>
   </td>
  </tr>
  </tbody>
@@ -123,12 +123,12 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c618c4d044ef8094847f6556fae2ed6"><td class="memItemLeft" align="right" valign="top"><a id="a4c618c4d044ef8094847f6556fae2ed6" name="a4c618c4d044ef8094847f6556fae2ed6"></a>
 <a class="el" href="structboost_1_1sqlite_1_1vtab__module__prototype_1_1table__type.html">table_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>connect</b> (int argc, const char *const argv)</td></tr>
-<tr class="memdesc:a4c618c4d044ef8094847f6556fae2ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a table The <a class="el" href="structboost_1_1sqlite_1_1vtab__module__prototype_1_1table__type.html" title="The type produced by connect. The type is purely for exposition.">table_type</a> gets used &amp; managed by value, OR a pointer to a class that inherits sqlite3_vtab. <br /></td></tr>
+<tr class="memdesc:a4c618c4d044ef8094847f6556fae2ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a table The <a class="el" href="structboost_1_1sqlite_1_1vtab__module__prototype_1_1table__type.html" title="The type produced by connect. The type is purely for exposition.">table_type</a> gets used &amp; managed by value, OR a pointer to a class that inherits sqlite3_vtab. <a class="el" href="structboost_1_1sqlite_1_1vtab__module__prototype_1_1table__type.html" title="The type produced by connect. The type is purely for exposition.">table_type</a> must have a member <code>declaration</code> that returns a <code>const char *</code> for the declaration. <br /></td></tr>
 <tr class="separator:a4c618c4d044ef8094847f6556fae2ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad843eff5484d89bf3f217f7c4bcf73f8"><td class="memItemLeft" align="right" valign="top"><a id="ad843eff5484d89bf3f217f7c4bcf73f8" name="ad843eff5484d89bf3f217f7c4bcf73f8"></a>
-instance_type&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (int argc, const char *const argv)</td></tr>
-<tr class="memdesc:ad843eff5484d89bf3f217f7c4bcf73f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance The instance_type gets used &amp; managed by value, OR a pointer to a class that inherits sqlite3_vtab. Optional member - can be skipped for eponymous tables. <br /></td></tr>
-<tr class="separator:ad843eff5484d89bf3f217f7c4bcf73f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df35d16f269d1ecd6e8669eea957a85"><td class="memItemLeft" align="right" valign="top"><a id="a2df35d16f269d1ecd6e8669eea957a85" name="a2df35d16f269d1ecd6e8669eea957a85"></a>
+<a class="el" href="structboost_1_1sqlite_1_1vtab__module__prototype_1_1table__type.html">table_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (int argc, const char *const argv)</td></tr>
+<tr class="memdesc:a2df35d16f269d1ecd6e8669eea957a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the instance The instance_type gets used &amp; managed by value, OR a pointer to a class that inherits sqlite3_vtab. Optional member - can be skipped for eponymous tables instance_type must have a member <code>declaration</code> that returns a <code>const char *</code> for the declaration. <br /></td></tr>
+<tr class="separator:a2df35d16f269d1ecd6e8669eea957a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -143,7 +143,7 @@ static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>epon
 <p >Please see the sqlite reference for the virtual table documentation <a href="https://www.sqlite.org/vtab.html">vtab</a>.</p>
 <p >Error handling is implemented through exceptions. Members are required unless explicitly stated optional. The destruction functions are automatically filled with destructors. </p>
 
-<p class="definition">Definition at line <a class="el" href="vtable_8hpp_source.html#l00967">967</a> of file <a class="el" href="vtable_8hpp_source.html">vtable.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtable_8hpp_source.html#l01014">1014</a> of file <a class="el" href="vtable_8hpp_source.html">vtable.hpp</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>boost/sqlite/<a class="el" href="vtable_8hpp_source.html">vtable.hpp</a></li>
 </ul>
@@ -153,7 +153,7 @@ static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>epon
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1vtab__module__prototype.html">vtab_module_prototype</a></li>
-    <li class="footer">Generated on Sat Feb 4 2023 23:08:44 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Mon Feb 13 2023 02:38:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

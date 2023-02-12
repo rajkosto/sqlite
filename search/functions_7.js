@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['insert_0',['insert',['../structboost_1_1sqlite_1_1vtab__module__prototype_1_1table__type.html#a61f0ca40977400b82f33ec3fad3ea9d7',1,'boost::sqlite::vtab_module_prototype::table_type']]],
-  ['is_5fjson_1',['is_json',['../group__reference.html#ga3facf3a9aa92c5f27d195131ff824248',1,'boost::sqlite::is_json(const value &amp;v)'],['../group__reference.html#ga34786d37ee936540a702d9a59555bd3b',1,'boost::sqlite::is_json(const field &amp;f)']]],
-  ['is_5fnull_2',['is_null',['../structboost_1_1sqlite_1_1field.html#ad337ec2cf5017dc3b8234541fba956fd',1,'boost::sqlite::field::is_null()'],['../structboost_1_1sqlite_1_1value.html#abe39cf2768ebdb1cb35fa47d9a611d8f',1,'boost::sqlite::value::is_null()']]]
+  ['handle_0',['handle',['../structboost_1_1sqlite_1_1blob__handle.html#aa7891fad110a30d8be5f8ad17e91d437',1,'boost::sqlite::blob_handle::handle()'],['../structboost_1_1sqlite_1_1connection.html#a78784a0f71261f57ec4eabe0ab7123ab',1,'boost::sqlite::connection::handle()'],['../structboost_1_1sqlite_1_1value.html#ac0dc0f5b5d35307bbe728574b11ce899',1,'boost::sqlite::value::handle()']]],
+  ['has_5fcolumn_1',['has_column',['../structboost_1_1sqlite_1_1connection.html#aee51f84b1449f89a2ff09857ead436eb',1,'boost::sqlite::connection']]],
+  ['has_5ftable_2',['has_table',['../structboost_1_1sqlite_1_1connection.html#a33250e26a0dc35b81f615917746a18f6',1,'boost::sqlite::connection']]]
 ];
