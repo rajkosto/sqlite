@@ -177,11 +177,15 @@ Quickstart</h1>
 <div class="line">boost::sqlite::query q = conn.query(</div>
 <div class="line">    <span class="stringliteral">&quot;select first_name, collect_libs(name) &quot;</span> </div>
 <div class="line">       <span class="stringliteral">&quot; from author inner join library l on author.id = l.author group by last_name&quot;</span>)</div>
-<div class="line">whilte (q.read_one(r))</div>
-<div class="line">  std::cout &lt;&lt; q.<a class="code hl_function" href="structboost_1_1sqlite_1_1row.html#ae2bbb7c0e388f499c91b538f4e6c10de">at</a>(0u).<a class="code hl_function" href="structboost_1_1sqlite_1_1field.html#ade659219182421d0da997713aab6501e">get_text</a>() &lt;&lt; <span class="stringliteral">&quot; authored &quot;</span> &lt;&lt; q.at(1u).get_text() &lt;&lt; std::endl;</div>
+<div class="line"><span class="keywordflow">do</span> </div>
+<div class="line">{</div>
+<div class="line">  <span class="keyword">auto</span> r = q.current();<span class="stringliteral">&#39;&#39;</span></div>
+<div class="line">  std::cout &lt;&lt; r.<a class="code hl_function" href="structboost_1_1sqlite_1_1row.html#ae2bbb7c0e388f499c91b538f4e6c10de">at</a>(0u).<a class="code hl_function" href="structboost_1_1sqlite_1_1field.html#ade659219182421d0da997713aab6501e">get_text</a>() &lt;&lt; <span class="stringliteral">&quot; authored &quot;</span> &lt;&lt; r.<a class="code hl_function" href="structboost_1_1sqlite_1_1row.html#ae2bbb7c0e388f499c91b538f4e6c10de">at</a>(1u).<a class="code hl_function" href="structboost_1_1sqlite_1_1field.html#ade659219182421d0da997713aab6501e">get_text</a>() &lt;&lt; std::endl;</div>
+<div class="line">}</div>
+<div class="line"><span class="keywordflow">while</span> (q.read_next());</div>
 <div class="ttc" id="astructboost_1_1sqlite_1_1field_html_ade659219182421d0da997713aab6501e"><div class="ttname"><a href="structboost_1_1sqlite_1_1field.html#ade659219182421d0da997713aab6501e">boost::sqlite::field::get_text</a></div><div class="ttdeci">core::string_view get_text() const</div><div class="ttdoc">Get the value as text, i.e. a string_view. Note that this value may be invalidated`.</div><div class="ttdef"><b>Definition:</b> <a href="field_8hpp_source.html#l00051">field.hpp:51</a></div></div>
-<div class="ttc" id="astructboost_1_1sqlite_1_1row_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1row.html">boost::sqlite::row</a></div><div class="ttdoc">Representation of a row in a database.</div><div class="ttdef"><b>Definition:</b> <a href="row_8hpp_source.html#l00018">row.hpp:19</a></div></div>
-<div class="ttc" id="astructboost_1_1sqlite_1_1row_html_ae2bbb7c0e388f499c91b538f4e6c10de"><div class="ttname"><a href="structboost_1_1sqlite_1_1row.html#ae2bbb7c0e388f499c91b538f4e6c10de">boost::sqlite::row::at</a></div><div class="ttdeci">field at(std::size_t idx) const</div><div class="ttdoc">Get the field at idx,.</div><div class="ttdef"><b>Definition:</b> <a href="row_8hpp_source.html#l00026">row.hpp:26</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1row_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1row.html">boost::sqlite::row</a></div><div class="ttdoc">Representation of a row in a database.</div><div class="ttdef"><b>Definition:</b> <a href="row_8hpp_source.html#l00020">row.hpp:21</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1row_html_ae2bbb7c0e388f499c91b538f4e6c10de"><div class="ttname"><a href="structboost_1_1sqlite_1_1row.html#ae2bbb7c0e388f499c91b538f4e6c10de">boost::sqlite::row::at</a></div><div class="ttdeci">field at(std::size_t idx) const</div><div class="ttdoc">Get the field at idx,.</div><div class="ttdef"><b>Definition:</b> <a href="row_8hpp_source.html#l00028">row.hpp:28</a></div></div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
 Fields, values &amp; parameters</h1>
 <p >sqlite3 has a weak typesystem, where everything is one of following <a class="el" href="group__reference.html#ga54803a0f6eb577b3e3938ca6dc3f6818">value_types</a>:</p>
@@ -211,7 +215,7 @@ Custom functions</h1>
 <li>collation</li>
 <li><a class="el" href="group__reference.html#gaa45b6cf369e74ef1ef4638e6d137ef2a">scalar function</a></li>
 <li><a class="el" href="group__reference.html#ga9884740e92cd336e07ac43cc8f001764">aggregate function</a></li>
-<li><a class="el" href="group__reference.html#ga94ba993870b94f0be319be76445f0926">window function</a></li>
+<li>window function</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md5"></a>
 Vtables</h1>
@@ -244,15 +248,31 @@ Modules</h1>
 <h1><a class="anchor" id="autotoc_md7"></a>
 Reference</h1>
 <ul>
-<li><a class="el" href="group__reference.html">Reference</a>: Covers the topics discussed in this document. </li>
+<li><a class="el" href="group__reference.html">Reference</a>: Covers the topics discussed in this document.</li>
 </ul>
+<h1><a class="anchor" id="autotoc_md8"></a>
+Library Comparison</h1>
+<p >While there are many sqlite wrappers out there, most haven't been updated in the last five years - while sqlite has.</p>
+<p >Here are some actively maintained ones:</p>
+<ul>
+<li><a href="https://github.com/SRombauts/SQLiteCpp">SQLiteCpp</a></li>
+</ul>
+<p >SQLiteCpp is the closest to this library, a C++11 wrapper only depending on sqlite &amp; the STL. It's great and served as an inspiration for this library. boost.sqlite does provide more functionality when it comes to hooks, custom functions &amp; virtual tables. Furthermore, boost.sqlite has a non-throwing interface and supports variants &amp; json, as those are available through boost.</p>
+<ul>
+<li><a href="https://github.com/SqliteModernCpp/sqlite_modern_cpp">sqlite_modern_cpp</a></li>
+</ul>
+<p >This library takes a different approach, by making everything an <code>iostream</code> interface.</p>
+<ul>
+<li><a href="https://github.com/fnc12/sqlite_orm">sqlite_orm</a></li>
+</ul>
+<p >As the name says, it's an ORM. So it does more than give easy access to a database. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 13 2023 02:38:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Tue Feb 28 2023 10:04:51 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

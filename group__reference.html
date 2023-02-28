@@ -147,9 +147,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1value.html">boost::sqlite::value</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A holder for a sqlite values used for internal APIs.  <a href="structboost_1_1sqlite_1_1value.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1vtab__in.html">boost::sqlite::vtab_in</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function that can be used in <code>xFilter</code> for the <code>in</code> operator.  <a href="structboost_1_1sqlite_1_1vtab__in.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1vtab__module__prototype.html">boost::sqlite::vtab_module_prototype</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The prototype used by <a class="el" href="group__reference.html#gac9556090ab5cc76f3dc54f36f0125f0c">create_module</a>.  <a href="structboost_1_1sqlite_1_1vtab__module__prototype.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,14 +231,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf76e9ae69b5b4029c50bde53b2a94230"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reference.html#gaf76e9ae69b5b4029c50bde53b2a94230">boost::sqlite::create_aggregate_function</a> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, const std::string &amp;name, Func &amp;&amp;func)</td></tr>
 <tr class="memdesc:gaf76e9ae69b5b4029c50bde53b2a94230"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a aggregate function  <a href="group__reference.html#gaf76e9ae69b5b4029c50bde53b2a94230">More...</a><br /></td></tr>
 <tr class="separator:gaf76e9ae69b5b4029c50bde53b2a94230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94ba993870b94f0be319be76445f0926"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
-<tr class="memitem:ga94ba993870b94f0be319be76445f0926"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reference.html#ga94ba993870b94f0be319be76445f0926">boost::sqlite::create_window_function</a> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, const std::string &amp;name, Func &amp;&amp;func, system::error_code &amp;ec)</td></tr>
-<tr class="memdesc:ga94ba993870b94f0be319be76445f0926"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a aggregate window function  <a href="group__reference.html#ga94ba993870b94f0be319be76445f0926">More...</a><br /></td></tr>
-<tr class="separator:ga94ba993870b94f0be319be76445f0926"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3dcf6449551c842735b574db74f3b055"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
-<tr class="memitem:ga3dcf6449551c842735b574db74f3b055"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__reference.html#ga3dcf6449551c842735b574db74f3b055">boost::sqlite::create_window_function</a> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, const std::string &amp;name, Func &amp;&amp;func)</td></tr>
-<tr class="memdesc:ga3dcf6449551c842735b574db74f3b055"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a aggregate window function  <a href="group__reference.html#ga3dcf6449551c842735b574db74f3b055">More...</a><br /></td></tr>
-<tr class="separator:ga3dcf6449551c842735b574db74f3b055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3facf3a9aa92c5f27d195131ff824248"><td class="memItemLeft" align="right" valign="top"><a id="ga3facf3a9aa92c5f27d195131ff824248" name="ga3facf3a9aa92c5f27d195131ff824248"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>boost::sqlite::is_json</b> (const <a class="el" href="structboost_1_1sqlite_1_1value.html">value</a> &amp;v)</td></tr>
 <tr class="memdesc:ga3facf3a9aa92c5f27d195131ff824248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the value or field is a json. <br /></td></tr>
@@ -579,7 +568,7 @@ If <code>func</code> is a <code>nullptr</code> the hook gets reset.</dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if an hook has been replaced. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="hooks_8hpp_source.html#l00280">280</a> of file <a class="el" href="hooks_8hpp_source.html">hooks.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hooks_8hpp_source.html#l00276">276</a> of file <a class="el" href="hooks_8hpp_source.html">hooks.hpp</a>.</p>
 
 </div>
 </div>
@@ -638,27 +627,26 @@ template&lt;typename Func &gt; </div>
 <div class="line">T <span class="keyword">final</span>(State &amp;);</div>
 </div><!-- fragment --><p ><code>State</code> can be any type and will get deduced together with <code>N</code>. An aggregrate function will create a new <code>State</code> for a new <code>aggregate</code> and call <code>step</code> for every step. When the aggregation is done <code>final</code> is called and the result is returned to sqlite.</p>
 <dl class="section user"><dt>Example</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="fragment"><div class="line">  <span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">struct </span>aggregate_func</div>
-<div class="line">{</div>
-<div class="line">    std::size_t counter;</div>
-<div class="line">    <span class="keywordtype">void</span> step(std::size_t &amp; counter, boost::span&lt;sqlite::value, 1u&gt; val)</div>
-<div class="line">    {</div>
-<div class="line">      counter += val[0].get_text().size();</div>
-<div class="line">    }</div>
+<div class="line">  <span class="keyword">struct </span>aggregate_func</div>
+<div class="line">  {</div>
+<div class="line">F      <span class="keywordtype">void</span> step(std::size_t &amp; counter, boost::span&lt;sqlite::value, 1u&gt; val)</div>
+<div class="line">      {</div>
+<div class="line">        counter += val[0].get_text().size();</div>
+<div class="line">      }</div>
 <div class="line"> </div>
-<div class="line">    std::size_t <span class="keyword">final</span>(std::size_t &amp; counter)</div>
-<div class="line">    {</div>
-<div class="line">      <span class="keywordflow">return</span> counter;</div>
-<div class="line">    }</div>
-<div class="line">};</div>
+<div class="line">      std::size_t <span class="keyword">final</span>(std::size_t &amp; counter)</div>
+<div class="line">      {</div>
+<div class="line">        <span class="keywordflow">return</span> counter;</div>
+<div class="line">      }</div>
+<div class="line">  };</div>
 <div class="line"> </div>
-<div class="line">sqlite::create_function(</div>
-<div class="line">  conn, <span class="stringliteral">&quot;char_counter&quot;</span>,</div>
-<div class="line">  aggregate_func{});</div>
+<div class="line">  sqlite::create_function(</div>
+<div class="line">    conn, <span class="stringliteral">&quot;char_counter&quot;</span>,</div>
+<div class="line">    aggregate_func{});</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00574">574</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00575">575</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
@@ -729,27 +717,26 @@ template&lt;typename Func &gt; </div>
 <div class="line">T <span class="keyword">final</span>(State &amp;);</div>
 </div><!-- fragment --><p ><code>State</code> can be any type and will get deduced together with <code>N</code>. An aggregrate function will create a new <code>State</code> for a new <code>aggregate</code> and call <code>step</code> for every step. When the aggregation is done <code>final</code> is called and the result is returned to sqlite.</p>
 <dl class="section user"><dt>Example</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="fragment"><div class="line">  <span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">struct </span>aggregate_func</div>
-<div class="line">{</div>
-<div class="line">    std::size_t counter;</div>
-<div class="line">    <span class="keywordtype">void</span> step(std::size_t &amp; counter, boost::span&lt;sqlite::value, 1u&gt; val)</div>
-<div class="line">    {</div>
-<div class="line">      counter += val[0].get_text().size();</div>
-<div class="line">    }</div>
+<div class="line">  <span class="keyword">struct </span>aggregate_func</div>
+<div class="line">  {</div>
+<div class="line">F      <span class="keywordtype">void</span> step(std::size_t &amp; counter, boost::span&lt;sqlite::value, 1u&gt; val)</div>
+<div class="line">      {</div>
+<div class="line">        counter += val[0].get_text().size();</div>
+<div class="line">      }</div>
 <div class="line"> </div>
-<div class="line">    std::size_t <span class="keyword">final</span>(std::size_t &amp; counter)</div>
-<div class="line">    {</div>
-<div class="line">      <span class="keywordflow">return</span> counter;</div>
-<div class="line">    }</div>
-<div class="line">};</div>
+<div class="line">      std::size_t <span class="keyword">final</span>(std::size_t &amp; counter)</div>
+<div class="line">      {</div>
+<div class="line">        <span class="keywordflow">return</span> counter;</div>
+<div class="line">      }</div>
+<div class="line">  };</div>
 <div class="line"> </div>
-<div class="line">sqlite::create_function(</div>
-<div class="line">  conn, <span class="stringliteral">&quot;char_counter&quot;</span>,</div>
-<div class="line">  aggregate_func{});</div>
+<div class="line">  sqlite::create_function(</div>
+<div class="line">    conn, <span class="stringliteral">&quot;char_counter&quot;</span>,</div>
+<div class="line">    aggregate_func{});</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00558">558</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00559">559</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
@@ -879,7 +866,7 @@ template&lt;typename T &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to the module as stored in the database. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="vtable_8hpp_source.html#l00953">953</a> of file <a class="el" href="vtable_8hpp_source.html">vtable.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtable_8hpp_source.html#l00969">969</a> of file <a class="el" href="vtable_8hpp_source.html">vtable.hpp</a>.</p>
 
 </div>
 </div>
@@ -958,7 +945,7 @@ template&lt;typename Func &gt; </div>
 <div class="line">  });</div>
 <div class="ttc" id="astructboost_1_1sqlite_1_1value_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1value.html">boost::sqlite::value</a></div><div class="ttdoc">A holder for a sqlite values used for internal APIs.</div><div class="ttdef"><b>Definition:</b> <a href="value_8hpp_source.html#l00038">value.hpp:39</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00488">488</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00490">490</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
@@ -1039,183 +1026,7 @@ template&lt;typename Func &gt; </div>
 <div class="ttc" id="astructboost_1_1sqlite_1_1context_html_a65d1c2d7fed2db2f63e03a2cc744d1dc"><div class="ttname"><a href="structboost_1_1sqlite_1_1context.html#a65d1c2d7fed2db2f63e03a2cc744d1dc">boost::sqlite::context::set</a></div><div class="ttdeci">void set(element&lt; Idx &gt; value)</div><div class="ttdoc">Set the value in the context at position Idx</div><div class="ttdef"><b>Definition:</b> <a href="function_8hpp_source.html#l00056">function.hpp:56</a></div></div>
 <div class="ttc" id="astructboost_1_1sqlite_1_1value_html_a35bc60e28267479253a9d9f1343eef9b"><div class="ttname"><a href="structboost_1_1sqlite_1_1value.html#a35bc60e28267479253a9d9f1343eef9b">boost::sqlite::value::get_int64</a></div><div class="ttdeci">sqlite3_int64 get_int64() const</div><div class="ttdoc">Get the value as an int64.</div><div class="ttdef"><b>Definition:</b> <a href="value_8hpp_source.html#l00066">value.hpp:66</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00433">433</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
-
-</div>
-</div>
-<a id="ga3dcf6449551c842735b574db74f3b055" name="ga3dcf6449551c842735b574db74f3b055"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3dcf6449551c842735b574db74f3b055">&#9670;&#160;</a></span>create_window_function() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Func &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void boost::sqlite::create_window_function </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;&#160;</td>
-          <td class="paramname"><em>conn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Func &amp;&amp;&#160;</td>
-          <td class="paramname"><em>func</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>create a aggregate window function </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">conn</td><td>The connection to add the function to. </td></tr>
-    <tr><td class="paramname">name</td><td>The name of the function </td></tr>
-    <tr><td class="paramname">func</td><td>The function to be added </td></tr>
-    <tr><td class="paramname">ec</td><td>The error_code</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">`system::system_error`</td><td>when the overload without <code>ec</code> is used.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p><code>func</code> needs to be an object with three functions:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> step(State &amp;, boost::span&lt;sqlite::value, N&gt; args);</div>
-<div class="line"><span class="keywordtype">void</span> inverse(State &amp; , boost::span&lt;sqlite::value, N&gt; args);</div>
-<div class="line">T <span class="keyword">final</span>(State &amp;);</div>
-</div><!-- fragment --><p ><code>State</code> can be any type and will get deduced together with <code>N</code>. An aggregrate function will create a new <code>State</code> for a new <code>aggregate</code> and call <code>step</code> for every step. When an element is removed from the window <code>inverse</code> is called. When the aggregation is done <code>final</code> is called and the result is returned to sqlite.</p>
-<dl class="section user"><dt>Example</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">struct </span>window_func</div>
-<div class="line">{</div>
-<div class="line">    std::size_t counter;</div>
-<div class="line">    <span class="keywordtype">void</span> step(std::size_t &amp; counter, boost::span&lt;sqlite::value, 1u&gt; val)</div>
-<div class="line">    {</div>
-<div class="line">      counter += val[0].get_text().size();</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    <span class="keywordtype">void</span> inverse(std::size_t &amp; counter, boost::span&lt;sqlite::value, 1u&gt; val)</div>
-<div class="line">    {</div>
-<div class="line">      counter -= val[0].get_text().size();</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    std::size_t <span class="keyword">final</span>(std::size_t &amp; counter)</div>
-<div class="line">    {</div>
-<div class="line">      <span class="keywordflow">return</span> counter;</div>
-<div class="line">    }</div>
-<div class="line">};</div>
-<div class="line"> </div>
-<div class="line">sqlite::create_function(</div>
-<div class="line">  conn, <span class="stringliteral">&quot;win_char_counter&quot;</span>,</div>
-<div class="line">  aggregate_func{});</div>
-</div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00654">654</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
-
-</div>
-</div>
-<a id="ga94ba993870b94f0be319be76445f0926" name="ga94ba993870b94f0be319be76445f0926"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga94ba993870b94f0be319be76445f0926">&#9670;&#160;</a></span>create_window_function() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Func &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void boost::sqlite::create_window_function </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;&#160;</td>
-          <td class="paramname"><em>conn</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Func &amp;&amp;&#160;</td>
-          <td class="paramname"><em>func</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">system::error_code &amp;&#160;</td>
-          <td class="paramname"><em>ec</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>create a aggregate window function </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">conn</td><td>The connection to add the function to. </td></tr>
-    <tr><td class="paramname">name</td><td>The name of the function </td></tr>
-    <tr><td class="paramname">func</td><td>The function to be added </td></tr>
-    <tr><td class="paramname">ec</td><td>The error_code</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">`system::system_error`</td><td>when the overload without <code>ec</code> is used.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p><code>func</code> needs to be an object with three functions:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> step(State &amp;, boost::span&lt;sqlite::value, N&gt; args);</div>
-<div class="line"><span class="keywordtype">void</span> inverse(State &amp; , boost::span&lt;sqlite::value, N&gt; args);</div>
-<div class="line">T <span class="keyword">final</span>(State &amp;);</div>
-</div><!-- fragment --><p ><code>State</code> can be any type and will get deduced together with <code>N</code>. An aggregrate function will create a new <code>State</code> for a new <code>aggregate</code> and call <code>step</code> for every step. When an element is removed from the window <code>inverse</code> is called. When the aggregation is done <code>final</code> is called and the result is returned to sqlite.</p>
-<dl class="section user"><dt>Example</dt><dd></dd></dl>
-<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">struct </span>window_func</div>
-<div class="line">{</div>
-<div class="line">    std::size_t counter;</div>
-<div class="line">    <span class="keywordtype">void</span> step(std::size_t &amp; counter, boost::span&lt;sqlite::value, 1u&gt; val)</div>
-<div class="line">    {</div>
-<div class="line">      counter += val[0].get_text().size();</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    <span class="keywordtype">void</span> inverse(std::size_t &amp; counter, boost::span&lt;sqlite::value, 1u&gt; val)</div>
-<div class="line">    {</div>
-<div class="line">      counter -= val[0].get_text().size();</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    std::size_t <span class="keyword">final</span>(std::size_t &amp; counter)</div>
-<div class="line">    {</div>
-<div class="line">      <span class="keywordflow">return</span> counter;</div>
-<div class="line">    }</div>
-<div class="line">};</div>
-<div class="line"> </div>
-<div class="line">sqlite::create_function(</div>
-<div class="line">  conn, <span class="stringliteral">&quot;win_char_counter&quot;</span>,</div>
-<div class="line">  aggregate_func{});</div>
-</div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00642">642</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00435">435</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
 
 </div>
 </div>
@@ -1238,7 +1049,7 @@ template&lt;typename Table &gt; </div>
 </div><div class="memdoc">
 <p >Get the table associated with the cursor </p>
 
-<p class="definition">Definition at line <a class="el" href="vtable_8hpp_source.html#l00994">994</a> of file <a class="el" href="vtable_8hpp_source.html">vtable.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtable_8hpp_source.html#l01010">1010</a> of file <a class="el" href="vtable_8hpp_source.html">vtable.hpp</a>.</p>
 
 </div>
 </div>
@@ -1291,10 +1102,10 @@ If <code>func</code> is a <code>nullptr</code> the hook gets reset.</dd></dl>
 <div class="line">                    <span class="keyword">const</span> <span class="keywordtype">char</span> * table_name,</div>
 <div class="line">                    sqlite3_int64 current_key,</div>
 <div class="line">                    sqlite3_int64 new_key);</div>
-<div class="ttc" id="agroup__reference_html_gafc5e42f969f2e40a628bf38b0019977e"><div class="ttname"><a href="group__reference.html#gafc5e42f969f2e40a628bf38b0019977e">boost::sqlite::preupdate_hook</a></div><div class="ttdeci">bool preupdate_hook(connection &amp;conn, Func &amp;&amp;func)</div><div class="ttdef"><b>Definition:</b> <a href="hooks_8hpp_source.html#l00340">hooks.hpp:340</a></div></div>
+<div class="ttc" id="agroup__reference_html_gafc5e42f969f2e40a628bf38b0019977e"><div class="ttname"><a href="group__reference.html#gafc5e42f969f2e40a628bf38b0019977e">boost::sqlite::preupdate_hook</a></div><div class="ttdeci">bool preupdate_hook(connection &amp;conn, Func &amp;&amp;func)</div><div class="ttdef"><b>Definition:</b> <a href="hooks_8hpp_source.html#l00336">hooks.hpp:336</a></div></div>
 <div class="ttc" id="astructboost_1_1sqlite_1_1preupdate__context_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1preupdate__context.html">boost::sqlite::preupdate_context</a></div><div class="ttdef"><b>Definition:</b> <a href="hooks_8hpp_source.html#l00024">hooks.hpp:25</a></div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="hooks_8hpp_source.html#l00340">340</a> of file <a class="el" href="hooks_8hpp_source.html">hooks.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hooks_8hpp_source.html#l00336">336</a> of file <a class="el" href="hooks_8hpp_source.html">hooks.hpp</a>.</p>
 
 </div>
 </div>
@@ -1341,7 +1152,7 @@ If <code>func</code> is a <code>nullptr</code> the hook gets reset.</dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if an hook has been replaced. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="hooks_8hpp_source.html#l00302">302</a> of file <a class="el" href="hooks_8hpp_source.html">hooks.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hooks_8hpp_source.html#l00298">298</a> of file <a class="el" href="hooks_8hpp_source.html">hooks.hpp</a>.</p>
 
 </div>
 </div>
@@ -1388,7 +1199,7 @@ template&lt;typename Func &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if an hook has been replaced. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="hooks_8hpp_source.html#l00367">367</a> of file <a class="el" href="hooks_8hpp_source.html">hooks.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="hooks_8hpp_source.html#l00363">363</a> of file <a class="el" href="hooks_8hpp_source.html">hooks.hpp</a>.</p>
 
 </div>
 </div>
@@ -1397,7 +1208,7 @@ template&lt;typename Func &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 13 2023 02:38:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Tue Feb 28 2023 10:04:51 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

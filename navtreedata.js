@@ -31,7 +31,8 @@ var NAVTREE =
     [ "Custom functions", "index.html#autotoc_md4", null ],
     [ "Vtables", "index.html#autotoc_md5", null ],
     [ "Modules", "index.html#autotoc_md6", null ],
-    [ "Reference", "index.html#autotoc_md7", null ]
+    [ "Reference", "index.html#autotoc_md7", null ],
+    [ "Library Comparison", "index.html#autotoc_md8", null ]
   ] ]
 ];
 

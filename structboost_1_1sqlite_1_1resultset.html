@@ -132,10 +132,10 @@ core::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>column_n
 core::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>column_origin_name</b> (std::size_t idx) const</td></tr>
 <tr class="memdesc:a31ef38e19c80ef1f6c06a75791d5ffe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the origin name of the column for column idx. <br /></td></tr>
 <tr class="separator:a31ef38e19c80ef1f6c06a75791d5ffe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a517bc9ab1a14b139c97b46a58ec9e462"><td class="memItemLeft" align="right" valign="top"><a id="a517bc9ab1a14b139c97b46a58ec9e462" name="a517bc9ab1a14b139c97b46a58ec9e462"></a>
-<a class="el" href="structboost_1_1sqlite_1_1row.html">row</a>&#160;</td><td class="memItemRight" valign="bottom"><b>current</b> () const</td></tr>
-<tr class="memdesc:a517bc9ab1a14b139c97b46a58ec9e462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current row. <br /></td></tr>
-<tr class="separator:a517bc9ab1a14b139c97b46a58ec9e462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f2c82235f31af8c8e591f594f65335"><td class="memItemLeft" align="right" valign="top"><a id="a77f2c82235f31af8c8e591f594f65335" name="a77f2c82235f31af8c8e591f594f65335"></a>
+<a class="el" href="structboost_1_1sqlite_1_1row.html">row</a>&#160;</td><td class="memItemRight" valign="bottom"><b>current</b> () const &amp;</td></tr>
+<tr class="memdesc:a77f2c82235f31af8c8e591f594f65335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current row. <br /></td></tr>
+<tr class="separator:a77f2c82235f31af8c8e591f594f65335"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1f63280c5e6a1f0d65738042d805786"><td class="memItemLeft" align="right" valign="top"><a id="ab1f63280c5e6a1f0d65738042d805786" name="ab1f63280c5e6a1f0d65738042d805786"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>done</b> () const</td></tr>
 <tr class="memdesc:ab1f63280c5e6a1f0d65738042d805786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the last row has been reached. <br /></td></tr>
@@ -149,12 +149,10 @@ core::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>table_na
 <tr class="memdesc:a9204357934f9fe91af6b4f6e0e664f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the source table for column idx. <br /></td></tr>
 <tr class="separator:a9204357934f9fe91af6b4f6e0e664f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a395e9bedb38d64dca18533f20d30fd3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1resultset.html#a395e9bedb38d64dca18533f20d30fd3a">read_one</a> (<a class="el" href="structboost_1_1sqlite_1_1row.html">row</a> &amp;r, <a class="el" href="group__reference.html#ga99610662a6184dd633886178d75c52b5">error_code</a> &amp;ec, <a class="el" href="classboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;ei)</td></tr>
-<tr class="separator:a395e9bedb38d64dca18533f20d30fd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad76dfd6fdb2cb679d1ac95f541cde22c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1resultset.html#ad76dfd6fdb2cb679d1ac95f541cde22c">read_one</a> (<a class="el" href="structboost_1_1sqlite_1_1row.html">row</a> &amp;r)</td></tr>
-<tr class="separator:ad76dfd6fdb2cb679d1ac95f541cde22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7185800fce9b8c849ce933a5e7936d02"><td class="memItemLeft" align="right" valign="top">system::result&lt; <a class="el" href="structboost_1_1sqlite_1_1row.html">row</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1resultset.html#a7185800fce9b8c849ce933a5e7936d02">read_one</a> ()</td></tr>
-<tr class="separator:a7185800fce9b8c849ce933a5e7936d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b8e3219dfdeb81888b60730aaa27a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1resultset.html#ab4b8e3219dfdeb81888b60730aaa27a2">read_next</a> (<a class="el" href="group__reference.html#ga99610662a6184dd633886178d75c52b5">error_code</a> &amp;ec, <a class="el" href="classboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;ei)</td></tr>
+<tr class="separator:ab4b8e3219dfdeb81888b60730aaa27a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06ab632df9dcebae50701ea732eb4999"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1resultset.html#a06ab632df9dcebae50701ea732eb4999">read_next</a> ()</td></tr>
+<tr class="separator:a06ab632df9dcebae50701ea732eb4999"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Representation of a result from a database. </p>
@@ -164,69 +162,45 @@ core::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>table_na
 <div class="line"> </div>
 <div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">sqlite::resultset</a> rs = conn.<a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a7cb9f9a0f5a74bc51384ba8ab9c4ff2b">query</a>(<span class="stringliteral">&quot;select * from users;&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1row.html">sqlite::row</a> r;</div>
-<div class="line"><span class="keywordflow">while</span> (rs.<a class="code hl_function" href="structboost_1_1sqlite_1_1resultset.html#a395e9bedb38d64dca18533f20d30fd3a">read_one</a>(r)) <span class="comment">// read it line by line</span></div>
+<div class="line"><span class="keywordflow">do</span></div>
+<div class="line">{</div>
 <div class="line">  handle_row(r.current());</div>
+<div class="line">}</div>
+<div class="line"><span class="keywordflow">while</span> (rs.<a class="code hl_function" href="structboost_1_1sqlite_1_1resultset.html#ab4b8e3219dfdeb81888b60730aaa27a2">read_next</a>()) <span class="comment">// read it line by line</span></div>
 <div class="ttc" id="astructboost_1_1sqlite_1_1connection_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html">boost::sqlite::connection</a></div><div class="ttdoc">main object for a connection to a database.</div><div class="ttdef"><b>Definition:</b> <a href="connection_8hpp_source.html#l00029">connection.hpp:30</a></div></div>
 <div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a7cb9f9a0f5a74bc51384ba8ab9c4ff2b"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a7cb9f9a0f5a74bc51384ba8ab9c4ff2b">boost::sqlite::connection::query</a></div><div class="ttdeci">resultset query(core::string_view q, error_code &amp;ec, error_info &amp;ei)</div></div>
-<div class="ttc" id="astructboost_1_1sqlite_1_1resultset_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1resultset.html">boost::sqlite::resultset</a></div><div class="ttdoc">Representation of a result from a database.</div><div class="ttdef"><b>Definition:</b> <a href="resultset_8hpp_source.html#l00036">resultset.hpp:37</a></div></div>
-<div class="ttc" id="astructboost_1_1sqlite_1_1resultset_html_a395e9bedb38d64dca18533f20d30fd3a"><div class="ttname"><a href="structboost_1_1sqlite_1_1resultset.html#a395e9bedb38d64dca18533f20d30fd3a">boost::sqlite::resultset::read_one</a></div><div class="ttdeci">bool read_one(row &amp;r, error_code &amp;ec, error_info &amp;ei)</div></div>
-<div class="ttc" id="astructboost_1_1sqlite_1_1row_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1row.html">boost::sqlite::row</a></div><div class="ttdoc">Representation of a row in a database.</div><div class="ttdef"><b>Definition:</b> <a href="row_8hpp_source.html#l00018">row.hpp:19</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1resultset_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1resultset.html">boost::sqlite::resultset</a></div><div class="ttdoc">Representation of a result from a database.</div><div class="ttdef"><b>Definition:</b> <a href="resultset_8hpp_source.html#l00039">resultset.hpp:40</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1resultset_html_ab4b8e3219dfdeb81888b60730aaa27a2"><div class="ttname"><a href="structboost_1_1sqlite_1_1resultset.html#ab4b8e3219dfdeb81888b60730aaa27a2">boost::sqlite::resultset::read_next</a></div><div class="ttdeci">bool read_next(error_code &amp;ec, error_info &amp;ei)</div></div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="resultset_8hpp_source.html#l00036">36</a> of file <a class="el" href="resultset_8hpp_source.html">resultset.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="resultset_8hpp_source.html#l00039">39</a> of file <a class="el" href="resultset_8hpp_source.html">resultset.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7185800fce9b8c849ce933a5e7936d02" name="a7185800fce9b8c849ce933a5e7936d02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7185800fce9b8c849ce933a5e7936d02">&#9670;&#160;</a></span>read_one() <span class="overload">[1/3]</span></h2>
+<a id="a06ab632df9dcebae50701ea732eb4999" name="a06ab632df9dcebae50701ea732eb4999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06ab632df9dcebae50701ea732eb4999">&#9670;&#160;</a></span>read_next() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">system::result&lt; <a class="el" href="structboost_1_1sqlite_1_1row.html">row</a> &gt; boost::sqlite::resultset::read_one </td>
+          <td class="memname">bool boost::sqlite::resultset::read_next </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Read one row. Returns false if there's nothing more to read. </p>
+<p >Read the next row. Returns false if there's nothing more to read. </p>
 
 </div>
 </div>
-<a id="ad76dfd6fdb2cb679d1ac95f541cde22c" name="ad76dfd6fdb2cb679d1ac95f541cde22c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad76dfd6fdb2cb679d1ac95f541cde22c">&#9670;&#160;</a></span>read_one() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool boost::sqlite::resultset::read_one </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1row.html">row</a> &amp;&#160;</td>
-          <td class="paramname"><em>r</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Read one row. Returns false if there's nothing more to read. </p>
-
-</div>
-</div>
-<a id="a395e9bedb38d64dca18533f20d30fd3a" name="a395e9bedb38d64dca18533f20d30fd3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a395e9bedb38d64dca18533f20d30fd3a">&#9670;&#160;</a></span>read_one() <span class="overload">[3/3]</span></h2>
+<a id="ab4b8e3219dfdeb81888b60730aaa27a2" name="ab4b8e3219dfdeb81888b60730aaa27a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4b8e3219dfdeb81888b60730aaa27a2">&#9670;&#160;</a></span>read_next() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool boost::sqlite::resultset::read_one </td>
+          <td class="memname">bool boost::sqlite::resultset::read_next </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1row.html">row</a> &amp;&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="group__reference.html#ga99610662a6184dd633886178d75c52b5">error_code</a> &amp;&#160;</td>
           <td class="paramname"><em>ec</em>, </td>
         </tr>
@@ -243,7 +217,7 @@ core::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>table_na
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Read one row. Returns false if there's nothing more to read. </p>
+<p >Read the next row. Returns false if there's nothing more to read. </p>
 
 </div>
 </div>
@@ -256,7 +230,7 @@ core::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>table_na
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a></li>
-    <li class="footer">Generated on Mon Feb 13 2023 02:38:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Tue Feb 28 2023 10:04:51 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>
