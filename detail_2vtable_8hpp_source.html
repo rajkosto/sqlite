@@ -5,15 +5,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Boost.sqlite: /home/klemens/develop/sqlite/include/boost/sqlite/detail/vtable.hpp Source File</title>
+<title>boost_sqlite: boost/sqlite/detail/vtable.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -25,7 +36,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Boost.sqlite<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">boost_sqlite<span id="projectnumber">&#160;1</span>
    </div>
    <div id="projectbrief">A sqlite C++ library</div>
   </td>
@@ -56,6 +67,23 @@ $(function() {
 $(function() { codefold.init(0); });
 /* @license-end */
 </script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('detail_2vtable_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -77,11 +105,6 @@ $(function() { codefold.init(0); });
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_1878a3f4746a95c6aad317458cc7ef80.html">boost</a></li><li class="navelem"><a class="el" href="dir_078c9aa888cc7c345cd1cef81b37df35.html">sqlite</a></li><li class="navelem"><a class="el" href="dir_bb438685740f38fd7b77e8d704bd5817.html">detail</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">vtable.hpp</div></div>
 </div><!--header-->
@@ -100,8 +123,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>BOOST_SQLITE_BEGIN_NAMESPACE</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>detail</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structdetail_1_1vtab__impl.html">   15</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdetail_1_1vtab__impl.html">vtab_impl</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">struct </span>vtab_impl</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Module&gt;</div>
@@ -231,7 +253,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keyword">auto</span> res = tab-&gt;open();</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">if</span> (res.has_error())</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>      <span class="keywordflow">return</span> extract_error(pVTab-&gt;zErrMsg, res);</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    *ppCursor = <span class="keyword">new</span> (<a class="code hl_struct" href="structmemory__tag.html">memory_tag</a>{}) <span class="keyword">typename</span> Table::cursor_type(std::move(*res));</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    *ppCursor = <span class="keyword">new</span> (memory_tag{}) <span class="keyword">typename</span> Table::cursor_type(std::move(*res));</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordflow">return</span> SQLITE_OK;</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  }</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  BOOST_SQLITE_CATCH_AND_RETURN();</div>
@@ -281,7 +303,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keyword">auto</span> cr = <span class="keyword">static_cast&lt;</span>Cursor*<span class="keyword">&gt;</span>(pCursor);</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keyword">auto</span> r = cr-&gt;filter(idxNum, idxStr,</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                        boost::span&lt;value&gt;{<span class="keyword">reinterpret_cast&lt;</span><a class="code hl_struct" href="structvalue.html">value</a>*<span class="keyword">&gt;</span>(argv),</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                        boost::span&lt;value&gt;{<span class="keyword">reinterpret_cast&lt;</span>value*<span class="keyword">&gt;</span>(argv),</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                                           <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(argc)});</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordflow">if</span> (r.has_error())</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>      <span class="keywordflow">return</span> extract_error(pCursor-&gt;pVtab-&gt;zErrMsg, r);</div>
@@ -387,8 +409,8 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    }</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (argc &gt; 1 &amp;&amp; sqlite3_value_type(argv[0]) == SQLITE_NULL)</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    {</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>      <span class="keyword">auto</span> r = mod.insert(<a class="code hl_struct" href="structvalue.html">value</a>{argv[1]},</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>                          boost::span&lt;value&gt;{<span class="keyword">reinterpret_cast&lt;</span><a class="code hl_struct" href="structvalue.html">value</a> *<span class="keyword">&gt;</span>(argv + 2),</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>      <span class="keyword">auto</span> r = mod.insert(value{argv[1]},</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>                          boost::span&lt;value&gt;{<span class="keyword">reinterpret_cast&lt;</span>value *<span class="keyword">&gt;</span>(argv + 2),</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>                                             <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(argc - 2)},</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>                                             sqlite3_vtab_on_conflict(db));</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>      <span class="keywordflow">if</span> (r.has_error())</div>
@@ -397,8 +419,8 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    }</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (argc &gt; 1 &amp;&amp; sqlite3_value_type(argv[0]) != SQLITE_NULL)</div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    {</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>      <span class="keyword">auto</span> r = mod.update(sqlite::value(*argv), <a class="code hl_struct" href="structvalue.html">value</a>{argv[1]}, <span class="comment">// ID</span></div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                          boost::span&lt;value&gt;{<span class="keyword">reinterpret_cast&lt;</span><a class="code hl_struct" href="structvalue.html">value</a> *<span class="keyword">&gt;</span>(argv + 2),</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>      <span class="keyword">auto</span> r = mod.update(sqlite::value(*argv), value{argv[1]}, <span class="comment">// ID</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                          boost::span&lt;value&gt;{<span class="keyword">reinterpret_cast&lt;</span>value *<span class="keyword">&gt;</span>(argv + 2),</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                                             <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(argc - 2)},</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                                             sqlite3_vtab_on_conflict(db));</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
@@ -414,11 +436,11 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  }</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  BOOST_SQLITE_CATCH_ASSIGN_STR_AND_RETURN(pVTab-&gt;zErrMsg)</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  <span class="keywordflow">return</span> SQLITE_OK;</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  return SQLITE_OK;</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>}</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Module&gt;</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="keyword">static</span> <span class="keywordtype">void</span> assign_update(sqlite3_module &amp; md, <span class="keyword">const</span> Module &amp; mod,</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>template&lt;typename Module&gt;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>static <span class="keywordtype">void</span> assign_update(sqlite3_module &amp; md, const Module &amp; mod,</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                   std::true_type <span class="comment">/* modifiable */</span>)</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>{</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  md.xUpdate = &amp;update&lt;typename Module::table_type&gt;;</div>
@@ -573,7 +595,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span><span class="preprocessor">#if SQLITE_VERSION_NUMBER &gt;= 3007007</span></div>
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span> </div>
 <div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Table&gt;</div>
-<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span><span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_struct" href="structsavepoint.html">savepoint</a>(sqlite3_vtab* pVTab, <span class="keywordtype">int</span> i)</div>
+<div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span><span class="keyword">static</span> <span class="keywordtype">int</span> savepoint(sqlite3_vtab* pVTab, <span class="keywordtype">int</span> i)</div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>{</div>
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>  BOOST_SQLITE_TRY</div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>  {</div>
@@ -655,7 +677,6 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span> </div>
 <div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>};</div>
-</div>
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span> </div>
 <div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Module&gt;</div>
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span><span class="keyword">const</span> sqlite3_module make_module(<span class="keyword">const</span> Module &amp; mod)</div>
@@ -699,14 +720,14 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>BOOST_SQLITE_END_NAMESPACE</div>
 <div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span> </div>
 <div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span><span class="preprocessor">#endif </span><span class="comment">//BOOST_SQLITE_DETAIL_VTABLE_HPP</span></div>
-<div class="ttc" id="astructdetail_1_1vtab__impl_html"><div class="ttname"><a href="structdetail_1_1vtab__impl.html">detail::vtab_impl</a></div><div class="ttdef"><b>Definition</b> vtable.hpp:16</div></div>
-<div class="ttc" id="astructmemory__tag_html"><div class="ttname"><a href="structmemory__tag.html">memory_tag</a></div><div class="ttdef"><b>Definition</b> memory.hpp:15</div></div>
-<div class="ttc" id="astructsavepoint_html"><div class="ttname"><a href="structsavepoint.html">savepoint</a></div><div class="ttdoc">A simple transaction guard implementing RAAI for savepoints. Savepoints can be used recursively.</div><div class="ttdef"><b>Definition</b> transaction.hpp:118</div></div>
-<div class="ttc" id="astructvalue_html"><div class="ttname"><a href="structvalue.html">value</a></div><div class="ttdoc">A holder for a sqlite values used for internal APIs.</div><div class="ttdef"><b>Definition</b> value.hpp:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_c8984f1860c11f62f47abb6761e46c1e.html">boost</a></li><li class="navelem"><a class="el" href="dir_3e3942c4c59d28918e46de9324b21cf7.html">sqlite</a></li><li class="navelem"><a class="el" href="dir_da74c484e01c32055656013da34d40df.html">detail</a></li><li class="navelem"><b>vtable.hpp</b></li>
+    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
 </body>
 </html>

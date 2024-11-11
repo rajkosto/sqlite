@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['handle_0',['handle',['../structvalue.html#a2ce6b3efe2b3e250fc39be76e48904a3',1,'value::handle()'],['../structconnection.html#a84f2eeee0a6e45a8fb6a34beedff0003',1,'connection::handle()'],['../structblob__handle.html#af9cbcabe0d5906b991a6c028b6513a87',1,'blob_handle::handle()']]],
-  ['handle_5ftype_1',['handle_type',['../structvalue.html#a075514cc314f779fbd752ebd59506ed8',1,'value::handle_type'],['../structconnection.html#a7bb885ba9e5f79a0e0983299b8dd6fb1',1,'connection::handle_type'],['../structblob__handle.html#ab39d3d1ba37355fb63e44d94b975680f',1,'blob_handle::handle_type']]],
-  ['has_5fcolumn_2',['has_column',['../structconnection.html#aadcfd2a8e2e850f8f8146f7d890e0dbd',1,'connection']]],
-  ['has_5ftable_3',['has_table',['../structconnection.html#ad2d0ad676fd508508f36ed2d73341307',1,'connection']]]
+  ['handle_0',['handle',['../structboost_1_1sqlite_1_1blob__handle.html#aa7891fad110a30d8be5f8ad17e91d437',1,'boost::sqlite::blob_handle::handle()'],['../structboost_1_1sqlite_1_1connection.html#af490f97f7c5d8b7ba4c5b2affbbf62ad',1,'boost::sqlite::connection::handle()'],['../structboost_1_1sqlite_1_1value.html#ac0dc0f5b5d35307bbe728574b11ce899',1,'boost::sqlite::value::handle()']]],
+  ['handle_5ftype_1',['handle_type',['../structboost_1_1sqlite_1_1blob__handle.html#a69e0c7c70a382ba52b2b8b3628cab5c5',1,'boost::sqlite::blob_handle::handle_type'],['../structboost_1_1sqlite_1_1connection.html#aa8bb6a81ebce37234431ea719b4b9fa1',1,'boost::sqlite::connection::handle_type'],['../structboost_1_1sqlite_1_1value.html#a5652e21fa847c8464b2798a2c12ab914',1,'boost::sqlite::value::handle_type']]],
+  ['has_5fcolumn_2',['has_column',['../structboost_1_1sqlite_1_1connection.html#a657d0363875afb2f0a5785e3cc88ed7a',1,'boost::sqlite::connection']]],
+  ['has_5ftable_3',['has_table',['../structboost_1_1sqlite_1_1connection.html#a465beee6852f3041750b77202f373755',1,'boost::sqlite::connection']]]
 ];

@@ -5,15 +5,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Boost.sqlite: /home/klemens/develop/sqlite/include/boost/sqlite/detail/exception.hpp Source File</title>
+<title>boost_sqlite: boost/sqlite/detail/exception.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -25,7 +36,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Boost.sqlite<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">boost_sqlite<span id="projectnumber">&#160;1</span>
    </div>
    <div id="projectbrief">A sqlite C++ library</div>
   </td>
@@ -56,6 +67,23 @@ $(function() {
 $(function() { codefold.init(0); });
 /* @license-end */
 </script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('exception_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -77,11 +105,6 @@ $(function() { codefold.init(0); });
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_1878a3f4746a95c6aad317458cc7ef80.html">boost</a></li><li class="navelem"><a class="el" href="dir_078c9aa888cc7c345cd1cef81b37df35.html">sqlite</a></li><li class="navelem"><a class="el" href="dir_bb438685740f38fd7b77e8d704bd5817.html">detail</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">exception.hpp</div></div>
 </div><!--header-->
@@ -106,7 +129,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>BOOST_SQLITE_DECL</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>BOOST_NORETURN <span class="keywordtype">void</span> throw_error_code(<span class="keyword">const</span> boost::system::error_code &amp; ec,</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                                     <span class="keyword">const</span> <a class="code hl_struct" href="structerror__info.html">error_info</a> &amp; ei,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                                     <span class="keyword">const</span> error_info &amp; ei,</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                                     <span class="keyword">const</span> boost::source_location &amp; loc = BOOST_CURRENT_LOCATION);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>BOOST_SQLITE_DECL</div>
@@ -134,11 +157,14 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">//BOOST_SQLITE_DETAIL_EXCEPTION_HPP</span></div>
-<div class="ttc" id="astructerror__info_html"><div class="ttname"><a href="structerror__info.html">error_info</a></div><div class="ttdoc">Additional information about error conditions stored in an sqlite-allocate string.</div><div class="ttdef"><b>Definition</b> error.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_c8984f1860c11f62f47abb6761e46c1e.html">boost</a></li><li class="navelem"><a class="el" href="dir_3e3942c4c59d28918e46de9324b21cf7.html">sqlite</a></li><li class="navelem"><a class="el" href="dir_da74c484e01c32055656013da34d40df.html">detail</a></li><li class="navelem"><b>exception.hpp</b></li>
+    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
 </body>
 </html>

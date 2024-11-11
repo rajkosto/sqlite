@@ -5,15 +5,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Boost.sqlite: /home/klemens/develop/sqlite/include/boost/sqlite/hooks.hpp Source File</title>
+<title>boost_sqlite: boost/sqlite/hooks.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -25,7 +36,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Boost.sqlite<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">boost_sqlite<span id="projectnumber">&#160;1</span>
    </div>
    <div id="projectbrief">A sqlite C++ library</div>
   </td>
@@ -56,6 +67,23 @@ $(function() {
 $(function() { codefold.init(0); });
 /* @license-end */
 </script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('hooks_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -77,11 +105,6 @@ $(function() { codefold.init(0); });
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_1878a3f4746a95c6aad317458cc7ef80.html">boost</a></li><li class="navelem"><a class="el" href="dir_078c9aa888cc7c345cd1cef81b37df35.html">sqlite</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">hooks.hpp</div></div>
 </div><!--header-->
@@ -104,33 +127,39 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#if defined(SQLITE_ENABLE_PREUPDATE_HOOK)</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">struct </span>preupdate_context</div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1preupdate__context.html">   24</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structboost_1_1sqlite_1_1preupdate__context.html">preupdate_context</a></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  system::result&lt;value&gt; old(<span class="keywordtype">int</span> column)<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1preupdate__context.html#ac631f5fd9bafc3c40fb9a545e2166a54">   27</a></span>  system::result&lt;value&gt; <a class="code hl_function" href="structboost_1_1sqlite_1_1preupdate__context.html#ac631f5fd9bafc3c40fb9a545e2166a54">old</a>(<span class="keywordtype">int</span> column)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">  </span>{</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    sqlite3_value * val;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">int</span> res = sqlite3_preupdate_old(db_, column, &amp;val);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">if</span> (res != 0)</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      BOOST_SQLITE_RETURN_EC(res);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structvalue.html">value</a>(val);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1value.html">value</a>(val);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">int</span> count()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sqlite3_preupdate_count(db_); }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">int</span> depth()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sqlite3_preupdate_depth(db_); }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  system::result&lt;value&gt; new_(<span class="keywordtype">int</span> column)<span class="keyword"> const</span></div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1preupdate__context.html#afc8f69d3bb6572c79c38d95a10537dda">   36</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1preupdate__context.html#afc8f69d3bb6572c79c38d95a10537dda">count</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sqlite3_preupdate_count(db_); }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1preupdate__context.html#a045008b81fdc78f1b7577bd711b2c28e">   38</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1preupdate__context.html#a045008b81fdc78f1b7577bd711b2c28e">depth</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sqlite3_preupdate_depth(db_); }</div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1preupdate__context.html#adb342d1b03444f7cc6ca908a5c0da422">   40</a></span>  system::result&lt;value&gt; <a class="code hl_function" href="structboost_1_1sqlite_1_1preupdate__context.html#adb342d1b03444f7cc6ca908a5c0da422">new_</a>(<span class="keywordtype">int</span> column)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">  </span>{</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    sqlite3_value * val;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">int</span> res = sqlite3_preupdate_new(db_, column, &amp;val);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">if</span> (res != 0)</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      BOOST_SQLITE_RETURN_EC(res);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structvalue.html">value</a>(val);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1value.html">value</a>(val);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  }</div>
+</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">int</span> blob_write()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sqlite3_preupdate_blobwrite(db_); }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1preupdate__context.html#a50543f1fea0abc5838ce23920c025c7f">   51</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1preupdate__context.html#a50543f1fea0abc5838ce23920c025c7f">blob_write</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> sqlite3_preupdate_blobwrite(db_); }</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">explicit</span> preupdate_context(sqlite3 * db) noexcept : db_(db) {}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">explicit</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1preupdate__context.html">preupdate_context</a>(sqlite3 * db) noexcept : db_(db) {}</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  sqlite3 * db_;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
+</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
@@ -334,7 +363,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Func&gt;</div>
 <div class="foldopen" id="foldopen00276" data-start="{" data-end="}">
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="group__reference.html#ga9046b8d061e18a2e5e495c191b0e7136">  276</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__reference.html#ga9046b8d061e18a2e5e495c191b0e7136">commit_hook</a>(<a class="code hl_struct" href="structconnection.html">connection</a> &amp; conn, Func &amp;&amp; func)</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="group__reference.html#ga21b7c565949a46cde0ab93dd86acdd62">  276</a></span><span class="keywordtype">bool</span> commit_hook(<a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp; conn, Func &amp;&amp; func)</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>{</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  <span class="keywordflow">return</span> detail::commit_hook(conn.handle(), std::forward&lt;Func&gt;(func));</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>}</div>
@@ -342,7 +371,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Func&gt;</div>
 <div class="foldopen" id="foldopen00298" data-start="{" data-end="}">
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="group__reference.html#gad4748d67aa18285ae004c118fca7758f">  298</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__reference.html#gad4748d67aa18285ae004c118fca7758f">rollback_hook</a>(<a class="code hl_struct" href="structconnection.html">connection</a> &amp; conn, Func &amp;&amp; func)</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="group__reference.html#gadaa638eab7f7af9d3005e318023366ac">  298</a></span><span class="keywordtype">bool</span> rollback_hook(<a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp; conn, Func &amp;&amp; func)</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>{</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <span class="keywordflow">return</span> detail::rollback_hook(conn.handle(), std::forward&lt;Func&gt;(func));</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>}</div>
@@ -350,16 +379,18 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="preprocessor">#if defined(SQLITE_ENABLE_PREUPDATE_HOOK)</span></div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Func&gt;</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="keywordtype">bool</span> preupdate_hook(<a class="code hl_struct" href="structconnection.html">connection</a> &amp; conn, Func &amp;&amp; func)</div>
+<div class="foldopen" id="foldopen00336" data-start="{" data-end="}">
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="group__reference.html#gafc5e42f969f2e40a628bf38b0019977e">  336</a></span><span class="keywordtype">bool</span> preupdate_hook(<a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp; conn, Func &amp;&amp; func)</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>{</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  <span class="keywordflow">return</span> detail::preupdate_hook(conn.handle(), std::forward&lt;Func&gt;(func));</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>}</div>
+</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Func&gt;</div>
 <div class="foldopen" id="foldopen00363" data-start="{" data-end="}">
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="group__reference.html#gaf6ad7f6b68de372f7f7a54b0fcb72849">  363</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="group__reference.html#gaf6ad7f6b68de372f7f7a54b0fcb72849">update_hook</a>(<a class="code hl_struct" href="structconnection.html">connection</a> &amp; conn, Func &amp;&amp; func)</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="group__reference.html#gad92994a103b679f4ba893e7aacc9b5d1">  363</a></span><span class="keywordtype">bool</span> update_hook(<a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp; conn, Func &amp;&amp; func)</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>{</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>  <span class="keywordflow">return</span> detail::update_hook(conn.handle(), std::forward&lt;Func&gt;(func));</div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>}</div>
@@ -368,15 +399,22 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>BOOST_SQLITE_END_NAMESPACE</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="preprocessor">#endif </span><span class="comment">//BOOST_SQLITE_HOOKS_HPP</span></div>
-<div class="ttc" id="agroup__reference_html_ga9046b8d061e18a2e5e495c191b0e7136"><div class="ttname"><a href="group__reference.html#ga9046b8d061e18a2e5e495c191b0e7136">commit_hook</a></div><div class="ttdeci">bool commit_hook(connection &amp;conn, Func &amp;&amp;func)</div><div class="ttdoc">Install a commit hook.</div><div class="ttdef"><b>Definition</b> hooks.hpp:276</div></div>
-<div class="ttc" id="agroup__reference_html_gad4748d67aa18285ae004c118fca7758f"><div class="ttname"><a href="group__reference.html#gad4748d67aa18285ae004c118fca7758f">rollback_hook</a></div><div class="ttdeci">bool rollback_hook(connection &amp;conn, Func &amp;&amp;func)</div><div class="ttdoc">Install a rollback hook.</div><div class="ttdef"><b>Definition</b> hooks.hpp:298</div></div>
-<div class="ttc" id="agroup__reference_html_gaf6ad7f6b68de372f7f7a54b0fcb72849"><div class="ttname"><a href="group__reference.html#gaf6ad7f6b68de372f7f7a54b0fcb72849">update_hook</a></div><div class="ttdeci">bool update_hook(connection &amp;conn, Func &amp;&amp;func)</div><div class="ttdoc">Install an update hook.</div><div class="ttdef"><b>Definition</b> hooks.hpp:363</div></div>
-<div class="ttc" id="astructconnection_html"><div class="ttname"><a href="structconnection.html">connection</a></div><div class="ttdoc">main object for a connection to a database.</div><div class="ttdef"><b>Definition</b> connection.hpp:32</div></div>
-<div class="ttc" id="astructvalue_html"><div class="ttname"><a href="structvalue.html">value</a></div><div class="ttdoc">A holder for a sqlite values used for internal APIs.</div><div class="ttdef"><b>Definition</b> value.hpp:39</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html">boost::sqlite::connection</a></div><div class="ttdoc">main object for a connection to a database.</div><div class="ttdef"><b>Definition</b> <a href="connection_8hpp_source.html#l00031">connection.hpp:32</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1preupdate__context_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1preupdate__context.html">boost::sqlite::preupdate_context</a></div><div class="ttdef"><b>Definition</b> <a href="#l00024">hooks.hpp:25</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1preupdate__context_html_a045008b81fdc78f1b7577bd711b2c28e"><div class="ttname"><a href="structboost_1_1sqlite_1_1preupdate__context.html#a045008b81fdc78f1b7577bd711b2c28e">boost::sqlite::preupdate_context::depth</a></div><div class="ttdeci">int depth() const</div><div class="ttdoc">The nesting depth of the update.</div><div class="ttdef"><b>Definition</b> <a href="#l00038">hooks.hpp:38</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1preupdate__context_html_a50543f1fea0abc5838ce23920c025c7f"><div class="ttname"><a href="structboost_1_1sqlite_1_1preupdate__context.html#a50543f1fea0abc5838ce23920c025c7f">boost::sqlite::preupdate_context::blob_write</a></div><div class="ttdeci">int blob_write() const</div><div class="ttdoc">Query the status of blob access, e.g. when using blob_handle.</div><div class="ttdef"><b>Definition</b> <a href="#l00051">hooks.hpp:51</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1preupdate__context_html_ac631f5fd9bafc3c40fb9a545e2166a54"><div class="ttname"><a href="structboost_1_1sqlite_1_1preupdate__context.html#ac631f5fd9bafc3c40fb9a545e2166a54">boost::sqlite::preupdate_context::old</a></div><div class="ttdeci">system::result&lt; value &gt; old(int column) const</div><div class="ttdoc">Returns the old value, i.e. the value before the update.</div><div class="ttdef"><b>Definition</b> <a href="#l00027">hooks.hpp:27</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1preupdate__context_html_adb342d1b03444f7cc6ca908a5c0da422"><div class="ttname"><a href="structboost_1_1sqlite_1_1preupdate__context.html#adb342d1b03444f7cc6ca908a5c0da422">boost::sqlite::preupdate_context::new_</a></div><div class="ttdeci">system::result&lt; value &gt; new_(int column) const</div><div class="ttdoc">The new value to be written to column.</div><div class="ttdef"><b>Definition</b> <a href="#l00040">hooks.hpp:40</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1preupdate__context_html_afc8f69d3bb6572c79c38d95a10537dda"><div class="ttname"><a href="structboost_1_1sqlite_1_1preupdate__context.html#afc8f69d3bb6572c79c38d95a10537dda">boost::sqlite::preupdate_context::count</a></div><div class="ttdeci">int count() const</div><div class="ttdoc">The count of colums to be updated.</div><div class="ttdef"><b>Definition</b> <a href="#l00036">hooks.hpp:36</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1value_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1value.html">boost::sqlite::value</a></div><div class="ttdoc">A holder for a sqlite values used for internal APIs.</div><div class="ttdef"><b>Definition</b> <a href="value_8hpp_source.html#l00038">value.hpp:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_c8984f1860c11f62f47abb6761e46c1e.html">boost</a></li><li class="navelem"><a class="el" href="dir_3e3942c4c59d28918e46de9324b21cf7.html">sqlite</a></li><li class="navelem"><b>hooks.hpp</b></li>
+    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
 </body>
 </html>

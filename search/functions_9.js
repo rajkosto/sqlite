@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['message_0',['message',['../structerror__info.html#a21bdd16f25a659585d3b5315b12ddd77',1,'error_info']]]
+  ['message_0',['message',['../structboost_1_1sqlite_1_1error__info.html#a3efa2c9771ce1b00260a687e89684e08',1,'boost::sqlite::error_info']]]
 ];

@@ -1,8 +1,16 @@
 var searchData=
 [
-  ['table_0',['table',['../structvtab_1_1table.html',1,'vtab::table&lt; Cursor &gt;'],['../structvtab_1_1cursor.html#a7700b79cd76f1a6464cdad3632756d3b',1,'vtab::cursor::table()'],['../structvtab_1_1cursor_3_01void_01_4.html#a7d0cdd83c52306b0295554694db8c1ee',1,'vtab::cursor&lt; void &gt;::table()']]],
-  ['table_5fname_1',['table_name',['../structstatic__resultset.html#a9582ed77d61c6ac36d654687259ef558',1,'static_resultset::table_name()'],['../structresultset.html#a0b4badd4429261a2941593f52dcd538d',1,'resultset::table_name()'],['../structfield.html#a029059f1fee59f4f52d33f9565782d97',1,'field::table_name()']]],
-  ['text_2',['text',['../group__reference.html#gga5b7c2b5c96c13d5b5d2842e91794f6c1a1cb251ec0d568de6a929b520c4aed8d1',1,'value.hpp']]],
-  ['transaction_3',['transaction',['../structtransaction.html',1,'transaction'],['../structvtab_1_1transaction.html',1,'vtab::transaction'],['../structtransaction.html#ac1d75a269b441e729409471a4a10ff0f',1,'transaction::transaction(connection &amp;conn, adopt_transaction_t)'],['../structtransaction.html#a91895b970904b28405ab3e2d6c7671af',1,'transaction::transaction(connection &amp;conn)'],['../structtransaction.html#ad8bebcc5164bac763ab81226490ce14d',1,'transaction::transaction(connection &amp;conn, behaviour b)']]],
-  ['type_4',['type',['../structvalue.html#aeab802c1f21724c082adf8532a32dda5',1,'value::type()'],['../structfield.html#a3197b9f3bb92cda2820f4ae5057db3f7',1,'field::type()']]]
+  ['savepoint_0',['savepoint',['../structboost_1_1sqlite_1_1savepoint.html',1,'boost::sqlite::savepoint'],['../structboost_1_1sqlite_1_1savepoint.html#ae4f10fb3febfcbe8fb01a203b8ea6fbb',1,'boost::sqlite::savepoint::savepoint(connection &amp;conn, std::string name, transaction::adopt_transaction_t)'],['../structboost_1_1sqlite_1_1savepoint.html#a2e26d802ff85ea753c4d3c72c8087dfe',1,'boost::sqlite::savepoint::savepoint(connection &amp;conn, std::string name)'],['../structboost_1_1sqlite_1_1vtab_1_1recursive__transaction.html#a0b61f250cfad5bc502d6fb99ac5210b2',1,'boost::sqlite::vtab::recursive_transaction::savepoint()']]],
+  ['set_1',['set',['../structboost_1_1sqlite_1_1context.html#a65d1c2d7fed2db2f63e03a2cc744d1dc',1,'boost::sqlite::context::set()'],['../structboost_1_1sqlite_1_1vtab_1_1function__setter.html#a3950ad6a993b3f883ed29ae1467137bf',1,'boost::sqlite::vtab::function_setter::set()']]],
+  ['set_5ferror_2',['set_error',['../structboost_1_1sqlite_1_1context.html#a6245ee2db2baf90d0a606bd034836c2b',1,'boost::sqlite::context']]],
+  ['set_5fmessage_3',['set_message',['../structboost_1_1sqlite_1_1error__info.html#a93ef76235523f14d0fc7dafc06a3271b',1,'boost::sqlite::error_info']]],
+  ['set_5fresult_4',['set_result',['../structboost_1_1sqlite_1_1context.html#a888bdb187ad299318ceb2e0ef7a95a41',1,'boost::sqlite::context']]],
+  ['size_5',['size',['../structboost_1_1sqlite_1_1blob__view.html#a9da18126fe15658f1c80e3b54accc86c',1,'boost::sqlite::blob_view::size()'],['../structboost_1_1sqlite_1_1blob.html#aa34d59944f5605f28f682cfd029646fe',1,'boost::sqlite::blob::size()'],['../structboost_1_1sqlite_1_1blob__handle.html#abebebfff3c30490393e2e5a870258890',1,'boost::sqlite::blob_handle::size()'],['../structboost_1_1sqlite_1_1row.html#ae576c1fd88f81c6da13f89f746401099',1,'boost::sqlite::row::size()']]],
+  ['snformat_6',['snformat',['../structboost_1_1sqlite_1_1error__info.html#a627f10ee26b06f77c7c936b896a6771b',1,'boost::sqlite::error_info']]],
+  ['sql_7',['sql',['../structboost_1_1sqlite_1_1statement.html#a1958c1d5f4f3d1f188cd44268f25e214',1,'boost::sqlite::statement']]],
+  ['sqlite_8',['boost.sqlite',['../index.html',1,'']]],
+  ['statement_9',['statement',['../structboost_1_1sqlite_1_1statement.html',1,'boost::sqlite']]],
+  ['static_5fresultset_10',['static_resultset',['../structboost_1_1sqlite_1_1static__resultset.html',1,'boost::sqlite']]],
+  ['subtype_11',['subtype',['../structboost_1_1sqlite_1_1value.html#aee697fb23df549f5b9c28b13c443f033',1,'boost::sqlite::value']]],
+  ['sync_12',['sync',['../structboost_1_1sqlite_1_1vtab_1_1transaction.html#a27c69ff94667d0b18c13c96e80675263',1,'boost::sqlite::vtab::transaction']]]
 ];

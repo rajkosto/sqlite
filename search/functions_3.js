@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['data_0',['data',['../structblob__view.html#a33bc39edb7b30f44f68418dc7ab33b42',1,'blob_view::data()'],['../structblob.html#a7ab6d7fa1b3373b01db98205b25477f0',1,'blob::data()']]],
-  ['declaration_1',['declaration',['../structvtab_1_1table.html#abdc6e36254a9062f6fa8105f549d9f2c',1,'vtab::table']]],
-  ['declared_5ftype_2',['declared_type',['../structstatement.html#ac7a07df93f332be4921fac3d43c60933',1,'statement']]],
-  ['destroy_3',['destroy',['../structvtab_1_1table.html#a7bd0d907ffcbbe5b62be700b4da57862',1,'vtab::table']]],
-  ['done_4',['done',['../structstatic__resultset.html#a0193b2a5d05474101f1b06e40b8d1212',1,'static_resultset::done()'],['../structresultset.html#a138d608ed0a7057dbebafb0c81611cf5',1,'resultset::done()']]]
+  ['data_0',['data',['../structboost_1_1sqlite_1_1blob__view.html#ab97b0dfcec8ec0624ab5723a968d8606',1,'boost::sqlite::blob_view::data()'],['../structboost_1_1sqlite_1_1blob.html#ac5f99eac01e2b0dbb3f17a44d044d65a',1,'boost::sqlite::blob::data()']]],
+  ['declaration_1',['declaration',['../structboost_1_1sqlite_1_1vtab_1_1table.html#ad797db41841cb41834e7c5355fb81dbc',1,'boost::sqlite::vtab::table']]],
+  ['declared_5ftype_2',['declared_type',['../structboost_1_1sqlite_1_1statement.html#ab68c45fe09f35db63538310b75b157eb',1,'boost::sqlite::statement']]],
+  ['depth_3',['depth',['../structboost_1_1sqlite_1_1preupdate__context.html#a045008b81fdc78f1b7577bd711b2c28e',1,'boost::sqlite::preupdate_context']]],
+  ['destroy_4',['destroy',['../structboost_1_1sqlite_1_1vtab_1_1table.html#ac6ee462151d11854ee6df07f6acc1b12',1,'boost::sqlite::vtab::table']]],
+  ['distinct_5',['distinct',['../structboost_1_1sqlite_1_1vtab_1_1index__info.html#a2e34487583b632ec06c1a6bdabec225b',1,'boost::sqlite::vtab::index_info']]],
+  ['done_6',['done',['../structboost_1_1sqlite_1_1resultset.html#ab1f63280c5e6a1f0d65738042d805786',1,'boost::sqlite::resultset::done()'],['../structboost_1_1sqlite_1_1static__resultset.html#a8a18f96207f707976ec6810f57f3bd98',1,'boost::sqlite::static_resultset::done()']]]
 ];

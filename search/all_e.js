@@ -1,18 +1,6 @@
 var searchData=
 [
-  ['read_5fat_0',['read_at',['../structblob__handle.html#af77e28ed58c034cbc85a6b50c0ea81e4',1,'blob_handle']]],
-  ['read_5fnext_1',['read_next',['../structstatic__resultset.html#a78a3ac81d14dfc3bae55fb79f3b25bdb',1,'static_resultset::read_next()'],['../structresultset.html#a70109199c40fb51e1bfddebc195b196b',1,'resultset::read_next()']]],
-  ['recursive_5fmutex_2',['recursive_mutex',['../structrecursive__mutex.html',1,'']]],
-  ['reference_3',['Reference',['../group__reference.html',1,'']]],
-  ['release_4',['release',['../structconnection.html#a0a03bf09af97c043dff636f47c4fbaab',1,'connection::release()'],['../structblob.html#af075f30223099e7dcc11aece367b0e24',1,'blob::release()'],['../structblob__handle.html#ab0fe3756fc0e776ad0770b5f64dd58a3',1,'blob_handle::release()']]],
-  ['renamable_5',['renamable',['../structvtab_1_1renamable.html',1,'vtab']]],
-  ['rename_6',['rename',['../structvtab_1_1renamable.html#a39dcb2ee94d44931df34c4b8b2d77705',1,'vtab::renamable']]],
-  ['reopen_7',['reopen',['../structblob__handle.html#a6521b56d35f56f0b6c10afd383fa4e51',1,'blob_handle']]],
-  ['reserve_8',['reserve',['../structerror__info.html#a3ad5fe0d2afa629d1017e50b0c6faa06',1,'error_info']]],
-  ['reset_9',['reset',['../structerror__info.html#af5a4f5f5df42644ff4603e672b360cf3',1,'error_info']]],
-  ['resultset_10',['resultset',['../structresultset.html',1,'']]],
-  ['rollback_11',['rollback',['../structvtab_1_1transaction.html#a31584bc78f5b19e91577ffb9a57aebf9',1,'vtab::transaction::rollback()'],['../structtransaction.html#a0cc9d5fb8dcfd391e64c5477119afab4',1,'transaction::rollback()'],['../structsavepoint.html#a063045b74ba67c253b57c064064c7100',1,'savepoint::rollback()']]],
-  ['rollback_5fhook_12',['rollback_hook',['../group__reference.html#gad4748d67aa18285ae004c118fca7758f',1,'hooks.hpp']]],
-  ['row_13',['row',['../structrow.html',1,'']]],
-  ['row_5fid_14',['row_id',['../structvtab_1_1cursor.html#a4931079787bc65c57e4f645eadd3c622',1,'vtab::cursor::row_id()'],['../structvtab_1_1cursor_3_01void_01_4.html#a58b0399f9c92680dad619e0329462013',1,'vtab::cursor&lt; void &gt;::row_id()']]]
+  ['queries_0',['Typed queries',['../index.html#autotoc_md4',1,'']]],
+  ['query_1',['query',['../structboost_1_1sqlite_1_1connection.html#a664bf51ddfb95d5e796a0226207b4f0b',1,'boost::sqlite::connection::query(core::string_view q, system::error_code &amp;ec, error_info &amp;ei)'],['../structboost_1_1sqlite_1_1connection.html#a286512170b74732e80553b88a449b1d9',1,'boost::sqlite::connection::query(core::string_view q)'],['../structboost_1_1sqlite_1_1connection.html#abe4eebcfe3e85bf537ece25d94c295a6',1,'boost::sqlite::connection::query(core::string_view q, system::error_code &amp;ec, error_info &amp;ei)'],['../structboost_1_1sqlite_1_1connection.html#a8a66a89bcc745c938a52fd2310fb0fce',1,'boost::sqlite::connection::query(core::string_view q)']]],
+  ['quickstart_2',['Quickstart',['../index.html#autotoc_md2',1,'']]]
 ];

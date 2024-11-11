@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['update_0',['update',['../structvtab_1_1modifiable.html#ad8af15e3f2d514aeaf79632fedfd2f62',1,'vtab::modifiable']]],
-  ['update_5fhook_1',['update_hook',['../group__reference.html#gaf6ad7f6b68de372f7f7a54b0fcb72849',1,'hooks.hpp']]]
+  ['table_0',['table',['../structboost_1_1sqlite_1_1vtab_1_1table.html',1,'boost::sqlite::vtab::table&lt; Cursor &gt;'],['../structboost_1_1sqlite_1_1vtab_1_1cursor.html#af4f98eb9f795929e0e54dafd8a0ce7f6',1,'boost::sqlite::vtab::cursor::table()'],['../structboost_1_1sqlite_1_1vtab_1_1cursor_3_01void_01_4.html#ae1cc236f2f7642ded9aa6b69ff92cb80',1,'boost::sqlite::vtab::cursor&lt; void &gt;::table()']]],
+  ['table_5fname_1',['table_name',['../structboost_1_1sqlite_1_1field.html#a0e14405de3b38982016f1cdd6c8f18a2',1,'boost::sqlite::field::table_name()'],['../structboost_1_1sqlite_1_1resultset.html#a9204357934f9fe91af6b4f6e0e664f66',1,'boost::sqlite::resultset::table_name()'],['../structboost_1_1sqlite_1_1static__resultset.html#acd192985a941cfc952455cc6d54d59a9',1,'boost::sqlite::static_resultset::table_name()']]],
+  ['text_2',['text',['../group__reference.html#gga54803a0f6eb577b3e3938ca6dc3f6818a1cb251ec0d568de6a929b520c4aed8d1',1,'boost::sqlite']]],
+  ['the_20library_3',['Building the library',['../index.html#autotoc_md1',1,'']]],
+  ['transaction_4',['transaction',['../structboost_1_1sqlite_1_1transaction.html',1,'boost::sqlite::transaction'],['../structboost_1_1sqlite_1_1vtab_1_1transaction.html',1,'boost::sqlite::vtab::transaction'],['../structboost_1_1sqlite_1_1transaction.html#af42f6adcb086dbea3dbf5c17f9dc1bda',1,'boost::sqlite::transaction::transaction(connection &amp;conn, adopt_transaction_t)'],['../structboost_1_1sqlite_1_1transaction.html#a2ba81d64aaa2b4ce327a96ee8702f3a1',1,'boost::sqlite::transaction::transaction(connection &amp;conn)'],['../structboost_1_1sqlite_1_1transaction.html#a2cc3a6ed174f9b899a134ac805ef8c45',1,'boost::sqlite::transaction::transaction(connection &amp;conn, behaviour b)']]],
+  ['type_5',['type',['../structboost_1_1sqlite_1_1field.html#a3a02d159d4c5decb7142f97db8717f28',1,'boost::sqlite::field::type()'],['../structboost_1_1sqlite_1_1value.html#a64876af836f1d477595eb5a785d65862',1,'boost::sqlite::value::type()']]],
+  ['typed_20queries_6',['Typed queries',['../index.html#autotoc_md4',1,'']]]
 ];

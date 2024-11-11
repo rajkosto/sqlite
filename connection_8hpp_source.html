@@ -5,15 +5,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Boost.sqlite: /home/klemens/develop/sqlite/include/boost/sqlite/connection.hpp Source File</title>
+<title>boost_sqlite: boost/sqlite/connection.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -25,7 +36,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Boost.sqlite<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">boost_sqlite<span id="projectnumber">&#160;1</span>
    </div>
    <div id="projectbrief">A sqlite C++ library</div>
   </td>
@@ -56,6 +67,23 @@ $(function() {
 $(function() { codefold.init(0); });
 /* @license-end */
 </script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('connection_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -77,11 +105,6 @@ $(function() { codefold.init(0); });
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_1878a3f4746a95c6aad317458cc7ef80.html">boost</a></li><li class="navelem"><a class="el" href="dir_078c9aa888cc7c345cd1cef81b37df35.html">sqlite</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">connection.hpp</div></div>
 </div><!--header-->
@@ -103,49 +126,50 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>BOOST_SQLITE_BEGIN_NAMESPACE</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">struct </span><a class="code hl_struct" href="structstatic__resultset.html">static_resultset</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">struct </span>static_resultset;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structconnection.html">   31</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structconnection.html">connection</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html">   31</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">connection</a></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structconnection.html#a7bb885ba9e5f79a0e0983299b8dd6fb1">   34</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structconnection.html#a7bb885ba9e5f79a0e0983299b8dd6fb1">handle_type</a> = sqlite3*;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structconnection.html#a84f2eeee0a6e45a8fb6a34beedff0003">   36</a></span>    <a class="code hl_typedef" href="structconnection.html#a7bb885ba9e5f79a0e0983299b8dd6fb1">handle_type</a> <a class="code hl_function" href="structconnection.html#a84f2eeee0a6e45a8fb6a34beedff0003">handle</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> impl_.get(); }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structconnection.html#a0a03bf09af97c043dff636f47c4fbaab">   38</a></span>    <a class="code hl_typedef" href="structconnection.html#a7bb885ba9e5f79a0e0983299b8dd6fb1">handle_type</a> <a class="code hl_function" href="structconnection.html#a0a03bf09af97c043dff636f47c4fbaab">release</a>() &amp;&amp;    { <span class="keywordflow">return</span> impl_.release(); }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#aa8bb6a81ebce37234431ea719b4b9fa1">   34</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structboost_1_1sqlite_1_1connection.html#aa8bb6a81ebce37234431ea719b4b9fa1">handle_type</a> = sqlite3*;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#af490f97f7c5d8b7ba4c5b2affbbf62ad">   36</a></span>    <a class="code hl_typedef" href="structboost_1_1sqlite_1_1connection.html#aa8bb6a81ebce37234431ea719b4b9fa1">handle_type</a> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#af490f97f7c5d8b7ba4c5b2affbbf62ad">handle</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> impl_.get(); }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#aec95a55410f5f797dfe95db1d7f17d8a">   38</a></span>    <a class="code hl_typedef" href="structboost_1_1sqlite_1_1connection.html#aa8bb6a81ebce37234431ea719b4b9fa1">handle_type</a> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#aec95a55410f5f797dfe95db1d7f17d8a">release</a>() &amp;&amp;    { <span class="keywordflow">return</span> impl_.release(); }</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structconnection.html#a12865525cabc18015396eced3d57bb06">   41</a></span>    <a class="code hl_function" href="structconnection.html#a12865525cabc18015396eced3d57bb06">connection</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structconnection.html#a6d1884855caabc948bb1785b4c4c9dc1">   43</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="structconnection.html#a6d1884855caabc948bb1785b4c4c9dc1">connection</a>(<a class="code hl_typedef" href="structconnection.html#a7bb885ba9e5f79a0e0983299b8dd6fb1">handle_type</a> <a class="code hl_function" href="structconnection.html#a84f2eeee0a6e45a8fb6a34beedff0003">handle</a>, <span class="keywordtype">bool</span> take_ownership = <span class="keyword">true</span>) : impl_(<a class="code hl_function" href="structconnection.html#a84f2eeee0a6e45a8fb6a34beedff0003">handle</a>, take_ownership) {}</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structconnection.html#ae5f93ab98ac0426971c6fc3e1f416fcc">   45</a></span>    <a class="code hl_function" href="structconnection.html#ae5f93ab98ac0426971c6fc3e1f416fcc">connection</a>(<a class="code hl_struct" href="structconnection.html">connection</a> &amp;&amp; ) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structconnection.html#a7d01f1582ba9df43ab360853e5e0b69b">   47</a></span>    <a class="code hl_struct" href="structconnection.html">connection</a>&amp; <a class="code hl_function" href="structconnection.html#a7d01f1582ba9df43ab360853e5e0b69b">operator=</a>(<a class="code hl_struct" href="structconnection.html">connection</a> &amp;&amp; ) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#ab26ea31dd368b7449fa765ebc8c235ff">   41</a></span>    <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#ab26ea31dd368b7449fa765ebc8c235ff">connection</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#a91591cbbda2363d5a95cf84779a48781">   43</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a91591cbbda2363d5a95cf84779a48781">connection</a>(<a class="code hl_typedef" href="structboost_1_1sqlite_1_1connection.html#aa8bb6a81ebce37234431ea719b4b9fa1">handle_type</a> handle, <span class="keywordtype">bool</span> take_ownership = <span class="keyword">true</span>) : impl_(handle, take_ownership) {}</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#a49e6633362339c77291974203cfd3b51">   45</a></span>    <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a49e6633362339c77291974203cfd3b51">connection</a>(<a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;&amp; ) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#a239cbf3e0076844e9e44c6e0d729855a">   47</a></span>    <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">connection</a>&amp; <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a239cbf3e0076844e9e44c6e0d729855a">operator=</a>(<a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;&amp; ) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structconnection.html#aa6cb17023e0393d49fdb29cd5cf3563f">   50</a></span>    <a class="code hl_function" href="structconnection.html#aa6cb17023e0393d49fdb29cd5cf3563f">connection</a>(cstring_ref filename,</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>               <span class="keywordtype">int</span> flags = SQLITE_OPEN_READWRITE | SQLITE_OPEN_CREATE) { <a class="code hl_function" href="structconnection.html#a09f6c2b0e1eee7ee7dcf71f603bb8ff5">connect</a>(filename, flags); }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#a29785f338f0e6e2c8fb838d7a1c34f7b">   50</a></span>    <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a29785f338f0e6e2c8fb838d7a1c34f7b">connection</a>(<a class="code hl_struct" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a> filename,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>               <span class="keywordtype">int</span> flags = SQLITE_OPEN_READWRITE | SQLITE_OPEN_CREATE) { connect(filename, flags); }</div>
 </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structconnection.html#a09f6c2b0e1eee7ee7dcf71f603bb8ff5">   56</a></span>    BOOST_SQLITE_DECL <span class="keywordtype">void</span> <a class="code hl_function" href="structconnection.html#a09f6c2b0e1eee7ee7dcf71f603bb8ff5">connect</a>(cstring_ref filename, <span class="keywordtype">int</span> flags = SQLITE_OPEN_READWRITE | SQLITE_OPEN_CREATE);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    BOOST_SQLITE_DECL <span class="keywordtype">void</span> <a class="code hl_function" href="structconnection.html#a09f6c2b0e1eee7ee7dcf71f603bb8ff5">connect</a>(cstring_ref filename, <span class="keywordtype">int</span> flags, system::error_code &amp; ec);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#ac713792c43418f16a3f652759f56cc65">   56</a></span>    BOOST_SQLITE_DECL <span class="keywordtype">void</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#ac713792c43418f16a3f652759f56cc65">connect</a>(<a class="code hl_struct" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a> filename, <span class="keywordtype">int</span> flags = SQLITE_OPEN_READWRITE | SQLITE_OPEN_CREATE);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#af255dc0955da1a1be548c260bf7e5f0d">   57</a></span>    BOOST_SQLITE_DECL <span class="keywordtype">void</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#af255dc0955da1a1be548c260bf7e5f0d">connect</a>(<a class="code hl_struct" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a> filename, <span class="keywordtype">int</span> flags, system::error_code &amp; ec);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structconnection.html#a286eca600bba5a6598143e574e808346">   62</a></span>    BOOST_SQLITE_DECL <span class="keywordtype">void</span> <a class="code hl_function" href="structconnection.html#a286eca600bba5a6598143e574e808346">close</a>();</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    BOOST_SQLITE_DECL <span class="keywordtype">void</span> <a class="code hl_function" href="structconnection.html#a286eca600bba5a6598143e574e808346">close</a>(system::error_code &amp; ec, <a class="code hl_struct" href="structerror__info.html">error_info</a> &amp; ei);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#ab78c01b3fc0f8ce3ed6830b4c033de41">   62</a></span>    BOOST_SQLITE_DECL <span class="keywordtype">void</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#ab78c01b3fc0f8ce3ed6830b4c033de41">close</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#a1430660960bd93c8cd7f058d42762cd4">   63</a></span>    BOOST_SQLITE_DECL <span class="keywordtype">void</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a1430660960bd93c8cd7f058d42762cd4">close</a>(system::error_code &amp; ec, <a class="code hl_struct" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp; ei);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="structconnection.html#ab4d4e09709a41650f0074351a50be429">   67</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structconnection.html#ab4d4e09709a41650f0074351a50be429">valid</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> impl_ != <span class="keyword">nullptr</span>;}</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#a6fe681d06faba81b65fd95e642e1cc6c">   67</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a6fe681d06faba81b65fd95e642e1cc6c">valid</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> impl_ != <span class="keyword">nullptr</span>;}</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="structconnection.html#ab91386cea3c9fbb03ece14df3cd25bd9">   72</a></span>    BOOST_SQLITE_DECL <a class="code hl_struct" href="structresultset.html">resultset</a> <a class="code hl_function" href="structconnection.html#ab91386cea3c9fbb03ece14df3cd25bd9">query</a>(</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#a664bf51ddfb95d5e796a0226207b4f0b">   72</a></span>    BOOST_SQLITE_DECL <a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a664bf51ddfb95d5e796a0226207b4f0b">query</a>(</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            core::string_view q,</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            system::error_code &amp; ec,</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <a class="code hl_struct" href="structerror__info.html">error_info</a> &amp; ei);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <a class="code hl_struct" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp; ei);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    BOOST_SQLITE_DECL <a class="code hl_struct" href="structresultset.html">resultset</a> <a class="code hl_function" href="structconnection.html#ab91386cea3c9fbb03ece14df3cd25bd9">query</a>(core::string_view q);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#a286512170b74732e80553b88a449b1d9">   77</a></span>    BOOST_SQLITE_DECL <a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a286512170b74732e80553b88a449b1d9">query</a>(core::string_view q);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    static_resultset&lt;T&gt; <a class="code hl_function" href="structconnection.html#ab91386cea3c9fbb03ece14df3cd25bd9">query</a>(</div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#abe4eebcfe3e85bf537ece25d94c295a6">   80</a></span>    static_resultset&lt;T&gt; <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#abe4eebcfe3e85bf537ece25d94c295a6">query</a>(</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        core::string_view q,</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        system::error_code &amp; ec,</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_struct" href="structerror__info.html">error_info</a> &amp; ei)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_struct" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp; ei)</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        static_resultset&lt;T&gt; tmp = <a class="code hl_function" href="structconnection.html#ab91386cea3c9fbb03ece14df3cd25bd9">query</a>(q, ec, ei);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        static_resultset&lt;T&gt; tmp = query(q, ec, ei);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">if</span> (ec)</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordflow">return</span> {};</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        tmp.check_columns_(ec, ei);</div>
@@ -154,49 +178,54 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">return</span> tmp;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
+</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    static_resultset&lt;T&gt; <a class="code hl_function" href="structconnection.html#ab91386cea3c9fbb03ece14df3cd25bd9">query</a>(core::string_view q)</div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="}">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#a8a66a89bcc745c938a52fd2310fb0fce">   96</a></span>    static_resultset&lt;T&gt; <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a8a66a89bcc745c938a52fd2310fb0fce">query</a>(core::string_view q)</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    {</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        system::error_code ec;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <a class="code hl_struct" href="structerror__info.html">error_info</a> ei;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <a class="code hl_struct" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> ei;</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keyword">auto</span> tmp = query&lt;T&gt;(q, ec, ei);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">if</span> (ec)</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            throw_exception(system::system_error(ec, ei.message()));</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">return</span> tmp;</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    }</div>
+</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="structconnection.html#a3dff71fafbb74b77d96c21f35d1e645f">  109</a></span>    BOOST_SQLITE_DECL <span class="keywordtype">void</span> <a class="code hl_function" href="structconnection.html#a3dff71fafbb74b77d96c21f35d1e645f">execute</a>(</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>      cstring_ref q,</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#a790d727be159156b32b1c69a1aa500cf">  109</a></span>    BOOST_SQLITE_DECL <span class="keywordtype">void</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a790d727be159156b32b1c69a1aa500cf">execute</a>(</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>      <a class="code hl_struct" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a> q,</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        system::error_code &amp; ec,</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <a class="code hl_struct" href="structerror__info.html">error_info</a> &amp; ei);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <a class="code hl_struct" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp; ei);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    BOOST_SQLITE_DECL <span class="keywordtype">void</span> <a class="code hl_function" href="structconnection.html#a3dff71fafbb74b77d96c21f35d1e645f">execute</a>(cstring_ref q);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#a5132bfb8a6024a4f275f0f7cb2bfdc7e">  114</a></span>    BOOST_SQLITE_DECL <span class="keywordtype">void</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a5132bfb8a6024a4f275f0f7cb2bfdc7e">execute</a>(<a class="code hl_struct" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a> q);</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> StringLike,</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>             <span class="keyword">typename</span> = <span class="keyword">decltype</span>(std::declval&lt;const StringLike&amp;&gt;().c_str())&gt;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structconnection.html#a3dff71fafbb74b77d96c21f35d1e645f">execute</a>(</div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#a03b053021fcb8321750097d840a72025">  118</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a03b053021fcb8321750097d840a72025">execute</a>(</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keyword">const</span> StringLike&amp; q,</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        system::error_code &amp; ec,</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <a class="code hl_struct" href="structerror__info.html">error_info</a> &amp; ei)</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <a class="code hl_struct" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp; ei)</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    {</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <a class="code hl_function" href="structconnection.html#a3dff71fafbb74b77d96c21f35d1e645f">execute</a>(q.c_str(), ec, ei);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        execute(q.c_str(), ec, ei);</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    }</div>
+</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> StringLike,</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>             <span class="keyword">typename</span> = <span class="keyword">decltype</span>(std::declval&lt;const StringLike&amp;&gt;().c_str())&gt;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structconnection.html#a3dff71fafbb74b77d96c21f35d1e645f">execute</a>(<span class="keyword">const</span> StringLike &amp; q) { <a class="code hl_function" href="structconnection.html#a3dff71fafbb74b77d96c21f35d1e645f">execute</a>(q.c_str());}</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#a5addb59cc2400f8eb9a3c31c61f6fd8a">  127</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a5addb59cc2400f8eb9a3c31c61f6fd8a">execute</a>(<span class="keyword">const</span> StringLike &amp; q) { <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a5addb59cc2400f8eb9a3c31c61f6fd8a">execute</a>(q.c_str());}</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="structconnection.html#a1b9a1ca1cb020bacecb929b8165e32e9">  132</a></span>    BOOST_SQLITE_DECL <a class="code hl_struct" href="structstatement.html">statement</a> <a class="code hl_function" href="structconnection.html#a1b9a1ca1cb020bacecb929b8165e32e9">prepare</a>(</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#afc495d6e7122c608fbe6a472cf308981">  132</a></span>    BOOST_SQLITE_DECL <a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#afc495d6e7122c608fbe6a472cf308981">prepare</a>(</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            core::string_view q,</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            system::error_code &amp; ec,</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            <a class="code hl_struct" href="structerror__info.html">error_info</a> &amp; ei);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            <a class="code hl_struct" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp; ei);</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    BOOST_SQLITE_DECL <a class="code hl_struct" href="structstatement.html">statement</a> <a class="code hl_function" href="structconnection.html#a1b9a1ca1cb020bacecb929b8165e32e9">prepare</a>(core::string_view q);</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#af3645ef3e538d35815ad3ec55b0fc1b2">  137</a></span>    BOOST_SQLITE_DECL <a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#af3645ef3e538d35815ad3ec55b0fc1b2">prepare</a>(core::string_view q);</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
 <div class="foldopen" id="foldopen00141" data-start="{" data-end="}">
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="structconnection.html#ad2d0ad676fd508508f36ed2d73341307">  141</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structconnection.html#ad2d0ad676fd508508f36ed2d73341307">has_table</a>(</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        cstring_ref table,</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        cstring_ref db_name = <span class="stringliteral">&quot;main&quot;</span>)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#a465beee6852f3041750b77202f373755">  141</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a465beee6852f3041750b77202f373755">has_table</a>(</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <a class="code hl_struct" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a> table,</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <a class="code hl_struct" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a> db_name = <span class="stringliteral">&quot;main&quot;</span>)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>      <span class="keywordflow">return</span> sqlite3_table_column_metadata(impl_.get(), db_name.c_str(), table.c_str(),</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                                           <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>)</div>
@@ -205,10 +234,10 @@ $(function() { codefold.init(0); });
 </div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
 <div class="foldopen" id="foldopen00151" data-start="{" data-end="}">
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="structconnection.html#aadcfd2a8e2e850f8f8146f7d890e0dbd">  151</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structconnection.html#aadcfd2a8e2e850f8f8146f7d890e0dbd">has_column</a>(</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        cstring_ref table,</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        cstring_ref column,</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        cstring_ref db_name = <span class="stringliteral">&quot;main&quot;</span>)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1connection.html#a657d0363875afb2f0a5785e3cc88ed7a">  151</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#a657d0363875afb2f0a5785e3cc88ed7a">has_column</a>(</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <a class="code hl_struct" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a> table,</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        <a class="code hl_struct" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a> column,</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <a class="code hl_struct" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a> db_name = <span class="stringliteral">&quot;main&quot;</span>)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      <span class="keywordflow">return</span> sqlite3_table_column_metadata(impl_.get(), db_name.c_str(), table.c_str(), column.c_str(),</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                                           <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>)</div>
@@ -235,31 +264,44 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="preprocessor">#endif </span><span class="comment">//BOOST_SQLITE_CONNECTION_HPP</span></div>
-<div class="ttc" id="astructconnection_html"><div class="ttname"><a href="structconnection.html">connection</a></div><div class="ttdoc">main object for a connection to a database.</div><div class="ttdef"><b>Definition</b> connection.hpp:32</div></div>
-<div class="ttc" id="astructconnection_html_a09f6c2b0e1eee7ee7dcf71f603bb8ff5"><div class="ttname"><a href="structconnection.html#a09f6c2b0e1eee7ee7dcf71f603bb8ff5">connection::connect</a></div><div class="ttdeci">BOOST_SQLITE_DECL void connect(cstring_ref filename, int flags=SQLITE_OPEN_READWRITE|SQLITE_OPEN_CREATE)</div></div>
-<div class="ttc" id="astructconnection_html_a0a03bf09af97c043dff636f47c4fbaab"><div class="ttname"><a href="structconnection.html#a0a03bf09af97c043dff636f47c4fbaab">connection::release</a></div><div class="ttdeci">handle_type release() &amp;&amp;</div><div class="ttdoc">Release the owned handle.</div><div class="ttdef"><b>Definition</b> connection.hpp:38</div></div>
-<div class="ttc" id="astructconnection_html_a12865525cabc18015396eced3d57bb06"><div class="ttname"><a href="structconnection.html#a12865525cabc18015396eced3d57bb06">connection::connection</a></div><div class="ttdeci">connection()=default</div><div class="ttdoc">Default constructor.</div></div>
-<div class="ttc" id="astructconnection_html_a1b9a1ca1cb020bacecb929b8165e32e9"><div class="ttname"><a href="structconnection.html#a1b9a1ca1cb020bacecb929b8165e32e9">connection::prepare</a></div><div class="ttdeci">BOOST_SQLITE_DECL statement prepare(core::string_view q, system::error_code &amp;ec, error_info &amp;ei)</div></div>
-<div class="ttc" id="astructconnection_html_a286eca600bba5a6598143e574e808346"><div class="ttname"><a href="structconnection.html#a286eca600bba5a6598143e574e808346">connection::close</a></div><div class="ttdeci">BOOST_SQLITE_DECL void close()</div></div>
-<div class="ttc" id="astructconnection_html_a3dff71fafbb74b77d96c21f35d1e645f"><div class="ttname"><a href="structconnection.html#a3dff71fafbb74b77d96c21f35d1e645f">connection::execute</a></div><div class="ttdeci">BOOST_SQLITE_DECL void execute(cstring_ref q, system::error_code &amp;ec, error_info &amp;ei)</div></div>
-<div class="ttc" id="astructconnection_html_a6d1884855caabc948bb1785b4c4c9dc1"><div class="ttname"><a href="structconnection.html#a6d1884855caabc948bb1785b4c4c9dc1">connection::connection</a></div><div class="ttdeci">connection(handle_type handle, bool take_ownership=true)</div><div class="ttdoc">Construct the connection from a handle.</div><div class="ttdef"><b>Definition</b> connection.hpp:43</div></div>
-<div class="ttc" id="astructconnection_html_a7bb885ba9e5f79a0e0983299b8dd6fb1"><div class="ttname"><a href="structconnection.html#a7bb885ba9e5f79a0e0983299b8dd6fb1">connection::handle_type</a></div><div class="ttdeci">sqlite3 * handle_type</div><div class="ttdoc">The handle of the connection.</div><div class="ttdef"><b>Definition</b> connection.hpp:34</div></div>
-<div class="ttc" id="astructconnection_html_a7d01f1582ba9df43ab360853e5e0b69b"><div class="ttname"><a href="structconnection.html#a7d01f1582ba9df43ab360853e5e0b69b">connection::operator=</a></div><div class="ttdeci">connection &amp; operator=(connection &amp;&amp;)=default</div><div class="ttdoc">Move assign operator.</div></div>
-<div class="ttc" id="astructconnection_html_a84f2eeee0a6e45a8fb6a34beedff0003"><div class="ttname"><a href="structconnection.html#a84f2eeee0a6e45a8fb6a34beedff0003">connection::handle</a></div><div class="ttdeci">handle_type handle() const</div><div class="ttdoc">Returns the handle.</div><div class="ttdef"><b>Definition</b> connection.hpp:36</div></div>
-<div class="ttc" id="astructconnection_html_aa6cb17023e0393d49fdb29cd5cf3563f"><div class="ttname"><a href="structconnection.html#aa6cb17023e0393d49fdb29cd5cf3563f">connection::connection</a></div><div class="ttdeci">connection(cstring_ref filename, int flags=SQLITE_OPEN_READWRITE|SQLITE_OPEN_CREATE)</div><div class="ttdoc">Construct a connection and connect it to filename.. flags is set by SQLITE_OPEN_* flags.</div><div class="ttdef"><b>Definition</b> connection.hpp:50</div></div>
-<div class="ttc" id="astructconnection_html_aadcfd2a8e2e850f8f8146f7d890e0dbd"><div class="ttname"><a href="structconnection.html#aadcfd2a8e2e850f8f8146f7d890e0dbd">connection::has_column</a></div><div class="ttdeci">bool has_column(cstring_ref table, cstring_ref column, cstring_ref db_name=&quot;main&quot;) const</div><div class="ttdoc">Check if the database has the table.</div><div class="ttdef"><b>Definition</b> connection.hpp:151</div></div>
-<div class="ttc" id="astructconnection_html_ab4d4e09709a41650f0074351a50be429"><div class="ttname"><a href="structconnection.html#ab4d4e09709a41650f0074351a50be429">connection::valid</a></div><div class="ttdeci">bool valid() const</div><div class="ttdoc">Check if the database holds a valid handle.</div><div class="ttdef"><b>Definition</b> connection.hpp:67</div></div>
-<div class="ttc" id="astructconnection_html_ab91386cea3c9fbb03ece14df3cd25bd9"><div class="ttname"><a href="structconnection.html#ab91386cea3c9fbb03ece14df3cd25bd9">connection::query</a></div><div class="ttdeci">BOOST_SQLITE_DECL resultset query(core::string_view q, system::error_code &amp;ec, error_info &amp;ei)</div></div>
-<div class="ttc" id="astructconnection_html_ad2d0ad676fd508508f36ed2d73341307"><div class="ttname"><a href="structconnection.html#ad2d0ad676fd508508f36ed2d73341307">connection::has_table</a></div><div class="ttdeci">bool has_table(cstring_ref table, cstring_ref db_name=&quot;main&quot;) const</div><div class="ttdoc">Check if the database has the table.</div><div class="ttdef"><b>Definition</b> connection.hpp:141</div></div>
-<div class="ttc" id="astructconnection_html_ae5f93ab98ac0426971c6fc3e1f416fcc"><div class="ttname"><a href="structconnection.html#ae5f93ab98ac0426971c6fc3e1f416fcc">connection::connection</a></div><div class="ttdeci">connection(connection &amp;&amp;)=default</div><div class="ttdoc">Move constructor.</div></div>
-<div class="ttc" id="astructerror__info_html"><div class="ttname"><a href="structerror__info.html">error_info</a></div><div class="ttdoc">Additional information about error conditions stored in an sqlite-allocate string.</div><div class="ttdef"><b>Definition</b> error.hpp:33</div></div>
-<div class="ttc" id="astructresultset_html"><div class="ttname"><a href="structresultset.html">resultset</a></div><div class="ttdoc">Representation of a result from a database.</div><div class="ttdef"><b>Definition</b> resultset.hpp:41</div></div>
-<div class="ttc" id="astructstatement_html"><div class="ttname"><a href="structstatement.html">statement</a></div><div class="ttdoc">A statement used for a prepared-statement.</div><div class="ttdef"><b>Definition</b> statement.hpp:199</div></div>
-<div class="ttc" id="astructstatic__resultset_html"><div class="ttname"><a href="structstatic__resultset.html">static_resultset</a></div><div class="ttdoc">A typed resultset using a tuple or a described struct.</div><div class="ttdef"><b>Definition</b> static_resultset.hpp:273</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html">boost::sqlite::connection</a></div><div class="ttdoc">main object for a connection to a database.</div><div class="ttdef"><b>Definition</b> <a href="#l00031">connection.hpp:32</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a03b053021fcb8321750097d840a72025"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a03b053021fcb8321750097d840a72025">boost::sqlite::connection::execute</a></div><div class="ttdeci">void execute(const StringLike &amp;q, system::error_code &amp;ec, error_info &amp;ei)</div><div class="ttdef"><b>Definition</b> <a href="#l00118">connection.hpp:118</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a1430660960bd93c8cd7f058d42762cd4"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a1430660960bd93c8cd7f058d42762cd4">boost::sqlite::connection::close</a></div><div class="ttdeci">void close(system::error_code &amp;ec, error_info &amp;ei)</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a239cbf3e0076844e9e44c6e0d729855a"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a239cbf3e0076844e9e44c6e0d729855a">boost::sqlite::connection::operator=</a></div><div class="ttdeci">connection &amp; operator=(connection &amp;&amp;)=default</div><div class="ttdoc">Move assign operator.</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a286512170b74732e80553b88a449b1d9"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a286512170b74732e80553b88a449b1d9">boost::sqlite::connection::query</a></div><div class="ttdeci">resultset query(core::string_view q)</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a29785f338f0e6e2c8fb838d7a1c34f7b"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a29785f338f0e6e2c8fb838d7a1c34f7b">boost::sqlite::connection::connection</a></div><div class="ttdeci">connection(cstring_ref filename, int flags=SQLITE_OPEN_READWRITE|SQLITE_OPEN_CREATE)</div><div class="ttdoc">Construct a connection and connect it to filename.. flags is set by SQLITE_OPEN_* flags.</div><div class="ttdef"><b>Definition</b> <a href="#l00050">connection.hpp:50</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a465beee6852f3041750b77202f373755"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a465beee6852f3041750b77202f373755">boost::sqlite::connection::has_table</a></div><div class="ttdeci">bool has_table(cstring_ref table, cstring_ref db_name=&quot;main&quot;) const</div><div class="ttdoc">Check if the database has the table.</div><div class="ttdef"><b>Definition</b> <a href="#l00141">connection.hpp:141</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a49e6633362339c77291974203cfd3b51"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a49e6633362339c77291974203cfd3b51">boost::sqlite::connection::connection</a></div><div class="ttdeci">connection(connection &amp;&amp;)=default</div><div class="ttdoc">Move constructor.</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a5132bfb8a6024a4f275f0f7cb2bfdc7e"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a5132bfb8a6024a4f275f0f7cb2bfdc7e">boost::sqlite::connection::execute</a></div><div class="ttdeci">void execute(cstring_ref q)</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a5addb59cc2400f8eb9a3c31c61f6fd8a"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a5addb59cc2400f8eb9a3c31c61f6fd8a">boost::sqlite::connection::execute</a></div><div class="ttdeci">void execute(const StringLike &amp;q)</div><div class="ttdef"><b>Definition</b> <a href="#l00127">connection.hpp:127</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a657d0363875afb2f0a5785e3cc88ed7a"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a657d0363875afb2f0a5785e3cc88ed7a">boost::sqlite::connection::has_column</a></div><div class="ttdeci">bool has_column(cstring_ref table, cstring_ref column, cstring_ref db_name=&quot;main&quot;) const</div><div class="ttdoc">Check if the database has the table.</div><div class="ttdef"><b>Definition</b> <a href="#l00151">connection.hpp:151</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a664bf51ddfb95d5e796a0226207b4f0b"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a664bf51ddfb95d5e796a0226207b4f0b">boost::sqlite::connection::query</a></div><div class="ttdeci">resultset query(core::string_view q, system::error_code &amp;ec, error_info &amp;ei)</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a6fe681d06faba81b65fd95e642e1cc6c"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a6fe681d06faba81b65fd95e642e1cc6c">boost::sqlite::connection::valid</a></div><div class="ttdeci">bool valid() const</div><div class="ttdoc">Check if the database holds a valid handle.</div><div class="ttdef"><b>Definition</b> <a href="#l00067">connection.hpp:67</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a790d727be159156b32b1c69a1aa500cf"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a790d727be159156b32b1c69a1aa500cf">boost::sqlite::connection::execute</a></div><div class="ttdeci">void execute(cstring_ref q, system::error_code &amp;ec, error_info &amp;ei)</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a8a66a89bcc745c938a52fd2310fb0fce"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a8a66a89bcc745c938a52fd2310fb0fce">boost::sqlite::connection::query</a></div><div class="ttdeci">static_resultset&lt; T &gt; query(core::string_view q)</div><div class="ttdef"><b>Definition</b> <a href="#l00096">connection.hpp:96</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_a91591cbbda2363d5a95cf84779a48781"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#a91591cbbda2363d5a95cf84779a48781">boost::sqlite::connection::connection</a></div><div class="ttdeci">connection(handle_type handle, bool take_ownership=true)</div><div class="ttdoc">Construct the connection from a handle.</div><div class="ttdef"><b>Definition</b> <a href="#l00043">connection.hpp:43</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_aa8bb6a81ebce37234431ea719b4b9fa1"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#aa8bb6a81ebce37234431ea719b4b9fa1">boost::sqlite::connection::handle_type</a></div><div class="ttdeci">sqlite3 * handle_type</div><div class="ttdoc">The handle of the connection.</div><div class="ttdef"><b>Definition</b> <a href="#l00034">connection.hpp:34</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_ab26ea31dd368b7449fa765ebc8c235ff"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#ab26ea31dd368b7449fa765ebc8c235ff">boost::sqlite::connection::connection</a></div><div class="ttdeci">connection()=default</div><div class="ttdoc">Default constructor.</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_ab78c01b3fc0f8ce3ed6830b4c033de41"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#ab78c01b3fc0f8ce3ed6830b4c033de41">boost::sqlite::connection::close</a></div><div class="ttdeci">void close()</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_abe4eebcfe3e85bf537ece25d94c295a6"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#abe4eebcfe3e85bf537ece25d94c295a6">boost::sqlite::connection::query</a></div><div class="ttdeci">static_resultset&lt; T &gt; query(core::string_view q, system::error_code &amp;ec, error_info &amp;ei)</div><div class="ttdef"><b>Definition</b> <a href="#l00080">connection.hpp:80</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_ac713792c43418f16a3f652759f56cc65"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#ac713792c43418f16a3f652759f56cc65">boost::sqlite::connection::connect</a></div><div class="ttdeci">void connect(cstring_ref filename, int flags=SQLITE_OPEN_READWRITE|SQLITE_OPEN_CREATE)</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_aec95a55410f5f797dfe95db1d7f17d8a"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#aec95a55410f5f797dfe95db1d7f17d8a">boost::sqlite::connection::release</a></div><div class="ttdeci">handle_type release() &amp;&amp;</div><div class="ttdoc">Release the owned handle.</div><div class="ttdef"><b>Definition</b> <a href="#l00038">connection.hpp:38</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_af255dc0955da1a1be548c260bf7e5f0d"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#af255dc0955da1a1be548c260bf7e5f0d">boost::sqlite::connection::connect</a></div><div class="ttdeci">void connect(cstring_ref filename, int flags, system::error_code &amp;ec)</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_af3645ef3e538d35815ad3ec55b0fc1b2"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#af3645ef3e538d35815ad3ec55b0fc1b2">boost::sqlite::connection::prepare</a></div><div class="ttdeci">statement prepare(core::string_view q)</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_af490f97f7c5d8b7ba4c5b2affbbf62ad"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#af490f97f7c5d8b7ba4c5b2affbbf62ad">boost::sqlite::connection::handle</a></div><div class="ttdeci">handle_type handle() const</div><div class="ttdoc">Returns the handle.</div><div class="ttdef"><b>Definition</b> <a href="#l00036">connection.hpp:36</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_afc495d6e7122c608fbe6a472cf308981"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#afc495d6e7122c608fbe6a472cf308981">boost::sqlite::connection::prepare</a></div><div class="ttdeci">statement prepare(core::string_view q, system::error_code &amp;ec, error_info &amp;ei)</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1cstring__ref_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1cstring__ref.html">boost::sqlite::cstring_ref</a></div><div class="ttdoc">Small wrapper for a null-terminated string that can be directly passed to C APIS.</div><div class="ttdef"><b>Definition</b> <a href="cstring__ref_8hpp_source.html#l00029">cstring_ref.hpp:30</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1error__info_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1error__info.html">boost::sqlite::error_info</a></div><div class="ttdoc">Additional information about error conditions stored in an sqlite-allocate string.</div><div class="ttdef"><b>Definition</b> <a href="error_8hpp_source.html#l00032">error.hpp:33</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1resultset_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1resultset.html">boost::sqlite::resultset</a></div><div class="ttdoc">Representation of a result from a database.</div><div class="ttdef"><b>Definition</b> <a href="resultset_8hpp_source.html#l00040">resultset.hpp:41</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1statement_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1statement.html">boost::sqlite::statement</a></div><div class="ttdoc">A statement used for a prepared-statement.</div><div class="ttdef"><b>Definition</b> <a href="statement_8hpp_source.html#l00198">statement.hpp:199</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_c8984f1860c11f62f47abb6761e46c1e.html">boost</a></li><li class="navelem"><a class="el" href="dir_3e3942c4c59d28918e46de9324b21cf7.html">sqlite</a></li><li class="navelem"><b>connection.hpp</b></li>
+    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
 </body>
 </html>

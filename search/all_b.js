@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['open_0',['open',['../structvtab_1_1table.html#ae45ab93aefd9d94c927dcebb63832c46',1,'vtab::table']]],
-  ['operator_20bool_1',['operator bool',['../structvalue.html#a56f06e4bca6f629d94e0dd908dada54f',1,'value::operator bool()'],['../structfield.html#ae0bd09a0e540ecb59627808bc6514d96',1,'field::operator bool()']]],
-  ['operator_3d_2',['operator=',['../structconnection.html#a7d01f1582ba9df43ab360853e5e0b69b',1,'connection']]],
-  ['operator_5b_5d_3',['operator[]',['../structrow.html#a05c3b2b0ca5386a7483a38e18d363d8e',1,'row']]],
-  ['order_5fby_4',['order_by',['../structvtab_1_1index__info.html#ad3b552179a1296a1e8bc9f8bde4484f2',1,'vtab::index_info']]],
-  ['overload_5ffunctions_5',['overload_functions',['../structvtab_1_1overload__functions.html',1,'vtab']]]
+  ['name_0',['name',['../structboost_1_1sqlite_1_1savepoint.html#af39a9a5c13be43eb231fe025191e7ddd',1,'boost::sqlite::savepoint']]],
+  ['new_5f_1',['new_',['../structboost_1_1sqlite_1_1preupdate__context.html#adb342d1b03444f7cc6ca908a5c0da422',1,'boost::sqlite::preupdate_context']]],
+  ['next_2',['next',['../structboost_1_1sqlite_1_1vtab_1_1cursor.html#a49ed65ee522acbf11452a0e366650d08',1,'boost::sqlite::vtab::cursor::next()'],['../structboost_1_1sqlite_1_1vtab_1_1cursor_3_01void_01_4.html#a70671fc322afa1f5baecb330af234c9d',1,'boost::sqlite::vtab::cursor&lt; void &gt;::next()']]],
+  ['nochange_3',['nochange',['../structboost_1_1sqlite_1_1value.html#a479bf102a1ef9a3e6528fa1aea8e164f',1,'boost::sqlite::value']]],
+  ['not_5fnull_4',['not_null',['../structboost_1_1sqlite_1_1column__meta__data.html#a9152945f07a824b40e7310672e94107a',1,'boost::sqlite::column_meta_data']]],
+  ['null_5',['null',['../group__reference.html#gga54803a0f6eb577b3e3938ca6dc3f6818a37a6259cc0c1dae299a7866489dff0bd',1,'boost::sqlite']]],
+  ['numeric_5ftype_6',['numeric_type',['../structboost_1_1sqlite_1_1value.html#a5eb39de9167926c9ade1d500eb7085c6',1,'boost::sqlite::value']]]
 ];

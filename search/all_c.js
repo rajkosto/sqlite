@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['param_5fref_0',['param_ref',['../structparam__ref.html',1,'param_ref'],['../structparam__ref.html#a99b73ec4dcf5f34c51b81f052bb44ec8',1,'param_ref::param_ref()=default'],['../structparam__ref.html#a8a8e4e464afcdf2014cedab777210566',1,'param_ref::param_ref(variant2::monostate)'],['../structparam__ref.html#a18fd1eec680bd68952305576973e5e5e',1,'param_ref::param_ref(std::nullptr_t)'],['../structparam__ref.html#ada21994ed548aadf9b746c02a5e86cbc',1,'param_ref::param_ref(I value)'],['../structparam__ref.html#ae54b3dcab7e44048c0fa31fd17076010',1,'param_ref::param_ref(blob_view blob)'],['../structparam__ref.html#a614a8b08db96e08815b0c91cf818a59b',1,'param_ref::param_ref(string_view text)'],['../structparam__ref.html#a68c1575fb62577c79118542397fabdd5',1,'param_ref::param_ref(double value)'],['../structparam__ref.html#ac9f3c1da75b33b82831ab14e32191be6',1,'param_ref::param_ref(zero_blob zb)'],['../structparam__ref.html#a0ca06bbf2f59777ba7254fac04328573',1,'param_ref::param_ref(T &amp;&amp;t, decltype(variant2::visit(make_visitor(), std::forward&lt; T &gt;(t))) *=nullptr)']]],
-  ['prepare_1',['prepare',['../structconnection.html#a1b9a1ca1cb020bacecb929b8165e32e9',1,'connection']]],
-  ['primary_5fkey_2',['primary_key',['../structcolumn__meta__data.html#ae5588d359a88e520cfc79db64e56307c',1,'column_meta_data']]]
+  ['old_0',['old',['../structboost_1_1sqlite_1_1preupdate__context.html#ac631f5fd9bafc3c40fb9a545e2166a54',1,'boost::sqlite::preupdate_context']]],
+  ['open_1',['open',['../structboost_1_1sqlite_1_1vtab_1_1table.html#a1a0ce28737f57ad383875f5ae0faf336',1,'boost::sqlite::vtab::table']]],
+  ['operator_20bool_2',['operator bool',['../structboost_1_1sqlite_1_1field.html#a166ed4f296bf66519b8c171b5650974a',1,'boost::sqlite::field::operator bool()'],['../structboost_1_1sqlite_1_1value.html#a7035a45661fbb59f1c86df45cfb3e377',1,'boost::sqlite::value::operator bool()']]],
+  ['operator_3d_3',['operator=',['../structboost_1_1sqlite_1_1connection.html#a239cbf3e0076844e9e44c6e0d729855a',1,'boost::sqlite::connection']]],
+  ['operator_5b_5d_4',['operator[]',['../structboost_1_1sqlite_1_1row.html#aaab460b0285d34c8d8717522535a3b26',1,'boost::sqlite::row']]],
+  ['order_5fby_5',['order_by',['../structboost_1_1sqlite_1_1vtab_1_1index__info.html#ab76bfead13963f99d3e159a180187fbb',1,'boost::sqlite::vtab::index_info']]],
+  ['overload_5ffunctions_6',['overload_functions',['../structboost_1_1sqlite_1_1vtab_1_1overload__functions.html',1,'boost::sqlite::vtab']]]
 ];

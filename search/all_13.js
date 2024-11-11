@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['write_5fat_0',['write_at',['../structblob__handle.html#aaa087523aa0078ae266fd6ae5329bc02',1,'blob_handle']]]
+  ['valid_0',['valid',['../structboost_1_1sqlite_1_1connection.html#a6fe681d06faba81b65fd95e642e1cc6c',1,'boost::sqlite::connection']]],
+  ['value_1',['value',['../structboost_1_1sqlite_1_1value.html',1,'boost::sqlite::value'],['../structboost_1_1sqlite_1_1value.html#abdf3e268f66a902825f3266b05a9c531',1,'boost::sqlite::value::value()']]],
+  ['value_5ftype_2',['value_type',['../group__reference.html#ga54803a0f6eb577b3e3938ca6dc3f6818',1,'boost::sqlite']]],
+  ['values_20parameters_3',['Fields, values &amp; parameters',['../index.html#autotoc_md3',1,'']]],
+  ['vtables_4',['Vtables',['../index.html#autotoc_md6',1,'']]]
 ];

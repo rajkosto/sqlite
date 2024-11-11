@@ -5,15 +5,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Boost.sqlite: /home/klemens/develop/sqlite/include/boost/sqlite/static_resultset.hpp Source File</title>
+<title>boost_sqlite: boost/sqlite/static_resultset.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -25,7 +36,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Boost.sqlite<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">boost_sqlite<span id="projectnumber">&#160;1</span>
    </div>
    <div id="projectbrief">A sqlite C++ library</div>
   </td>
@@ -56,6 +67,23 @@ $(function() {
 $(function() { codefold.init(0); });
 /* @license-end */
 </script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('static__resultset_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -77,11 +105,6 @@ $(function() { codefold.init(0); });
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_1878a3f4746a95c6aad317458cc7ef80.html">boost</a></li><li class="navelem"><a class="el" href="dir_078c9aa888cc7c345cd1cef81b37df35.html">sqlite</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">static_resultset.hpp</div></div>
 </div><!--header-->
@@ -116,35 +139,35 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structdetail_1_1value__to__tag.html">   31</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdetail_1_1value__to__tag.html">value_to_tag</a> {};</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">struct </span>value_to_tag {};</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">inline</span> <a class="code hl_struct" href="structvalue.html">value</a>        tag_invoke(value_to_tag&lt;value&gt;,        <span class="keyword">const</span> <a class="code hl_struct" href="structfield.html">field</a> &amp; f) {<span class="keywordflow">return</span> f.get_value();}</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">inline</span> <span class="keywordtype">int</span>          tag_invoke(value_to_tag&lt;int&gt;,          <span class="keyword">const</span> <a class="code hl_struct" href="structfield.html">field</a> &amp; f) {<span class="keywordflow">return</span> f.<a class="code hl_function" href="structvalue.html#a7369ec92d3c49ccb59d9e4e8038889d8">get_int</a>();}</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">inline</span> sqlite_int64 tag_invoke(value_to_tag&lt;sqlite_int64&gt;, <span class="keyword">const</span> <a class="code hl_struct" href="structfield.html">field</a> &amp; f) {<span class="keywordflow">return</span> f.<a class="code hl_function" href="structvalue.html#aba1ce6d6bf5a356a65864a87d81e6ac7">get_int64</a>();}</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">inline</span> <span class="keywordtype">double</span>       tag_invoke(value_to_tag&lt;double&gt;,       <span class="keyword">const</span> <a class="code hl_struct" href="structfield.html">field</a> &amp; f) {<span class="keywordflow">return</span> f.<a class="code hl_function" href="structvalue.html#a97929f0e2657b8354a2c37c1d92475ab">get_double</a>();}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">inline</span> value        tag_invoke(value_to_tag&lt;value&gt;,        <span class="keyword">const</span> field &amp; f) {<span class="keywordflow">return</span> f.get_value();}</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">inline</span> <span class="keywordtype">int</span>          tag_invoke(value_to_tag&lt;int&gt;,          <span class="keyword">const</span> field &amp; f) {<span class="keywordflow">return</span> f.get_int();}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">inline</span> sqlite_int64 tag_invoke(value_to_tag&lt;sqlite_int64&gt;, <span class="keyword">const</span> field &amp; f) {<span class="keywordflow">return</span> f.get_int64();}</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">inline</span> <span class="keywordtype">double</span>       tag_invoke(value_to_tag&lt;double&gt;,       <span class="keyword">const</span> field &amp; f) {<span class="keywordflow">return</span> f.get_double();}</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Allocator, <span class="keyword">typename</span> Traits&gt;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">inline</span> std::basic_string&lt;char, Allocator, Traits&gt;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    tag_invoke(value_to_tag&lt;std::basic_string&lt;char, Allocator, Traits&gt;&gt;, <span class="keyword">const</span> <a class="code hl_struct" href="structfield.html">field</a> &amp; f)</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    tag_invoke(value_to_tag&lt;std::basic_string&lt;char, Allocator, Traits&gt;&gt;, <span class="keyword">const</span> field &amp; f)</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordflow">return</span> f.<a class="code hl_function" href="structvalue.html#a849126ae462a9d65ac76b07439842437">get_text</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordflow">return</span> f.get_text();</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">inline</span> string_view  tag_invoke(value_to_tag&lt;string_view&gt;, <span class="keyword">const</span> <a class="code hl_struct" href="structfield.html">field</a> &amp; f) {<span class="keywordflow">return</span> f.<a class="code hl_function" href="structvalue.html#a849126ae462a9d65ac76b07439842437">get_text</a>();}</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">inline</span> <a class="code hl_struct" href="structblob.html">blob</a>         tag_invoke(value_to_tag&lt;blob&gt;,        <span class="keyword">const</span> <a class="code hl_struct" href="structfield.html">field</a> &amp; f) {<span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group__reference.html#gga5b7c2b5c96c13d5b5d2842e91794f6c1aee26908bf9629eeb4b37dac350f4754a">blob</a>(f.get_blob());}</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">inline</span> <a class="code hl_struct" href="structblob__view.html">blob_view</a>    tag_invoke(value_to_tag&lt;blob_view&gt;,   <span class="keyword">const</span> <a class="code hl_struct" href="structfield.html">field</a> &amp; f) {<span class="keywordflow">return</span> f.<a class="code hl_function" href="structvalue.html#a795623f83fa4aebb7d238bdd63976894">get_blob</a>();}</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">inline</span> string_view  tag_invoke(value_to_tag&lt;string_view&gt;, <span class="keyword">const</span> field &amp; f) {<span class="keywordflow">return</span> f.get_text();}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">inline</span> <a class="code hl_enumvalue" href="group__reference.html#gga54803a0f6eb577b3e3938ca6dc3f6818aee26908bf9629eeb4b37dac350f4754a">blob</a>         tag_invoke(value_to_tag&lt;blob&gt;,        <span class="keyword">const</span> field &amp; f) {<span class="keywordflow">return</span> <a class="code hl_enumvalue" href="group__reference.html#gga54803a0f6eb577b3e3938ca6dc3f6818aee26908bf9629eeb4b37dac350f4754a">blob</a>(f.get_blob());}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">inline</span> blob_view    tag_invoke(value_to_tag&lt;blob_view&gt;,   <span class="keyword">const</span> field &amp; f) {<span class="keywordflow">return</span> f.get_blob();}</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span>&gt;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structdetail_1_1check__columns__tag.html">   51</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdetail_1_1check__columns__tag.html">check_columns_tag</a> {};</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">struct </span>check_columns_tag {};</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span>&gt;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structdetail_1_1convert__row__tag.html">   55</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdetail_1_1convert__row__tag.html">convert_row_tag</a> {};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">struct </span>convert_row_tag {};</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> ... Args&gt;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keywordtype">void</span> tag_invoke(<a class="code hl_struct" href="structdetail_1_1check__columns__tag.html">check_columns_tag</a>&lt;std::tuple&lt;Args...&gt;&gt;, <span class="keyword">const</span> <a class="code hl_struct" href="structresultset.html">resultset</a> &amp; r,</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                system::error_code &amp;ec, <a class="code hl_struct" href="structerror__info.html">error_info</a> &amp; ei)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keywordtype">void</span> tag_invoke(check_columns_tag&lt;std::tuple&lt;Args...&gt;&gt;, <span class="keyword">const</span> resultset &amp; r,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                system::error_code &amp;ec, error_info &amp; ei)</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordflow">if</span> (r.column_count() != <span class="keyword">sizeof</span>...(Args))</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  {</div>
@@ -154,7 +177,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Tuple, std::size_t ... Ns&gt;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>Tuple convert_row_to_tuple_impl(convert_row_tag&lt;Tuple&gt;, <span class="keyword">const</span> <a class="code hl_struct" href="structrow.html">row</a> &amp; r,</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>Tuple convert_row_to_tuple_impl(convert_row_tag&lt;Tuple&gt;, <span class="keyword">const</span> row &amp; r,</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                                              mp11::index_sequence&lt;Ns...&gt;)</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordflow">return</span> Tuple{ tag_invoke(value_to_tag&lt;<span class="keyword">typename</span> std::tuple_element&lt;Ns, Tuple&gt;::type&gt;{}, r[Ns])... };</div>
@@ -163,7 +186,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> ... Args&gt;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>std::tuple&lt;Args...&gt; tag_invoke(convert_row_tag&lt;std::tuple&lt;Args...&gt;&gt; tag, <span class="keyword">const</span> <a class="code hl_struct" href="structrow.html">row</a> &amp; r)</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>std::tuple&lt;Args...&gt; tag_invoke(convert_row_tag&lt;std::tuple&lt;Args...&gt;&gt; tag, <span class="keyword">const</span> row &amp; r)</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>{</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordflow">return</span> convert_row_to_tuple_impl(tag, r, mp11::make_index_sequence&lt;<span class="keyword">sizeof</span>...(Args)&gt;{});</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
@@ -171,8 +194,8 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#if defined(BOOST_DESCRIBE_CXX14)</span></div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>template&lt;typename T, typename = typename std::enable_if&lt;describe::has_describe_members&lt;T&gt;::value&gt;::type&gt;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keywordtype">void</span> tag_invoke(check_columns_tag&lt;T&gt;, <span class="keyword">const</span> <a class="code hl_struct" href="structresultset.html">resultset</a> &amp; r,</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                system::error_code &amp;ec, <a class="code hl_struct" href="structerror__info.html">error_info</a> &amp; ei)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keywordtype">void</span> tag_invoke(check_columns_tag&lt;T&gt;, <span class="keyword">const</span> resultset &amp; r,</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                system::error_code &amp;ec, error_info &amp; ei)</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>{</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keyword">using </span>mems = boost::describe::describe_members&lt;T, describe::mod_public&gt;;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keyword">constexpr</span> std::size_t sz = mp11::mp_size&lt;mems&gt;();</div>
@@ -227,7 +250,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>}</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>template&lt;typename T, typename = typename std::enable_if&lt;describe::has_describe_members&lt;T&gt;::value&gt;::type&gt;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>T tag_invoke(convert_row_tag&lt;T&gt; tag, <span class="keyword">const</span> <a class="code hl_struct" href="structrow.html">row</a> &amp; r)</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>T tag_invoke(convert_row_tag&lt;T&gt; tag, <span class="keyword">const</span> row &amp; r)</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>{</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  T res;</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;&amp; c: r)</div>
@@ -251,8 +274,8 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  <span class="keyword">requires</span> (std::is_aggregate_v&lt;T&gt; &amp;&amp; !describe::has_describe_members&lt;T&gt;::value)</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="keywordtype">void</span> tag_invoke(check_columns_tag&lt;T&gt;, <span class="keyword">const</span> <a class="code hl_struct" href="structresultset.html">resultset</a> &amp; r,</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                system::error_code &amp;ec, <a class="code hl_struct" href="structerror__info.html">error_info</a> &amp; ei)</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="keywordtype">void</span> tag_invoke(check_columns_tag&lt;T&gt;, <span class="keyword">const</span> resultset &amp; r,</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                system::error_code &amp;ec, error_info &amp; ei)</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>{</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <span class="keyword">constexpr</span> std::size_t sz = pfr::tuple_size_v&lt;T&gt;;</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="keywordflow">if</span> (r.column_count() != sz)</div>
@@ -305,7 +328,7 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <span class="keyword">requires</span> (std::is_aggregate_v&lt;T&gt; &amp;&amp; !describe::has_describe_members&lt;T&gt;::value)</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>T tag_invoke(convert_row_tag&lt;T&gt; tag, <span class="keyword">const</span> <a class="code hl_struct" href="structrow.html">row</a> &amp; r)</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>T tag_invoke(convert_row_tag&lt;T&gt; tag, <span class="keyword">const</span> row &amp; r)</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>{</div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  T res;</div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;&amp; c: r)</div>
@@ -330,50 +353,50 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00272" data-start="{" data-end="};">
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="structstatic__resultset.html">  272</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structstatic__resultset.html">static_resultset</a></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1static__resultset.html">  272</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a></div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>{</div>
 <div class="foldopen" id="foldopen00275" data-start="{" data-end="}">
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="structstatic__resultset.html#a1c032964cd36bd51944aed4cdce485b3">  275</a></span>  T <a class="code hl_function" href="structstatic__resultset.html#a1c032964cd36bd51944aed4cdce485b3">current</a>() const &amp;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1static__resultset.html#a5ecdd49ba9dfcc34ac086e3e5b1abe94">  275</a></span>  T <a class="code hl_function" href="structboost_1_1sqlite_1_1static__resultset.html#a5ecdd49ba9dfcc34ac086e3e5b1abe94">current</a>() const &amp;</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  {</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keywordflow">return</span> detail::tag_invoke(<a class="code hl_struct" href="structdetail_1_1convert__row__tag.html">detail::convert_row_tag&lt;T&gt;</a>{}, result_.<a class="code hl_function" href="structresultset.html#a551c148dbf51ed608e466b67aa4859a2">current</a>());</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keywordflow">return</span> detail::tag_invoke(detail::convert_row_tag&lt;T&gt;{}, result_.current());</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  }</div>
 </div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="structstatic__resultset.html#a0193b2a5d05474101f1b06e40b8d1212">  280</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="structstatic__resultset.html#a0193b2a5d05474101f1b06e40b8d1212">done</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> result_.<a class="code hl_function" href="structresultset.html#a138d608ed0a7057dbebafb0c81611cf5">done</a>();}</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1static__resultset.html#a8a18f96207f707976ec6810f57f3bd98">  280</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1static__resultset.html#a8a18f96207f707976ec6810f57f3bd98">done</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> result_.done();}</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="structstatic__resultset.html#a78a3ac81d14dfc3bae55fb79f3b25bdb">  284</a></span>  BOOST_SQLITE_DECL <span class="keywordtype">bool</span> <a class="code hl_function" href="structstatic__resultset.html#a78a3ac81d14dfc3bae55fb79f3b25bdb">read_next</a>(system::error_code &amp; ec, <a class="code hl_struct" href="structerror__info.html">error_info</a> &amp; ei) { <span class="keywordflow">return</span> result_.<a class="code hl_function" href="structresultset.html#a70109199c40fb51e1bfddebc195b196b">read_next</a>(); }</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  BOOST_SQLITE_DECL <span class="keywordtype">bool</span> read_next()                                         { <span class="keywordflow">return</span> result_.<a class="code hl_function" href="structresultset.html#a70109199c40fb51e1bfddebc195b196b">read_next</a>(); }</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1static__resultset.html#a2adb2bf825e69bb6740995943535399c">  284</a></span>  BOOST_SQLITE_DECL <span class="keywordtype">bool</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1static__resultset.html#a2adb2bf825e69bb6740995943535399c">read_next</a>(system::error_code &amp; ec, <a class="code hl_struct" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp; ei) { <span class="keywordflow">return</span> result_.read_next(); }</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1static__resultset.html#a267ae7723d28bd85f693a72b63ade408">  285</a></span>  BOOST_SQLITE_DECL <span class="keywordtype">bool</span> <a class="code hl_function" href="structboost_1_1sqlite_1_1static__resultset.html#a267ae7723d28bd85f693a72b63ade408">read_next</a>()                                         { <span class="keywordflow">return</span> result_.read_next(); }</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  std::size_t column_count()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> result_.column_count(); }</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="structstatic__resultset.html#a111ff524aac7144d3277568bc2940422">  291</a></span>  core::string_view <a class="code hl_function" href="structstatic__resultset.html#a111ff524aac7144d3277568bc2940422">column_name</a>(std::size_t idx)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> result_.<a class="code hl_function" href="structresultset.html#adb3728a3ec39c29bb6e6f40920d0800a">column_name</a>(idx); }</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1static__resultset.html#a188365756bcd7db40fcbaf63e9b56859">  291</a></span>  core::string_view <a class="code hl_function" href="structboost_1_1sqlite_1_1static__resultset.html#a188365756bcd7db40fcbaf63e9b56859">column_name</a>(std::size_t idx)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> result_.column_name(idx); }</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno"><a class="line" href="structstatic__resultset.html#a9582ed77d61c6ac36d654687259ef558">  294</a></span>  core::string_view <a class="code hl_function" href="structstatic__resultset.html#a9582ed77d61c6ac36d654687259ef558">table_name</a>(std::size_t idx)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> result_.<a class="code hl_function" href="structresultset.html#a0b4badd4429261a2941593f52dcd538d">table_name</a>(idx);}</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno"><a class="line" href="structstatic__resultset.html#a792a52a70039f974aab3b9600d5a0208">  296</a></span>  core::string_view <a class="code hl_function" href="structstatic__resultset.html#a792a52a70039f974aab3b9600d5a0208">column_origin_name</a>(std::size_t idx)<span class="keyword"> const  </span>{ <span class="keywordflow">return</span> result_.<a class="code hl_function" href="structresultset.html#a968d8c12534892f56d192526c95e5dbf">column_origin_name</a>(idx);}</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1static__resultset.html#acd192985a941cfc952455cc6d54d59a9">  294</a></span>  core::string_view <a class="code hl_function" href="structboost_1_1sqlite_1_1static__resultset.html#acd192985a941cfc952455cc6d54d59a9">table_name</a>(std::size_t idx)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> result_.table_name(idx);}</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1static__resultset.html#a88cc1f268821399170eb1ffcd13636ee">  296</a></span>  core::string_view <a class="code hl_function" href="structboost_1_1sqlite_1_1static__resultset.html#a88cc1f268821399170eb1ffcd13636ee">column_origin_name</a>(std::size_t idx)<span class="keyword"> const  </span>{ <span class="keywordflow">return</span> result_.column_origin_name(idx);}</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  <a class="code hl_struct" href="structstatic__resultset.html">static_resultset</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  <a class="code hl_struct" href="structstatic__resultset.html">static_resultset</a>(<a class="code hl_struct" href="structresultset.html">resultset</a> &amp;&amp; result) : result_(std::move(result))</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  <a class="code hl_struct" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  <a class="code hl_struct" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>(<a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> &amp;&amp; result) : result_(std::move(result))</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  {</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  }</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
 <div class="foldopen" id="foldopen00305" data-start="{" data-end="};">
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="structstatic__resultset_1_1iterator.html">  305</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structstatic__resultset_1_1iterator.html">iterator</a></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1static__resultset_1_1iterator.html">  305</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structboost_1_1sqlite_1_1static__resultset_1_1iterator.html">iterator</a></div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  {</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keyword">using </span>value_type = T;</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    <span class="keyword">using </span>difference_type   = int;</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    <span class="keyword">using </span>reference         = T&amp;;</div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keyword">using </span>iterator_category = std::forward_iterator_tag;</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    <a class="code hl_struct" href="structstatic__resultset_1_1iterator.html">iterator</a>()</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    <a class="code hl_struct" href="structboost_1_1sqlite_1_1static__resultset_1_1iterator.html">iterator</a>()</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    {</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    }</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    <span class="keyword">explicit</span> <a class="code hl_struct" href="structstatic__resultset_1_1iterator.html">iterator</a>(<a class="code hl_struct" href="structresultset_1_1iterator.html">resultset::iterator</a> itr) : itr_(itr)</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    <span class="keyword">explicit</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1static__resultset_1_1iterator.html">iterator</a>(<a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset_1_1iterator.html">resultset::iterator</a> itr) : itr_(itr)</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    {</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>      <span class="keywordflow">if</span> (itr-&gt;size() &gt; 0ul)</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        value_ = detail::tag_invoke(<a class="code hl_struct" href="structdetail_1_1convert__row__tag.html">detail::convert_row_tag&lt;T&gt;</a>{}, *itr);</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        value_ = detail::tag_invoke(detail::convert_row_tag&lt;T&gt;{}, *itr);</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    }</div>
 <div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <span class="keywordtype">bool</span> operator!=(<a class="code hl_struct" href="structstatic__resultset_1_1iterator.html">iterator</a> rhs)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <span class="keywordtype">bool</span> operator!=(<a class="code hl_struct" href="structboost_1_1sqlite_1_1static__resultset_1_1iterator.html">iterator</a> rhs)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>      <span class="keywordflow">return</span> itr_ != rhs.itr_;</div>
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>    }</div>
@@ -381,36 +404,36 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    value_type &amp;operator*()  { <span class="keywordflow">return</span> value_; }</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    value_type *operator-&gt;() { <span class="keywordflow">return</span> &amp;value_; }</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <a class="code hl_struct" href="structstatic__resultset_1_1iterator.html">iterator</a>&amp; operator++()</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <a class="code hl_struct" href="structboost_1_1sqlite_1_1static__resultset_1_1iterator.html">iterator</a>&amp; operator++()</div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    {</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>      ++itr_;</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>      <span class="keywordflow">if</span> (itr_-&gt;<a class="code hl_function" href="structrow.html#aaff9af007abd7f744fb7d7a6baffe70b">size</a>() &gt; 0ul)</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        value_ = detail::tag_invoke(<a class="code hl_struct" href="structdetail_1_1convert__row__tag.html">detail::convert_row_tag&lt;T&gt;</a>{}, *itr_);</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>      <span class="keywordflow">if</span> (itr_-&gt;size() &gt; 0ul)</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        value_ = detail::tag_invoke(detail::convert_row_tag&lt;T&gt;{}, *itr_);</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>    }</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <a class="code hl_struct" href="structstatic__resultset_1_1iterator.html">iterator</a> operator++(<span class="keywordtype">int</span>)</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>    <a class="code hl_struct" href="structboost_1_1sqlite_1_1static__resultset_1_1iterator.html">iterator</a> operator++(<span class="keywordtype">int</span>)</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>    {</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>      <span class="keyword">auto</span> l = *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>      ++(*this);</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>      <span class="keywordflow">return</span> l;</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    }</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>   <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    <a class="code hl_struct" href="structresultset_1_1iterator.html">resultset::iterator</a> itr_;</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    <a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset_1_1iterator.html">resultset::iterator</a> itr_;</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    value_type value_;</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  };</div>
 </div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno"><a class="line" href="structstatic__resultset.html#a9d4e0272977bd2168ab95cfff6141cb4">  349</a></span>  <a class="code hl_struct" href="structstatic__resultset_1_1iterator.html">iterator</a> <a class="code hl_function" href="structstatic__resultset.html#a9d4e0272977bd2168ab95cfff6141cb4">begin</a>() { <span class="keywordflow">return</span> <a class="code hl_struct" href="structstatic__resultset_1_1iterator.html">iterator</a>(result_.<a class="code hl_function" href="structresultset.html#a0fc7ad97ee9b5dfe6f8bfb2cc2c9f759">begin</a>());}</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno"><a class="line" href="structstatic__resultset.html#a20edb2babbd666cee15b6d7f86060b1d">  351</a></span>  <a class="code hl_struct" href="structstatic__resultset_1_1iterator.html">iterator</a>   <a class="code hl_function" href="structstatic__resultset.html#a20edb2babbd666cee15b6d7f86060b1d">end</a>() { <span class="keywordflow">return</span> <a class="code hl_struct" href="structstatic__resultset_1_1iterator.html">iterator</a>(result_.<a class="code hl_function" href="structresultset.html#a783ab7261954fca273852d57119860ab">end</a>()); }</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1static__resultset.html#a5f32a5a36561dc3043d2f827d56bfc1e">  349</a></span>  <a class="code hl_struct" href="structboost_1_1sqlite_1_1static__resultset_1_1iterator.html">iterator</a> <a class="code hl_function" href="structboost_1_1sqlite_1_1static__resultset.html#a5f32a5a36561dc3043d2f827d56bfc1e">begin</a>() { <span class="keywordflow">return</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1static__resultset_1_1iterator.html">iterator</a>(result_.begin());}</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno"><a class="line" href="structboost_1_1sqlite_1_1static__resultset.html#aa696fc3151d4207e14cb4927fb3451b4">  351</a></span>  <a class="code hl_struct" href="structboost_1_1sqlite_1_1static__resultset_1_1iterator.html">iterator</a>   <a class="code hl_function" href="structboost_1_1sqlite_1_1static__resultset.html#aa696fc3151d4207e14cb4927fb3451b4">end</a>() { <span class="keywordflow">return</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1static__resultset_1_1iterator.html">iterator</a>(result_.end()); }</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code hl_struct" href="structconnection.html">connection</a>;</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code hl_struct" href="structstatement.html">statement</a>;</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>  <a class="code hl_struct" href="structresultset.html">resultset</a> result_;</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  <span class="keywordtype">void</span> check_columns_( system::error_code &amp; ec, <a class="code hl_struct" href="structerror__info.html">error_info</a> &amp; ei)</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">connection</a>;</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>  <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a>;</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>  <a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> result_;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  <span class="keywordtype">void</span> check_columns_( system::error_code &amp; ec, <a class="code hl_struct" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp; ei)</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>  {</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    detail::tag_invoke(<a class="code hl_struct" href="structdetail_1_1check__columns__tag.html">detail::check_columns_tag&lt;T&gt;</a>{}, result_, ec, ei);</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    detail::tag_invoke(detail::check_columns_tag&lt;T&gt;{}, result_, ec, ei);</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>  }</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>};</div>
 </div>
@@ -418,48 +441,31 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>BOOST_SQLITE_END_NAMESPACE</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span> </div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span><span class="preprocessor">#endif </span><span class="comment">//BOOST_SQLITE_STATIC_RESULTSET_HPP</span></div>
-<div class="ttc" id="agroup__reference_html_gga5b7c2b5c96c13d5b5d2842e91794f6c1aee26908bf9629eeb4b37dac350f4754a"><div class="ttname"><a href="group__reference.html#gga5b7c2b5c96c13d5b5d2842e91794f6c1aee26908bf9629eeb4b37dac350f4754a">value_type::blob</a></div><div class="ttdeci">@ blob</div><div class="ttdoc">A binary value.</div></div>
-<div class="ttc" id="astructblob__view_html"><div class="ttname"><a href="structblob__view.html">blob_view</a></div><div class="ttdoc">a view to a binary large object</div><div class="ttdef"><b>Definition</b> blob.hpp:21</div></div>
-<div class="ttc" id="astructblob_html"><div class="ttname"><a href="structblob.html">blob</a></div><div class="ttdoc">An object that owns a binary large object.</div><div class="ttdef"><b>Definition</b> blob.hpp:48</div></div>
-<div class="ttc" id="astructconnection_html"><div class="ttname"><a href="structconnection.html">connection</a></div><div class="ttdoc">main object for a connection to a database.</div><div class="ttdef"><b>Definition</b> connection.hpp:32</div></div>
-<div class="ttc" id="astructdetail_1_1check__columns__tag_html"><div class="ttname"><a href="structdetail_1_1check__columns__tag.html">detail::check_columns_tag</a></div><div class="ttdef"><b>Definition</b> static_resultset.hpp:51</div></div>
-<div class="ttc" id="astructdetail_1_1convert__row__tag_html"><div class="ttname"><a href="structdetail_1_1convert__row__tag.html">detail::convert_row_tag</a></div><div class="ttdef"><b>Definition</b> static_resultset.hpp:55</div></div>
-<div class="ttc" id="astructdetail_1_1value__to__tag_html"><div class="ttname"><a href="structdetail_1_1value__to__tag.html">detail::value_to_tag</a></div><div class="ttdef"><b>Definition</b> static_resultset.hpp:31</div></div>
-<div class="ttc" id="astructerror__info_html"><div class="ttname"><a href="structerror__info.html">error_info</a></div><div class="ttdoc">Additional information about error conditions stored in an sqlite-allocate string.</div><div class="ttdef"><b>Definition</b> error.hpp:33</div></div>
-<div class="ttc" id="astructfield_html"><div class="ttname"><a href="structfield.html">field</a></div><div class="ttdoc">A holder for a sqlite field, i.e. something returned from a query.</div><div class="ttdef"><b>Definition</b> field.hpp:22</div></div>
-<div class="ttc" id="astructresultset_1_1iterator_html"><div class="ttname"><a href="structresultset_1_1iterator.html">resultset::iterator</a></div><div class="ttdoc">The input iterator can be used to read every row in a for-loop.</div><div class="ttdef"><b>Definition</b> resultset.hpp:81</div></div>
-<div class="ttc" id="astructresultset_html"><div class="ttname"><a href="structresultset.html">resultset</a></div><div class="ttdoc">Representation of a result from a database.</div><div class="ttdef"><b>Definition</b> resultset.hpp:41</div></div>
-<div class="ttc" id="astructresultset_html_a0b4badd4429261a2941593f52dcd538d"><div class="ttname"><a href="structresultset.html#a0b4badd4429261a2941593f52dcd538d">resultset::table_name</a></div><div class="ttdeci">core::string_view table_name(std::size_t idx) const</div><div class="ttdoc">Returns the name of the source table for column idx.</div><div class="ttdef"><b>Definition</b> resultset.hpp:69</div></div>
-<div class="ttc" id="astructresultset_html_a0fc7ad97ee9b5dfe6f8bfb2cc2c9f759"><div class="ttname"><a href="structresultset.html#a0fc7ad97ee9b5dfe6f8bfb2cc2c9f759">resultset::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdoc">Return an input iterator to the currently unread row.</div><div class="ttdef"><b>Definition</b> resultset.hpp:117</div></div>
-<div class="ttc" id="astructresultset_html_a138d608ed0a7057dbebafb0c81611cf5"><div class="ttname"><a href="structresultset.html#a138d608ed0a7057dbebafb0c81611cf5">resultset::done</a></div><div class="ttdeci">bool done() const</div><div class="ttdoc">Checks if the last row has been reached.</div><div class="ttdef"><b>Definition</b> resultset.hpp:50</div></div>
-<div class="ttc" id="astructresultset_html_a551c148dbf51ed608e466b67aa4859a2"><div class="ttname"><a href="structresultset.html#a551c148dbf51ed608e466b67aa4859a2">resultset::current</a></div><div class="ttdeci">row current() const &amp;</div><div class="ttdoc">Returns the current row.</div><div class="ttdef"><b>Definition</b> resultset.hpp:43</div></div>
-<div class="ttc" id="astructresultset_html_a70109199c40fb51e1bfddebc195b196b"><div class="ttname"><a href="structresultset.html#a70109199c40fb51e1bfddebc195b196b">resultset::read_next</a></div><div class="ttdeci">BOOST_SQLITE_DECL bool read_next(system::error_code &amp;ec, error_info &amp;ei)</div></div>
-<div class="ttc" id="astructresultset_html_a783ab7261954fca273852d57119860ab"><div class="ttname"><a href="structresultset.html#a783ab7261954fca273852d57119860ab">resultset::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdoc">Sentinel iterator.</div><div class="ttdef"><b>Definition</b> resultset.hpp:119</div></div>
-<div class="ttc" id="astructresultset_html_a968d8c12534892f56d192526c95e5dbf"><div class="ttname"><a href="structresultset.html#a968d8c12534892f56d192526c95e5dbf">resultset::column_origin_name</a></div><div class="ttdeci">core::string_view column_origin_name(std::size_t idx) const</div><div class="ttdoc">Returns the origin name of the column for column idx.</div><div class="ttdef"><b>Definition</b> resultset.hpp:74</div></div>
-<div class="ttc" id="astructresultset_html_adb3728a3ec39c29bb6e6f40920d0800a"><div class="ttname"><a href="structresultset.html#adb3728a3ec39c29bb6e6f40920d0800a">resultset::column_name</a></div><div class="ttdeci">core::string_view column_name(std::size_t idx) const</div><div class="ttdoc">Returns the name of the column idx.</div><div class="ttdef"><b>Definition</b> resultset.hpp:64</div></div>
-<div class="ttc" id="astructrow_html"><div class="ttname"><a href="structrow.html">row</a></div><div class="ttdoc">Representation of a row in a database.</div><div class="ttdef"><b>Definition</b> row.hpp:21</div></div>
-<div class="ttc" id="astructrow_html_aaff9af007abd7f744fb7d7a6baffe70b"><div class="ttname"><a href="structrow.html#aaff9af007abd7f744fb7d7a6baffe70b">row::size</a></div><div class="ttdeci">std::size_t size() const</div><div class="ttdoc">The size of the row.</div><div class="ttdef"><b>Definition</b> row.hpp:23</div></div>
-<div class="ttc" id="astructstatement_html"><div class="ttname"><a href="structstatement.html">statement</a></div><div class="ttdoc">A statement used for a prepared-statement.</div><div class="ttdef"><b>Definition</b> statement.hpp:199</div></div>
-<div class="ttc" id="astructstatic__resultset_1_1iterator_html"><div class="ttname"><a href="structstatic__resultset_1_1iterator.html">static_resultset::iterator</a></div><div class="ttdoc">The input iterator can be used to read every row in a for-loop.</div><div class="ttdef"><b>Definition</b> static_resultset.hpp:306</div></div>
-<div class="ttc" id="astructstatic__resultset_html"><div class="ttname"><a href="structstatic__resultset.html">static_resultset</a></div><div class="ttdoc">A typed resultset using a tuple or a described struct.</div><div class="ttdef"><b>Definition</b> static_resultset.hpp:273</div></div>
-<div class="ttc" id="astructstatic__resultset_html_a0193b2a5d05474101f1b06e40b8d1212"><div class="ttname"><a href="structstatic__resultset.html#a0193b2a5d05474101f1b06e40b8d1212">static_resultset::done</a></div><div class="ttdeci">bool done() const</div><div class="ttdoc">Checks if the last row has been reached.</div><div class="ttdef"><b>Definition</b> static_resultset.hpp:280</div></div>
-<div class="ttc" id="astructstatic__resultset_html_a111ff524aac7144d3277568bc2940422"><div class="ttname"><a href="structstatic__resultset.html#a111ff524aac7144d3277568bc2940422">static_resultset::column_name</a></div><div class="ttdeci">core::string_view column_name(std::size_t idx) const</div><div class="ttdoc">Returns the name of the column idx.</div><div class="ttdef"><b>Definition</b> static_resultset.hpp:291</div></div>
-<div class="ttc" id="astructstatic__resultset_html_a1c032964cd36bd51944aed4cdce485b3"><div class="ttname"><a href="structstatic__resultset.html#a1c032964cd36bd51944aed4cdce485b3">static_resultset::current</a></div><div class="ttdeci">T current() const &amp;</div><div class="ttdoc">Returns the current row.</div><div class="ttdef"><b>Definition</b> static_resultset.hpp:275</div></div>
-<div class="ttc" id="astructstatic__resultset_html_a20edb2babbd666cee15b6d7f86060b1d"><div class="ttname"><a href="structstatic__resultset.html#a20edb2babbd666cee15b6d7f86060b1d">static_resultset::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdoc">Sentinel iterator.</div><div class="ttdef"><b>Definition</b> static_resultset.hpp:351</div></div>
-<div class="ttc" id="astructstatic__resultset_html_a78a3ac81d14dfc3bae55fb79f3b25bdb"><div class="ttname"><a href="structstatic__resultset.html#a78a3ac81d14dfc3bae55fb79f3b25bdb">static_resultset::read_next</a></div><div class="ttdeci">BOOST_SQLITE_DECL bool read_next(system::error_code &amp;ec, error_info &amp;ei)</div><div class="ttdef"><b>Definition</b> static_resultset.hpp:284</div></div>
-<div class="ttc" id="astructstatic__resultset_html_a792a52a70039f974aab3b9600d5a0208"><div class="ttname"><a href="structstatic__resultset.html#a792a52a70039f974aab3b9600d5a0208">static_resultset::column_origin_name</a></div><div class="ttdeci">core::string_view column_origin_name(std::size_t idx) const</div><div class="ttdoc">Returns the origin name of the column for column idx.</div><div class="ttdef"><b>Definition</b> static_resultset.hpp:296</div></div>
-<div class="ttc" id="astructstatic__resultset_html_a9582ed77d61c6ac36d654687259ef558"><div class="ttname"><a href="structstatic__resultset.html#a9582ed77d61c6ac36d654687259ef558">static_resultset::table_name</a></div><div class="ttdeci">core::string_view table_name(std::size_t idx) const</div><div class="ttdoc">Returns the name of the source table for column idx.</div><div class="ttdef"><b>Definition</b> static_resultset.hpp:294</div></div>
-<div class="ttc" id="astructstatic__resultset_html_a9d4e0272977bd2168ab95cfff6141cb4"><div class="ttname"><a href="structstatic__resultset.html#a9d4e0272977bd2168ab95cfff6141cb4">static_resultset::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdoc">Return an input iterator to the currently unread row.</div><div class="ttdef"><b>Definition</b> static_resultset.hpp:349</div></div>
-<div class="ttc" id="astructvalue_html"><div class="ttname"><a href="structvalue.html">value</a></div><div class="ttdoc">A holder for a sqlite values used for internal APIs.</div><div class="ttdef"><b>Definition</b> value.hpp:39</div></div>
-<div class="ttc" id="astructvalue_html_a7369ec92d3c49ccb59d9e4e8038889d8"><div class="ttname"><a href="structvalue.html#a7369ec92d3c49ccb59d9e4e8038889d8">value::get_int</a></div><div class="ttdeci">int get_int() const</div><div class="ttdoc">Returns the value as regular int.</div><div class="ttdef"><b>Definition</b> value.hpp:61</div></div>
-<div class="ttc" id="astructvalue_html_a795623f83fa4aebb7d238bdd63976894"><div class="ttname"><a href="structvalue.html#a795623f83fa4aebb7d238bdd63976894">value::get_blob</a></div><div class="ttdeci">BOOST_SQLITE_DECL blob_view get_blob() const</div><div class="ttdoc">Returns the value as blob, i.e. raw memory. Note that this value may be invalidated`.</div></div>
-<div class="ttc" id="astructvalue_html_a849126ae462a9d65ac76b07439842437"><div class="ttname"><a href="structvalue.html#a849126ae462a9d65ac76b07439842437">value::get_text</a></div><div class="ttdeci">BOOST_SQLITE_DECL cstring_ref get_text() const</div><div class="ttdoc">Returns the value as text, i.e. a string_view. Note that this value may be invalidated`.</div></div>
-<div class="ttc" id="astructvalue_html_a97929f0e2657b8354a2c37c1d92475ab"><div class="ttname"><a href="structvalue.html#a97929f0e2657b8354a2c37c1d92475ab">value::get_double</a></div><div class="ttdeci">double get_double() const</div><div class="ttdoc">Returns the value as an double.</div><div class="ttdef"><b>Definition</b> value.hpp:71</div></div>
-<div class="ttc" id="astructvalue_html_aba1ce6d6bf5a356a65864a87d81e6ac7"><div class="ttname"><a href="structvalue.html#aba1ce6d6bf5a356a65864a87d81e6ac7">value::get_int64</a></div><div class="ttdeci">sqlite3_int64 get_int64() const</div><div class="ttdoc">Returns the value as an int64.</div><div class="ttdef"><b>Definition</b> value.hpp:66</div></div>
+<div class="ttc" id="agroup__reference_html_gga54803a0f6eb577b3e3938ca6dc3f6818aee26908bf9629eeb4b37dac350f4754a"><div class="ttname"><a href="group__reference.html#gga54803a0f6eb577b3e3938ca6dc3f6818aee26908bf9629eeb4b37dac350f4754a">boost::sqlite::value_type::blob</a></div><div class="ttdeci">@ blob</div><div class="ttdoc">A binary value.</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html">boost::sqlite::connection</a></div><div class="ttdoc">main object for a connection to a database.</div><div class="ttdef"><b>Definition</b> <a href="connection_8hpp_source.html#l00031">connection.hpp:32</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1error__info_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1error__info.html">boost::sqlite::error_info</a></div><div class="ttdoc">Additional information about error conditions stored in an sqlite-allocate string.</div><div class="ttdef"><b>Definition</b> <a href="error_8hpp_source.html#l00032">error.hpp:33</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1resultset_1_1iterator_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1resultset_1_1iterator.html">boost::sqlite::resultset::iterator</a></div><div class="ttdoc">The input iterator can be used to read every row in a for-loop.</div><div class="ttdef"><b>Definition</b> <a href="resultset_8hpp_source.html#l00080">resultset.hpp:81</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1resultset_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1resultset.html">boost::sqlite::resultset</a></div><div class="ttdoc">Representation of a result from a database.</div><div class="ttdef"><b>Definition</b> <a href="resultset_8hpp_source.html#l00040">resultset.hpp:41</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1statement_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1statement.html">boost::sqlite::statement</a></div><div class="ttdoc">A statement used for a prepared-statement.</div><div class="ttdef"><b>Definition</b> <a href="statement_8hpp_source.html#l00198">statement.hpp:199</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1static__resultset_1_1iterator_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1static__resultset_1_1iterator.html">boost::sqlite::static_resultset::iterator</a></div><div class="ttdoc">The input iterator can be used to read every row in a for-loop.</div><div class="ttdef"><b>Definition</b> <a href="#l00305">static_resultset.hpp:306</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1static__resultset_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1static__resultset.html">boost::sqlite::static_resultset</a></div><div class="ttdoc">A typed resultset using a tuple or a described struct.</div><div class="ttdef"><b>Definition</b> <a href="#l00272">static_resultset.hpp:273</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1static__resultset_html_a188365756bcd7db40fcbaf63e9b56859"><div class="ttname"><a href="structboost_1_1sqlite_1_1static__resultset.html#a188365756bcd7db40fcbaf63e9b56859">boost::sqlite::static_resultset::column_name</a></div><div class="ttdeci">core::string_view column_name(std::size_t idx) const</div><div class="ttdoc">Returns the name of the column idx.</div><div class="ttdef"><b>Definition</b> <a href="#l00291">static_resultset.hpp:291</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1static__resultset_html_a267ae7723d28bd85f693a72b63ade408"><div class="ttname"><a href="structboost_1_1sqlite_1_1static__resultset.html#a267ae7723d28bd85f693a72b63ade408">boost::sqlite::static_resultset::read_next</a></div><div class="ttdeci">bool read_next()</div><div class="ttdef"><b>Definition</b> <a href="#l00285">static_resultset.hpp:285</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1static__resultset_html_a2adb2bf825e69bb6740995943535399c"><div class="ttname"><a href="structboost_1_1sqlite_1_1static__resultset.html#a2adb2bf825e69bb6740995943535399c">boost::sqlite::static_resultset::read_next</a></div><div class="ttdeci">bool read_next(system::error_code &amp;ec, error_info &amp;ei)</div><div class="ttdef"><b>Definition</b> <a href="#l00284">static_resultset.hpp:284</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1static__resultset_html_a5ecdd49ba9dfcc34ac086e3e5b1abe94"><div class="ttname"><a href="structboost_1_1sqlite_1_1static__resultset.html#a5ecdd49ba9dfcc34ac086e3e5b1abe94">boost::sqlite::static_resultset::current</a></div><div class="ttdeci">T current() const &amp;</div><div class="ttdoc">Returns the current row.</div><div class="ttdef"><b>Definition</b> <a href="#l00275">static_resultset.hpp:275</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1static__resultset_html_a5f32a5a36561dc3043d2f827d56bfc1e"><div class="ttname"><a href="structboost_1_1sqlite_1_1static__resultset.html#a5f32a5a36561dc3043d2f827d56bfc1e">boost::sqlite::static_resultset::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdoc">Return an input iterator to the currently unread row.</div><div class="ttdef"><b>Definition</b> <a href="#l00349">static_resultset.hpp:349</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1static__resultset_html_a88cc1f268821399170eb1ffcd13636ee"><div class="ttname"><a href="structboost_1_1sqlite_1_1static__resultset.html#a88cc1f268821399170eb1ffcd13636ee">boost::sqlite::static_resultset::column_origin_name</a></div><div class="ttdeci">core::string_view column_origin_name(std::size_t idx) const</div><div class="ttdoc">Returns the origin name of the column for column idx.</div><div class="ttdef"><b>Definition</b> <a href="#l00296">static_resultset.hpp:296</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1static__resultset_html_a8a18f96207f707976ec6810f57f3bd98"><div class="ttname"><a href="structboost_1_1sqlite_1_1static__resultset.html#a8a18f96207f707976ec6810f57f3bd98">boost::sqlite::static_resultset::done</a></div><div class="ttdeci">bool done() const</div><div class="ttdoc">Checks if the last row has been reached.</div><div class="ttdef"><b>Definition</b> <a href="#l00280">static_resultset.hpp:280</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1static__resultset_html_aa696fc3151d4207e14cb4927fb3451b4"><div class="ttname"><a href="structboost_1_1sqlite_1_1static__resultset.html#aa696fc3151d4207e14cb4927fb3451b4">boost::sqlite::static_resultset::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdoc">Sentinel iterator.</div><div class="ttdef"><b>Definition</b> <a href="#l00351">static_resultset.hpp:351</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1static__resultset_html_acd192985a941cfc952455cc6d54d59a9"><div class="ttname"><a href="structboost_1_1sqlite_1_1static__resultset.html#acd192985a941cfc952455cc6d54d59a9">boost::sqlite::static_resultset::table_name</a></div><div class="ttdeci">core::string_view table_name(std::size_t idx) const</div><div class="ttdoc">Returns the name of the source table for column idx.</div><div class="ttdef"><b>Definition</b> <a href="#l00294">static_resultset.hpp:294</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_c8984f1860c11f62f47abb6761e46c1e.html">boost</a></li><li class="navelem"><a class="el" href="dir_3e3942c4c59d28918e46de9324b21cf7.html">sqlite</a></li><li class="navelem"><b>static_resultset.hpp</b></li>
+    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
 </body>
 </html>
