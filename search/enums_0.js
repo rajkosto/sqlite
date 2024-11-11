@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_5ftype_0',['value_type',['../group__reference.html#ga54803a0f6eb577b3e3938ca6dc3f6818',1,'boost::sqlite']]]
+  ['behaviour_0',['behaviour',['../structtransaction.html#a5dc79ea9487527132bfb495e1d8d210b',1,'transaction']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zero_5fblob_0',['zero_blob',['../group__reference.html#ga3210fa5fa6bd536bb7f13c3395acb37d',1,'boost::sqlite']]]
+  ['value_5ftype_0',['value_type',['../group__reference.html#ga5b7c2b5c96c13d5b5d2842e91794f6c1',1,'value.hpp']]]
 ];

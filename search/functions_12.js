@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['valid_0',['valid',['../structboost_1_1sqlite_1_1connection.html#a6fe681d06faba81b65fd95e642e1cc6c',1,'boost::sqlite::connection']]],
-  ['value_1',['value',['../structboost_1_1sqlite_1_1value.html#abdf3e268f66a902825f3266b05a9c531',1,'boost::sqlite::value']]]
+  ['valid_0',['valid',['../structconnection.html#ab4d4e09709a41650f0074351a50be429',1,'connection']]],
+  ['value_1',['value',['../structvalue.html#acf102ca440e5bf9886ccc1052ddee88e',1,'value']]]
 ];

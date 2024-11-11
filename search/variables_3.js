@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['eponymous_5fonly_0',['eponymous_only',['../structboost_1_1sqlite_1_1vtab__module__prototype.html#a9200208eabf6bcd6c6549a6c8fe18375',1,'boost::sqlite::vtab_module_prototype']]]
+  ['info_0',['info',['../structerror.html#a37f43a596ae67360285d7b074ba01504',1,'error']]]
 ];

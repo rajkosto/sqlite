@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mutex_0',['mutex',['../structboost_1_1sqlite_1_1mutex.html',1,'boost::sqlite']]]
+  ['field_0',['field',['../structfield.html',1,'']]],
+  ['function_5fsetter_1',['function_setter',['../structvtab_1_1function__setter.html',1,'vtab']]]
 ];

@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['message_0',['message',['../classboost_1_1sqlite_1_1error__info.html#afe78bd388b3859da6e5d383e46f32bbe',1,'boost::sqlite::error_info']]],
-  ['mutex_1',['mutex',['../structboost_1_1sqlite_1_1mutex.html',1,'boost::sqlite']]]
+  ['memory_5ftag_0',['memory_tag',['../structmemory__tag.html',1,'']]],
+  ['message_1',['message',['../structerror__info.html#a21bdd16f25a659585d3b5315b12ddd77',1,'error_info']]],
+  ['modifiable_2',['modifiable',['../structvtab_1_1modifiable.html',1,'vtab']]],
+  ['module_3',['module',['../structvtab_1_1module.html',1,'vtab']]],
+  ['module_5fconfig_4',['module_config',['../structvtab_1_1module__config.html',1,'vtab']]],
+  ['mutex_5',['mutex',['../structmutex.html',1,'']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['new_5f_0',['new_',['../structboost_1_1sqlite_1_1preupdate__context.html#adb342d1b03444f7cc6ca908a5c0da422',1,'boost::sqlite::preupdate_context']]],
-  ['next_1',['next',['../structboost_1_1sqlite_1_1vtab__module__prototype_1_1table__type_1_1cursor__type.html#a1ef3780a096e73e2d1244068ec1891c3',1,'boost::sqlite::vtab_module_prototype::table_type::cursor_type']]],
-  ['numeric_5ftype_2',['numeric_type',['../structboost_1_1sqlite_1_1value.html#a5eb39de9167926c9ade1d500eb7085c6',1,'boost::sqlite::value']]]
+  ['name_0',['name',['../structsavepoint.html#a70cf81eb7b92536fec07cce838e37b79',1,'savepoint']]],
+  ['next_1',['next',['../structvtab_1_1cursor.html#a342c0644adf6533b89c018c9080e799c',1,'vtab::cursor::next()'],['../structvtab_1_1cursor_3_01void_01_4.html#a40a79508ff301c3ac047158a13e88b5a',1,'vtab::cursor&lt; void &gt;::next()']]],
+  ['numeric_5ftype_2',['numeric_type',['../structvalue.html#ad3fc923ce4cfd5fe6b6e03c28d1f9de0',1,'value']]]
 ];

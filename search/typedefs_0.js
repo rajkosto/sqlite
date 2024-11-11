@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['error_5fcategory_0',['error_category',['../group__reference.html#ga67fd40e0265e2fc9ea43d8f3c2d59b35',1,'boost::sqlite']]],
-  ['error_5fcode_1',['error_code',['../group__reference.html#ga99610662a6184dd633886178d75c52b5',1,'boost::sqlite']]]
+  ['handle_5ftype_0',['handle_type',['../structvalue.html#a075514cc314f779fbd752ebd59506ed8',1,'value::handle_type'],['../structconnection.html#a7bb885ba9e5f79a0e0983299b8dd6fb1',1,'connection::handle_type'],['../structblob__handle.html#ab39d3d1ba37355fb63e44d94b975680f',1,'blob_handle::handle_type']]]
 ];

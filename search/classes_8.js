@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['statement_0',['statement',['../structboost_1_1sqlite_1_1statement.html',1,'boost::sqlite']]]
+  ['overload_5ffunctions_0',['overload_functions',['../structvtab_1_1overload__functions.html',1,'vtab']]]
 ];

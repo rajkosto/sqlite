@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['handle_0',['handle',['../structboost_1_1sqlite_1_1blob__handle.html#aa7891fad110a30d8be5f8ad17e91d437',1,'boost::sqlite::blob_handle::handle()'],['../structboost_1_1sqlite_1_1connection.html#a78784a0f71261f57ec4eabe0ab7123ab',1,'boost::sqlite::connection::handle()'],['../structboost_1_1sqlite_1_1value.html#ac0dc0f5b5d35307bbe728574b11ce899',1,'boost::sqlite::value::handle()']]],
-  ['has_5fcolumn_1',['has_column',['../structboost_1_1sqlite_1_1connection.html#aee51f84b1449f89a2ff09857ead436eb',1,'boost::sqlite::connection']]],
-  ['has_5ftable_2',['has_table',['../structboost_1_1sqlite_1_1connection.html#a33250e26a0dc35b81f615917746a18f6',1,'boost::sqlite::connection']]]
+  ['handle_0',['handle',['../structvalue.html#a2ce6b3efe2b3e250fc39be76e48904a3',1,'value::handle()'],['../structconnection.html#a84f2eeee0a6e45a8fb6a34beedff0003',1,'connection::handle()'],['../structblob__handle.html#af9cbcabe0d5906b991a6c028b6513a87',1,'blob_handle::handle()']]],
+  ['has_5fcolumn_1',['has_column',['../structconnection.html#aadcfd2a8e2e850f8f8146f7d890e0dbd',1,'connection']]],
+  ['has_5ftable_2',['has_table',['../structconnection.html#ad2d0ad676fd508508f36ed2d73341307',1,'connection']]]
 ];

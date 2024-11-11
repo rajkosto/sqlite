@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['collation_0',['collation',['../structboost_1_1sqlite_1_1column__meta__data.html#a9b6c7235605cdf26c54ed4b5909c164d',1,'boost::sqlite::column_meta_data']]]
+  ['code_0',['code',['../structerror.html#a537c18f8eafd38ae1e7e7a7ec8cd9386',1,'error']]],
+  ['collation_1',['collation',['../structcolumn__meta__data.html#a4e5f29763d32107119ab934d9d5be58b',1,'column_meta_data']]]
 ];

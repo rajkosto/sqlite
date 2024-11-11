@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['value_0',['value',['../structboost_1_1sqlite_1_1value.html',1,'boost::sqlite']]],
-  ['vtab_5ffunction_5fsetter_1',['vtab_function_setter',['../structboost_1_1sqlite_1_1vtab__function__setter.html',1,'boost::sqlite']]],
-  ['vtab_5fmodule_5fprototype_2',['vtab_module_prototype',['../structboost_1_1sqlite_1_1vtab__module__prototype.html',1,'boost::sqlite']]]
+  ['recursive_5fmutex_0',['recursive_mutex',['../structrecursive__mutex.html',1,'']]],
+  ['renamable_1',['renamable',['../structvtab_1_1renamable.html',1,'vtab']]],
+  ['resultset_2',['resultset',['../structresultset.html',1,'']]],
+  ['row_3',['row',['../structrow.html',1,'']]]
 ];
