@@ -101,16 +101,146 @@ $(function(){initNavTree('structboost_1_1sqlite_1_1column__meta__data.html','');
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structboost_1_1sqlite_1_1column__meta__data-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">boost::sqlite::column_meta_data Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The metadata of a column.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="meta__data_8hpp_source.html">include/boost/sqlite/meta_data.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a11341e395914ff83992f16996d2a2ba3" id="r_a11341e395914ff83992f16996d2a2ba3"><td class="memItemLeft" align="right" valign="top"><a id="a11341e395914ff83992f16996d2a2ba3" name="a11341e395914ff83992f16996d2a2ba3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>auto_increment</b></td></tr>
+<tr class="memdesc:a11341e395914ff83992f16996d2a2ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if column is AUTOINCREMENT <br /></td></tr>
+<tr class="separator:a11341e395914ff83992f16996d2a2ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc00ef4035ee380834d020b4bd18f41" id="r_abbc00ef4035ee380834d020b4bd18f41"><td class="memItemLeft" align="right" valign="top"><a id="abbc00ef4035ee380834d020b4bd18f41" name="abbc00ef4035ee380834d020b4bd18f41"></a>
+<a class="el" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><b>collation</b></td></tr>
+<tr class="memdesc:abbc00ef4035ee380834d020b4bd18f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of default collation sequence. <br /></td></tr>
+<tr class="separator:abbc00ef4035ee380834d020b4bd18f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa0465352a67b7aefb34bc5450c86f2" id="r_a3fa0465352a67b7aefb34bc5450c86f2"><td class="memItemLeft" align="right" valign="top"><a id="a3fa0465352a67b7aefb34bc5450c86f2" name="a3fa0465352a67b7aefb34bc5450c86f2"></a>
+<a class="el" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data_type</b></td></tr>
+<tr class="memdesc:a3fa0465352a67b7aefb34bc5450c86f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data type fo the column. <br /></td></tr>
+<tr class="separator:a3fa0465352a67b7aefb34bc5450c86f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9152945f07a824b40e7310672e94107a" id="r_a9152945f07a824b40e7310672e94107a"><td class="memItemLeft" align="right" valign="top"><a id="a9152945f07a824b40e7310672e94107a" name="a9152945f07a824b40e7310672e94107a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>not_null</b></td></tr>
+<tr class="memdesc:a9152945f07a824b40e7310672e94107a"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if column has a NOT NULL constraint <br /></td></tr>
+<tr class="separator:a9152945f07a824b40e7310672e94107a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6674f0af18bf894cb9132f6f99657d" id="r_acb6674f0af18bf894cb9132f6f99657d"><td class="memItemLeft" align="right" valign="top"><a id="acb6674f0af18bf894cb9132f6f99657d" name="acb6674f0af18bf894cb9132f6f99657d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>primary_key</b></td></tr>
+<tr class="memdesc:acb6674f0af18bf894cb9132f6f99657d"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if column is part of the PRIMARY KEY <br /></td></tr>
+<tr class="separator:acb6674f0af18bf894cb9132f6f99657d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The metadata of a column. </p>
+
+<p class="definition">Definition at line <a class="el" href="meta__data_8hpp_source.html#l00021">21</a> of file <a class="el" href="meta__data_8hpp_source.html">meta_data.hpp</a>.</p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a11341e395914ff83992f16996d2a2ba3" name="a11341e395914ff83992f16996d2a2ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11341e395914ff83992f16996d2a2ba3">&#9670;&#160;</a></span>auto_increment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool boost::sqlite::column_meta_data::auto_increment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>true if column is AUTOINCREMENT </p>
+
+<p class="definition">Definition at line <a class="el" href="meta__data_8hpp_source.html#l00032">32</a> of file <a class="el" href="meta__data_8hpp_source.html">meta_data.hpp</a>.</p>
+
+</div>
+</div>
+<a id="abbc00ef4035ee380834d020b4bd18f41" name="abbc00ef4035ee380834d020b4bd18f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbc00ef4035ee380834d020b4bd18f41">&#9670;&#160;</a></span>collation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a> boost::sqlite::column_meta_data::collation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Name of default collation sequence. </p>
+
+<p class="definition">Definition at line <a class="el" href="meta__data_8hpp_source.html#l00026">26</a> of file <a class="el" href="meta__data_8hpp_source.html">meta_data.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3fa0465352a67b7aefb34bc5450c86f2" name="a3fa0465352a67b7aefb34bc5450c86f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fa0465352a67b7aefb34bc5450c86f2">&#9670;&#160;</a></span>data_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a> boost::sqlite::column_meta_data::data_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data type fo the column. </p>
+
+<p class="definition">Definition at line <a class="el" href="meta__data_8hpp_source.html#l00024">24</a> of file <a class="el" href="meta__data_8hpp_source.html">meta_data.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9152945f07a824b40e7310672e94107a" name="a9152945f07a824b40e7310672e94107a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9152945f07a824b40e7310672e94107a">&#9670;&#160;</a></span>not_null</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool boost::sqlite::column_meta_data::not_null</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>true if column has a NOT NULL constraint </p>
+
+<p class="definition">Definition at line <a class="el" href="meta__data_8hpp_source.html#l00028">28</a> of file <a class="el" href="meta__data_8hpp_source.html">meta_data.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acb6674f0af18bf894cb9132f6f99657d" name="acb6674f0af18bf894cb9132f6f99657d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb6674f0af18bf894cb9132f6f99657d">&#9670;&#160;</a></span>primary_key</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool boost::sqlite::column_meta_data::primary_key</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>true if column is part of the PRIMARY KEY </p>
+
+<p class="definition">Definition at line <a class="el" href="meta__data_8hpp_source.html#l00030">30</a> of file <a class="el" href="meta__data_8hpp_source.html">meta_data.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>boost/sqlite/<a class="el" href="meta__data_8hpp_source.html">meta_data.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1column__meta__data.html">column_meta_data</a></li>
-    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:50:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

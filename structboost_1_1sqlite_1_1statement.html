@@ -101,16 +101,902 @@ $(function(){initNavTree('structboost_1_1sqlite_1_1statement.html',''); initResi
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structboost_1_1sqlite_1_1statement-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">boost::sqlite::statement Struct Reference<div class="ingroups"><a class="el" href="group__reference.html">Reference</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A statement used for a prepared-statement.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="statement_8hpp_source.html">include/boost/sqlite/statement.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab68c45fe09f35db63538310b75b157eb" id="r_ab68c45fe09f35db63538310b75b157eb"><td class="memItemLeft" align="right" valign="top">core::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab68c45fe09f35db63538310b75b157eb">declared_type</a> (int id) const</td></tr>
+<tr class="memdesc:ab68c45fe09f35db63538310b75b157eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the expanded sql used to construct the prepared statement.  <br /></td></tr>
+<tr class="separator:ab68c45fe09f35db63538310b75b157eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e70a3637c0f83a9eff8eea9d78e0ee" id="r_a82e70a3637c0f83a9eff8eea9d78e0ee"><td class="memItemLeft" align="right" valign="top"><a id="a82e70a3637c0f83a9eff8eea9d78e0ee" name="a82e70a3637c0f83a9eff8eea9d78e0ee"></a>
+core::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>expanded_sql</b> ()</td></tr>
+<tr class="memdesc:a82e70a3637c0f83a9eff8eea9d78e0ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the expanded sql used to construct the prepared statement. <br /></td></tr>
+<tr class="separator:a82e70a3637c0f83a9eff8eea9d78e0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1958c1d5f4f3d1f188cd44268f25e214" id="r_a1958c1d5f4f3d1f188cd44268f25e214"><td class="memItemLeft" align="right" valign="top"><a id="a1958c1d5f4f3d1f188cd44268f25e214" name="a1958c1d5f4f3d1f188cd44268f25e214"></a>
+core::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>sql</b> ()</td></tr>
+<tr class="memdesc:a1958c1d5f4f3d1f188cd44268f25e214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sql used to construct the prepared statement. <br /></td></tr>
+<tr class="separator:a1958c1d5f4f3d1f188cd44268f25e214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a0b7b0e468010d8bf49fb1681f6c87ef5" id="r_a0b7b0e468010d8bf49fb1681f6c87ef5"><td class="memTemplParams" colspan="2">template&lt;typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </td></tr>
+<tr class="memitem:a0b7b0e468010d8bf49fb1681f6c87ef5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0b7b0e468010d8bf49fb1681f6c87ef5">execute</a> (ArgRange &amp;&amp;params, system::error_code &amp;ec, <a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;info) &amp;&amp;</td></tr>
+<tr class="memdesc:a0b7b0e468010d8bf49fb1681f6c87ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement once.  <br /></td></tr>
+<tr class="separator:a0b7b0e468010d8bf49fb1681f6c87ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33d941f8ed33615d45c4c14e9b9fa48a" id="r_a33d941f8ed33615d45c4c14e9b9fa48a"><td class="memTemplParams" colspan="2">template&lt;typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </td></tr>
+<tr class="memitem:a33d941f8ed33615d45c4c14e9b9fa48a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a33d941f8ed33615d45c4c14e9b9fa48a">execute</a> (ArgRange &amp;&amp;params) &amp;&amp;</td></tr>
+<tr class="memdesc:a33d941f8ed33615d45c4c14e9b9fa48a"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement once.  <br /></td></tr>
+<tr class="separator:a33d941f8ed33615d45c4c14e9b9fa48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5abea68ce92ca96dbc7bec7e794d5433" id="r_a5abea68ce92ca96dbc7bec7e794d5433"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5abea68ce92ca96dbc7bec7e794d5433">execute</a> (std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt; params, system::error_code &amp;ec, <a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;info) &amp;&amp;</td></tr>
+<tr class="memdesc:a5abea68ce92ca96dbc7bec7e794d5433"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement once.  <br /></td></tr>
+<tr class="separator:a5abea68ce92ca96dbc7bec7e794d5433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816cde6b8135e98afc8dfe584ff38146" id="r_a816cde6b8135e98afc8dfe584ff38146"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a816cde6b8135e98afc8dfe584ff38146">execute</a> (std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt; params) &amp;&amp;</td></tr>
+<tr class="memdesc:a816cde6b8135e98afc8dfe584ff38146"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement once.  <br /></td></tr>
+<tr class="separator:a816cde6b8135e98afc8dfe584ff38146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7230fc90bdcb36abc631dd0b8267ce1f" id="r_a7230fc90bdcb36abc631dd0b8267ce1f"><td class="memTemplParams" colspan="2">template&lt;typename T , typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </td></tr>
+<tr class="memitem:a7230fc90bdcb36abc631dd0b8267ce1f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7230fc90bdcb36abc631dd0b8267ce1f">execute</a> (ArgRange &amp;&amp;params, system::error_code &amp;ec, <a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;ei) &amp;&amp;</td></tr>
+<tr class="memdesc:a7230fc90bdcb36abc631dd0b8267ce1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement once.  <br /></td></tr>
+<tr class="separator:a7230fc90bdcb36abc631dd0b8267ce1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf9dcbb008a70a1476bb771f4cd3918e" id="r_acf9dcbb008a70a1476bb771f4cd3918e"><td class="memTemplParams" colspan="2">template&lt;typename T , typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </td></tr>
+<tr class="memitem:acf9dcbb008a70a1476bb771f4cd3918e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#acf9dcbb008a70a1476bb771f4cd3918e">execute</a> (ArgRange &amp;&amp;params) &amp;&amp;</td></tr>
+<tr class="memdesc:acf9dcbb008a70a1476bb771f4cd3918e"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement once.  <br /></td></tr>
+<tr class="separator:acf9dcbb008a70a1476bb771f4cd3918e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1760ce8de680ffa9fcf60021c4af11" id="r_adf1760ce8de680ffa9fcf60021c4af11"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:adf1760ce8de680ffa9fcf60021c4af11"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#adf1760ce8de680ffa9fcf60021c4af11">execute</a> (std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt; params, system::error_code &amp;ec, <a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;ei) &amp;&amp;</td></tr>
+<tr class="memdesc:adf1760ce8de680ffa9fcf60021c4af11"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement once.  <br /></td></tr>
+<tr class="separator:adf1760ce8de680ffa9fcf60021c4af11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12bdd88d33f31fdc799d3aa1d1ef7bfc" id="r_a12bdd88d33f31fdc799d3aa1d1ef7bfc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a12bdd88d33f31fdc799d3aa1d1ef7bfc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a12bdd88d33f31fdc799d3aa1d1ef7bfc">execute</a> (std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt; params) &amp;&amp;</td></tr>
+<tr class="memdesc:a12bdd88d33f31fdc799d3aa1d1ef7bfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement once.  <br /></td></tr>
+<tr class="separator:a12bdd88d33f31fdc799d3aa1d1ef7bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ae1a7a611c192b76bf8291c97a16e8ebe" id="r_ae1a7a611c192b76bf8291c97a16e8ebe"><td class="memTemplParams" colspan="2">template&lt;typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </td></tr>
+<tr class="memitem:ae1a7a611c192b76bf8291c97a16e8ebe"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae1a7a611c192b76bf8291c97a16e8ebe">execute</a> (ArgRange &amp;&amp;params, system::error_code &amp;ec, <a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;info) &amp;</td></tr>
+<tr class="memdesc:ae1a7a611c192b76bf8291c97a16e8ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement and reset it afterwards.  <br /></td></tr>
+<tr class="separator:ae1a7a611c192b76bf8291c97a16e8ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aaee5e05b1019cbd57f3d4446756d68" id="r_a1aaee5e05b1019cbd57f3d4446756d68"><td class="memTemplParams" colspan="2">template&lt;typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </td></tr>
+<tr class="memitem:a1aaee5e05b1019cbd57f3d4446756d68"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a1aaee5e05b1019cbd57f3d4446756d68">execute</a> (ArgRange &amp;&amp;params) &amp;</td></tr>
+<tr class="memdesc:a1aaee5e05b1019cbd57f3d4446756d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement and reset it afterwards.  <br /></td></tr>
+<tr class="separator:a1aaee5e05b1019cbd57f3d4446756d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fbd9da33e11174d33bec583e10a6a8" id="r_a55fbd9da33e11174d33bec583e10a6a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55fbd9da33e11174d33bec583e10a6a8">execute</a> (std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt; params, system::error_code &amp;ec, <a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;info) &amp;</td></tr>
+<tr class="memdesc:a55fbd9da33e11174d33bec583e10a6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement and reset it afterwards.  <br /></td></tr>
+<tr class="separator:a55fbd9da33e11174d33bec583e10a6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad116a2c26b8d85982170b27f9d829cde" id="r_ad116a2c26b8d85982170b27f9d829cde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad116a2c26b8d85982170b27f9d829cde">execute</a> (std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt; params) &amp;</td></tr>
+<tr class="memdesc:ad116a2c26b8d85982170b27f9d829cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement and reset it afterwards.  <br /></td></tr>
+<tr class="separator:ad116a2c26b8d85982170b27f9d829cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34989fae5d7c722801009f15e9dadff9" id="r_a34989fae5d7c722801009f15e9dadff9"><td class="memTemplParams" colspan="2">template&lt;typename T , typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </td></tr>
+<tr class="memitem:a34989fae5d7c722801009f15e9dadff9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a34989fae5d7c722801009f15e9dadff9">execute</a> (ArgRange &amp;&amp;params, system::error_code &amp;ec, <a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;ei) &amp;</td></tr>
+<tr class="memdesc:a34989fae5d7c722801009f15e9dadff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement and reset it afterwards.  <br /></td></tr>
+<tr class="separator:a34989fae5d7c722801009f15e9dadff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad323cef59c1b285571af76249e6c3d96" id="r_ad323cef59c1b285571af76249e6c3d96"><td class="memTemplParams" colspan="2">template&lt;typename T , typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </td></tr>
+<tr class="memitem:ad323cef59c1b285571af76249e6c3d96"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad323cef59c1b285571af76249e6c3d96">execute</a> (ArgRange &amp;&amp;params) &amp;</td></tr>
+<tr class="memdesc:ad323cef59c1b285571af76249e6c3d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement and reset it afterwards.  <br /></td></tr>
+<tr class="separator:ad323cef59c1b285571af76249e6c3d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d6a500542abcb039a1b0d5314df9dce" id="r_a3d6a500542abcb039a1b0d5314df9dce"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3d6a500542abcb039a1b0d5314df9dce"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3d6a500542abcb039a1b0d5314df9dce">execute</a> (std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt; params, system::error_code &amp;ec, <a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;ei) &amp;</td></tr>
+<tr class="memdesc:a3d6a500542abcb039a1b0d5314df9dce"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement and reset it afterwards.  <br /></td></tr>
+<tr class="separator:a3d6a500542abcb039a1b0d5314df9dce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb784aa6775ed5e12f8e69ec111c52c" id="r_a7cb784aa6775ed5e12f8e69ec111c52c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7cb784aa6775ed5e12f8e69ec111c52c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7cb784aa6775ed5e12f8e69ec111c52c">execute</a> (std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt; params) &amp;</td></tr>
+<tr class="memdesc:a7cb784aa6775ed5e12f8e69ec111c52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">execute the prepared statement and reset it afterwards.  <br /></td></tr>
+<tr class="separator:a7cb784aa6775ed5e12f8e69ec111c52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A statement used for a prepared-statement. </p>
+
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00198">198</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab68c45fe09f35db63538310b75b157eb" name="ab68c45fe09f35db63538310b75b157eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab68c45fe09f35db63538310b75b157eb">&#9670;&#160;</a></span>declared_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core::string_view boost::sqlite::statement::declared_type </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the expanded sql used to construct the prepared statement. </p>
+<p>Returns the declared type of the column </p>
+
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00470">470</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a1aaee5e05b1019cbd57f3d4446756d68" name="a1aaee5e05b1019cbd57f3d4446756d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aaee5e05b1019cbd57f3d4446756d68">&#9670;&#160;</a></span>execute() <span class="overload">[1/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">ArgRange &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td> &amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement and reset it afterwards. </p>
+<dl class="section warning"><dt>Warning</dt><dd>The handle is shared between the statement &amp; resultset. The statemens need to be kept alive.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map, a vector or a stuple of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html">boost::sqlite::connection</a></div><div class="ttdoc">main object for a connection to a database.</div><div class="ttdef"><b>Definition</b> <a href="connection_8hpp_source.html#l00031">connection.hpp:32</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1resultset_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1resultset.html">boost::sqlite::resultset</a></div><div class="ttdoc">Representation of a result from a database.</div><div class="ttdef"><b>Definition</b> <a href="resultset_8hpp_source.html#l00040">resultset.hpp:41</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1statement_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1statement.html">boost::sqlite::statement</a></div><div class="ttdoc">A statement used for a prepared-statement.</div><div class="ttdef"><b>Definition</b> <a href="statement_8hpp_source.html#l00198">statement.hpp:199</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00355">355</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad323cef59c1b285571af76249e6c3d96" name="ad323cef59c1b285571af76249e6c3d96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad323cef59c1b285571af76249e6c3d96">&#9670;&#160;</a></span>execute() <span class="overload">[2/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt; boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">ArgRange &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td> &amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement and reset it afterwards. </p>
+<dl class="section warning"><dt>Warning</dt><dd>The handle is shared between the statement &amp; resultset. The statemens need to be kept alive.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map, a vector or a stuple of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00407">407</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a33d941f8ed33615d45c4c14e9b9fa48a" name="a33d941f8ed33615d45c4c14e9b9fa48a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33d941f8ed33615d45c4c14e9b9fa48a">&#9670;&#160;</a></span>execute() <span class="overload">[3/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">ArgRange &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement once. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map or a vector of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00230">230</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acf9dcbb008a70a1476bb771f4cd3918e" name="acf9dcbb008a70a1476bb771f4cd3918e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf9dcbb008a70a1476bb771f4cd3918e">&#9670;&#160;</a></span>execute() <span class="overload">[4/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt; boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">ArgRange &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement once. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map or a vector of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00280">280</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a34989fae5d7c722801009f15e9dadff9" name="a34989fae5d7c722801009f15e9dadff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34989fae5d7c722801009f15e9dadff9">&#9670;&#160;</a></span>execute() <span class="overload">[5/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt; boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">ArgRange &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>params</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">system::error_code &amp;</td>          <td class="paramname"><span class="paramname"><em>ec</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ei</em></span>&#160;) &amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement and reset it afterwards. </p>
+<dl class="section warning"><dt>Warning</dt><dd>The handle is shared between the statement &amp; resultset. The statemens need to be kept alive.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map, a vector or a stuple of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00391">391</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7230fc90bdcb36abc631dd0b8267ce1f" name="a7230fc90bdcb36abc631dd0b8267ce1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7230fc90bdcb36abc631dd0b8267ce1f">&#9670;&#160;</a></span>execute() <span class="overload">[6/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt; boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">ArgRange &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>params</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">system::error_code &amp;</td>          <td class="paramname"><span class="paramname"><em>ec</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ei</em></span>&#160;) &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement once. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map or a vector of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00264">264</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae1a7a611c192b76bf8291c97a16e8ebe" name="ae1a7a611c192b76bf8291c97a16e8ebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1a7a611c192b76bf8291c97a16e8ebe">&#9670;&#160;</a></span>execute() <span class="overload">[7/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">ArgRange &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>params</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">system::error_code &amp;</td>          <td class="paramname"><span class="paramname"><em>ec</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>info</em></span>&#160;) &amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement and reset it afterwards. </p>
+<dl class="section warning"><dt>Warning</dt><dd>The handle is shared between the statement &amp; resultset. The statemens need to be kept alive.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map, a vector or a stuple of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00339">339</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0b7b0e468010d8bf49fb1681f6c87ef5" name="a0b7b0e468010d8bf49fb1681f6c87ef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b7b0e468010d8bf49fb1681f6c87ef5">&#9670;&#160;</a></span>execute() <span class="overload">[8/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ArgRange  = std::initializer_list&lt;param_ref&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">ArgRange &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>params</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">system::error_code &amp;</td>          <td class="paramname"><span class="paramname"><em>ec</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>info</em></span>&#160;) &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement once. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map or a vector of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00216">216</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad116a2c26b8d85982170b27f9d829cde" name="ad116a2c26b8d85982170b27f9d829cde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad116a2c26b8d85982170b27f9d829cde">&#9670;&#160;</a></span>execute() <span class="overload">[9/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td> &amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement and reset it afterwards. </p>
+<dl class="section warning"><dt>Warning</dt><dd>The handle is shared between the statement &amp; resultset. The statemens need to be kept alive.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map, a vector or a stuple of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00380">380</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7cb784aa6775ed5e12f8e69ec111c52c" name="a7cb784aa6775ed5e12f8e69ec111c52c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cb784aa6775ed5e12f8e69ec111c52c">&#9670;&#160;</a></span>execute() <span class="overload">[10/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt; boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td> &amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement and reset it afterwards. </p>
+<dl class="section warning"><dt>Warning</dt><dd>The handle is shared between the statement &amp; resultset. The statemens need to be kept alive.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map, a vector or a stuple of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00434">434</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a816cde6b8135e98afc8dfe584ff38146" name="a816cde6b8135e98afc8dfe584ff38146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816cde6b8135e98afc8dfe584ff38146">&#9670;&#160;</a></span>execute() <span class="overload">[11/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement once. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map or a vector of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00253">253</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a12bdd88d33f31fdc799d3aa1d1ef7bfc" name="a12bdd88d33f31fdc799d3aa1d1ef7bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12bdd88d33f31fdc799d3aa1d1ef7bfc">&#9670;&#160;</a></span>execute() <span class="overload">[12/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt; boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>params</em></span></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement once. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map or a vector of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00307">307</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3d6a500542abcb039a1b0d5314df9dce" name="a3d6a500542abcb039a1b0d5314df9dce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d6a500542abcb039a1b0d5314df9dce">&#9670;&#160;</a></span>execute() <span class="overload">[13/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt; boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>params</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">system::error_code &amp;</td>          <td class="paramname"><span class="paramname"><em>ec</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ei</em></span>&#160;) &amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement and reset it afterwards. </p>
+<dl class="section warning"><dt>Warning</dt><dd>The handle is shared between the statement &amp; resultset. The statemens need to be kept alive.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map, a vector or a stuple of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00418">418</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="adf1760ce8de680ffa9fcf60021c4af11" name="adf1760ce8de680ffa9fcf60021c4af11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf1760ce8de680ffa9fcf60021c4af11">&#9670;&#160;</a></span>execute() <span class="overload">[14/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1static__resultset.html">static_resultset</a>&lt; T &gt; boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>params</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">system::error_code &amp;</td>          <td class="paramname"><span class="paramname"><em>ec</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ei</em></span>&#160;) &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement once. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map or a vector of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00291">291</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a55fbd9da33e11174d33bec583e10a6a8" name="a55fbd9da33e11174d33bec583e10a6a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55fbd9da33e11174d33bec583e10a6a8">&#9670;&#160;</a></span>execute() <span class="overload">[15/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>params</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">system::error_code &amp;</td>          <td class="paramname"><span class="paramname"><em>ec</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>info</em></span>&#160;) &amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement and reset it afterwards. </p>
+<dl class="section warning"><dt>Warning</dt><dd>The handle is shared between the statement &amp; resultset. The statemens need to be kept alive.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map, a vector or a stuple of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00366">366</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5abea68ce92ca96dbc7bec7e794d5433" name="a5abea68ce92ca96dbc7bec7e794d5433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5abea68ce92ca96dbc7bec7e794d5433">&#9670;&#160;</a></span>execute() <span class="overload">[16/16]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> boost::sqlite::statement::execute </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; std::pair&lt; string_view, <a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a> &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>params</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">system::error_code &amp;</td>          <td class="paramname"><span class="paramname"><em>ec</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>info</em></span>&#160;) &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>execute the prepared statement once. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>The arguments to be passed to the prepared statement. This can be a map or a vector of <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a>. </td></tr>
+    <tr><td class="paramname">ec</td><td>The system::error_code used to deliver errors for the exception less overload. </td></tr>
+    <tr><td class="paramname">info</td><td>The <a class="el" href="structboost_1_1sqlite_1_1error__info.html" title="Additional information about error conditions stored in an sqlite-allocate string.">error_info</a> used to deliver errors for the exception less overload. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The resultset of the query.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1statement.html">statement</a> st = conn.prepare(<span class="stringliteral">&quot;select id from users where name = $1;&quot;</span>);</div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1resultset.html">resultset</a> q = std::move(st).execute(std::make_tuple(<span class="stringliteral">&quot;peter&quot;</span>));</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00240">240</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>boost/sqlite/<a class="el" href="statement_8hpp_source.html">statement.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1statement.html">statement</a></li>
-    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:50:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

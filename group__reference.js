@@ -1,0 +1,277 @@
+var group__reference =
+[
+    [ "boost::sqlite::blob", "structboost_1_1sqlite_1_1blob.html", [
+      [ "blob", "structboost_1_1sqlite_1_1blob.html#a2509482ae14a74f3e1841d4d345d09c1", null ],
+      [ "blob", "structboost_1_1sqlite_1_1blob.html#a94623795b4c891400fd655d18f771b27", null ],
+      [ "data", "structboost_1_1sqlite_1_1blob.html#ac5f99eac01e2b0dbb3f17a44d044d65a", null ],
+      [ "release", "structboost_1_1sqlite_1_1blob.html#a88b366b2e2d1be9486248e7794243a47", null ],
+      [ "size", "structboost_1_1sqlite_1_1blob.html#aa34d59944f5605f28f682cfd029646fe", null ]
+    ] ],
+    [ "boost::sqlite::blob_handle", "structboost_1_1sqlite_1_1blob__handle.html", [
+      [ "handle_type", "structboost_1_1sqlite_1_1blob__handle.html#a69e0c7c70a382ba52b2b8b3628cab5c5", null ],
+      [ "blob_handle", "structboost_1_1sqlite_1_1blob__handle.html#a0b8170f525f6e25989cd37b4e81fa192", null ],
+      [ "blob_handle", "structboost_1_1sqlite_1_1blob__handle.html#a36d9b1d569fa9f44ff25212af5ef6256", null ],
+      [ "handle", "structboost_1_1sqlite_1_1blob__handle.html#aa7891fad110a30d8be5f8ad17e91d437", null ],
+      [ "read_at", "structboost_1_1sqlite_1_1blob__handle.html#ac33e74737150f7341af0299a6d35c625", null ],
+      [ "read_at", "structboost_1_1sqlite_1_1blob__handle.html#a37e5af23fb15a5948ff0476d09e90fcd", null ],
+      [ "release", "structboost_1_1sqlite_1_1blob__handle.html#a2cac13d0ede1e352822a33cc3036f51a", null ],
+      [ "reopen", "structboost_1_1sqlite_1_1blob__handle.html#a59cd54442c3f6bc30bbc6212b3be96e2", null ],
+      [ "reopen", "structboost_1_1sqlite_1_1blob__handle.html#ada3aa86fba44d7f38cf949c84fe86d12", null ],
+      [ "size", "structboost_1_1sqlite_1_1blob__handle.html#abebebfff3c30490393e2e5a870258890", null ],
+      [ "write_at", "structboost_1_1sqlite_1_1blob__handle.html#a59653a47879a5a6619c1742016669ce9", null ],
+      [ "write_at", "structboost_1_1sqlite_1_1blob__handle.html#a8ee439869690cbbe8ae4f90e2ca2e258", null ]
+    ] ],
+    [ "boost::sqlite::blob_view", "structboost_1_1sqlite_1_1blob__view.html", [
+      [ "blob_view", "structboost_1_1sqlite_1_1blob__view.html#af3a49b8f426e31729038208c1281ae5a", null ],
+      [ "blob_view", "structboost_1_1sqlite_1_1blob__view.html#aff9f1adaa153906e229e30b567dd4f70", null ],
+      [ "data", "structboost_1_1sqlite_1_1blob__view.html#ab97b0dfcec8ec0624ab5723a968d8606", null ],
+      [ "size", "structboost_1_1sqlite_1_1blob__view.html#a9da18126fe15658f1c80e3b54accc86c", null ]
+    ] ],
+    [ "boost::sqlite::connection", "structboost_1_1sqlite_1_1connection.html", [
+      [ "handle_type", "structboost_1_1sqlite_1_1connection.html#aa8bb6a81ebce37234431ea719b4b9fa1", null ],
+      [ "connection", "structboost_1_1sqlite_1_1connection.html#ab26ea31dd368b7449fa765ebc8c235ff", null ],
+      [ "connection", "structboost_1_1sqlite_1_1connection.html#a91591cbbda2363d5a95cf84779a48781", null ],
+      [ "connection", "structboost_1_1sqlite_1_1connection.html#a49e6633362339c77291974203cfd3b51", null ],
+      [ "connection", "structboost_1_1sqlite_1_1connection.html#a29785f338f0e6e2c8fb838d7a1c34f7b", null ],
+      [ "close", "structboost_1_1sqlite_1_1connection.html#ab78c01b3fc0f8ce3ed6830b4c033de41", null ],
+      [ "close", "structboost_1_1sqlite_1_1connection.html#a1430660960bd93c8cd7f058d42762cd4", null ],
+      [ "connect", "structboost_1_1sqlite_1_1connection.html#af255dc0955da1a1be548c260bf7e5f0d", null ],
+      [ "connect", "structboost_1_1sqlite_1_1connection.html#ac713792c43418f16a3f652759f56cc65", null ],
+      [ "execute", "structboost_1_1sqlite_1_1connection.html#a5addb59cc2400f8eb9a3c31c61f6fd8a", null ],
+      [ "execute", "structboost_1_1sqlite_1_1connection.html#a03b053021fcb8321750097d840a72025", null ],
+      [ "execute", "structboost_1_1sqlite_1_1connection.html#a5132bfb8a6024a4f275f0f7cb2bfdc7e", null ],
+      [ "execute", "structboost_1_1sqlite_1_1connection.html#a790d727be159156b32b1c69a1aa500cf", null ],
+      [ "handle", "structboost_1_1sqlite_1_1connection.html#af490f97f7c5d8b7ba4c5b2affbbf62ad", null ],
+      [ "has_column", "structboost_1_1sqlite_1_1connection.html#a657d0363875afb2f0a5785e3cc88ed7a", null ],
+      [ "has_table", "structboost_1_1sqlite_1_1connection.html#a465beee6852f3041750b77202f373755", null ],
+      [ "operator=", "structboost_1_1sqlite_1_1connection.html#a239cbf3e0076844e9e44c6e0d729855a", null ],
+      [ "prepare", "structboost_1_1sqlite_1_1connection.html#af3645ef3e538d35815ad3ec55b0fc1b2", null ],
+      [ "prepare", "structboost_1_1sqlite_1_1connection.html#afc495d6e7122c608fbe6a472cf308981", null ],
+      [ "query", "structboost_1_1sqlite_1_1connection.html#a286512170b74732e80553b88a449b1d9", null ],
+      [ "query", "structboost_1_1sqlite_1_1connection.html#a8a66a89bcc745c938a52fd2310fb0fce", null ],
+      [ "query", "structboost_1_1sqlite_1_1connection.html#a664bf51ddfb95d5e796a0226207b4f0b", null ],
+      [ "query", "structboost_1_1sqlite_1_1connection.html#abe4eebcfe3e85bf537ece25d94c295a6", null ],
+      [ "release", "structboost_1_1sqlite_1_1connection.html#aec95a55410f5f797dfe95db1d7f17d8a", null ],
+      [ "valid", "structboost_1_1sqlite_1_1connection.html#a6fe681d06faba81b65fd95e642e1cc6c", null ]
+    ] ],
+    [ "boost::sqlite::context< Args >", "structboost_1_1sqlite_1_1context.html", [
+      [ "get", "structboost_1_1sqlite_1_1context.html#ae141c9013cf3d83f3105d141e62a2687", null ],
+      [ "get_connection", "structboost_1_1sqlite_1_1context.html#add00e55ac25c4b9c796d501e7dd8f03c", null ],
+      [ "get_if", "structboost_1_1sqlite_1_1context.html#a5f94d292a29e0913e46c3fdf89b316c3", null ],
+      [ "set", "structboost_1_1sqlite_1_1context.html#a65d1c2d7fed2db2f63e03a2cc744d1dc", null ],
+      [ "set_error", "structboost_1_1sqlite_1_1context.html#a6245ee2db2baf90d0a606bd034836c2b", null ],
+      [ "set_result", "structboost_1_1sqlite_1_1context.html#a888bdb187ad299318ceb2e0ef7a95a41", null ]
+    ] ],
+    [ "boost::sqlite::vtab::cursor< ColumnType >", "structboost_1_1sqlite_1_1vtab_1_1cursor.html", [
+      [ "column", "structboost_1_1sqlite_1_1vtab_1_1cursor.html#ac97449b84c0c7b4579651862a178974d", null ],
+      [ "eof", "structboost_1_1sqlite_1_1vtab_1_1cursor.html#a260631df3ebaeb85cb84aabb32ef96ff", null ],
+      [ "filter", "structboost_1_1sqlite_1_1vtab_1_1cursor.html#a61f3aef91ccb5798ffef28bf564fc68a", null ],
+      [ "next", "structboost_1_1sqlite_1_1vtab_1_1cursor.html#a49ed65ee522acbf11452a0e366650d08", null ],
+      [ "row_id", "structboost_1_1sqlite_1_1vtab_1_1cursor.html#a4fb3593e48e7d8874d26885fa6b52d93", null ],
+      [ "table", "structboost_1_1sqlite_1_1vtab_1_1cursor.html#af4f98eb9f795929e0e54dafd8a0ce7f6", null ]
+    ] ],
+    [ "boost::sqlite::vtab::cursor< void >", "structboost_1_1sqlite_1_1vtab_1_1cursor_3_01void_01_4.html", [
+      [ "column", "structboost_1_1sqlite_1_1vtab_1_1cursor_3_01void_01_4.html#a66a06cd177812b8cceb6d0ccca5b2f35", null ],
+      [ "eof", "structboost_1_1sqlite_1_1vtab_1_1cursor_3_01void_01_4.html#ae3c492dc36477d6fc01ee68309169683", null ],
+      [ "filter", "structboost_1_1sqlite_1_1vtab_1_1cursor_3_01void_01_4.html#afa9350c05b5aacebeb7d56e65e33cf51", null ],
+      [ "next", "structboost_1_1sqlite_1_1vtab_1_1cursor_3_01void_01_4.html#a70671fc322afa1f5baecb330af234c9d", null ],
+      [ "row_id", "structboost_1_1sqlite_1_1vtab_1_1cursor_3_01void_01_4.html#a10e669807eaa81fc21d138d7d478083b", null ],
+      [ "table", "structboost_1_1sqlite_1_1vtab_1_1cursor_3_01void_01_4.html#ae1cc236f2f7642ded9aa6b69ff92cb80", null ]
+    ] ],
+    [ "boost::sqlite::error", "structboost_1_1sqlite_1_1error.html", [
+      [ "code", "structboost_1_1sqlite_1_1error.html#a6a51593fb0489eb5bdcb492ed61ac56a", null ],
+      [ "info", "structboost_1_1sqlite_1_1error.html#a1e2e5a84fdfc97dda349fea3621fb5f5", null ]
+    ] ],
+    [ "boost::sqlite::error_info", "structboost_1_1sqlite_1_1error__info.html", [
+      [ "error_info", "structboost_1_1sqlite_1_1error__info.html#aa4f00ef8f5b14b74c5d94dd3991f0560", null ],
+      [ "error_info", "structboost_1_1sqlite_1_1error__info.html#ad454f4b8dc41f5631c5976a8c50d81a0", null ],
+      [ "capacity", "structboost_1_1sqlite_1_1error__info.html#ae90bf8bef0c02780b10facc04ce45c42", null ],
+      [ "clear", "structboost_1_1sqlite_1_1error__info.html#a1c971ed5552069322b4ef6c1eba46a6f", null ],
+      [ "format", "structboost_1_1sqlite_1_1error__info.html#a1701768d0c2cb750bd3cb1ea0fcf12f3", null ],
+      [ "message", "structboost_1_1sqlite_1_1error__info.html#a3efa2c9771ce1b00260a687e89684e08", null ],
+      [ "reserve", "structboost_1_1sqlite_1_1error__info.html#a567cb0446bca4f5af7d009ec37048c77", null ],
+      [ "reset", "structboost_1_1sqlite_1_1error__info.html#a263f541545aba2fb716691fb4d998221", null ],
+      [ "set_message", "structboost_1_1sqlite_1_1error__info.html#a93ef76235523f14d0fc7dafc06a3271b", null ],
+      [ "snformat", "structboost_1_1sqlite_1_1error__info.html#a627f10ee26b06f77c7c936b896a6771b", null ]
+    ] ],
+    [ "boost::sqlite::field", "structboost_1_1sqlite_1_1field.html", [
+      [ "column_name", "structboost_1_1sqlite_1_1field.html#aea3bd2ab3312611c54b7e7f5d712d55e", null ],
+      [ "column_origin_name", "structboost_1_1sqlite_1_1field.html#a6c8b16c92bbc70a1339ef9c984e76aeb", null ],
+      [ "get_blob", "structboost_1_1sqlite_1_1field.html#af9c6b286770abfe6a9c45dd0d1dc6130", null ],
+      [ "get_double", "structboost_1_1sqlite_1_1field.html#a604fc632fc836b7d1e75076f62f37fe4", null ],
+      [ "get_int", "structboost_1_1sqlite_1_1field.html#aa72fb47881e4ad1d689800cb70fb6406", null ],
+      [ "get_int64", "structboost_1_1sqlite_1_1field.html#a7221cb4638ad6b0992cff6b5e90bdbab", null ],
+      [ "get_text", "structboost_1_1sqlite_1_1field.html#a4ddabf9e516f7110cfd2f1095aa87210", null ],
+      [ "get_value", "structboost_1_1sqlite_1_1field.html#aefd8054f3277ab190a64fec4bebf5b69", null ],
+      [ "is_null", "structboost_1_1sqlite_1_1field.html#ad337ec2cf5017dc3b8234541fba956fd", null ],
+      [ "operator bool", "structboost_1_1sqlite_1_1field.html#a166ed4f296bf66519b8c171b5650974a", null ],
+      [ "table_name", "structboost_1_1sqlite_1_1field.html#a0e14405de3b38982016f1cdd6c8f18a2", null ],
+      [ "type", "structboost_1_1sqlite_1_1field.html#a3a02d159d4c5decb7142f97db8717f28", null ]
+    ] ],
+    [ "boost::sqlite::vtab::in", "structboost_1_1sqlite_1_1vtab_1_1in.html", [
+      [ "begin", "structboost_1_1sqlite_1_1vtab_1_1in.html#a8338d87407d76bb7842b5685858397a0", null ],
+      [ "end", "structboost_1_1sqlite_1_1vtab_1_1in.html#a794252d84cec6166445b67a73b232f54", null ]
+    ] ],
+    [ "boost::sqlite::vtab::index_info", "structboost_1_1sqlite_1_1vtab_1_1index__info.html", [
+      [ "collation", "structboost_1_1sqlite_1_1vtab_1_1index__info.html#ab00f8caba018da0c1c90e19d9ad8c6a0", null ],
+      [ "constraints", "structboost_1_1sqlite_1_1vtab_1_1index__info.html#a642665a96369d3d0d6ac5d2d3113cfdf", null ],
+      [ "distinct", "structboost_1_1sqlite_1_1vtab_1_1index__info.html#a2e34487583b632ec06c1a6bdabec225b", null ],
+      [ "order_by", "structboost_1_1sqlite_1_1vtab_1_1index__info.html#ab76bfead13963f99d3e159a180187fbb", null ]
+    ] ],
+    [ "boost::sqlite::memory_tag", "group__reference.html#structboost_1_1sqlite_1_1memory__tag", null ],
+    [ "boost::sqlite::vtab::modifiable", "structboost_1_1sqlite_1_1vtab_1_1modifiable.html", [
+      [ "insert", "structboost_1_1sqlite_1_1vtab_1_1modifiable.html#ac2db12cc81e53b852a56f2b17e03069e", null ],
+      [ "update", "structboost_1_1sqlite_1_1vtab_1_1modifiable.html#a400441676e545d8dd40764498c261194", null ]
+    ] ],
+    [ "boost::sqlite::param_ref", "structboost_1_1sqlite_1_1param__ref.html", [
+      [ "param_ref", "structboost_1_1sqlite_1_1param__ref.html#ad7b17f1616c4b456b8595fda7db7d790", null ],
+      [ "param_ref", "structboost_1_1sqlite_1_1param__ref.html#afe60ed94f6e6fecab9b33be62716170b", null ],
+      [ "param_ref", "structboost_1_1sqlite_1_1param__ref.html#a422c02029a2ff71b7e7fc00e12ed53dc", null ],
+      [ "param_ref", "structboost_1_1sqlite_1_1param__ref.html#aedae915fc82cf9f6291e32d168cf4b45", null ],
+      [ "param_ref", "structboost_1_1sqlite_1_1param__ref.html#a5d99bb0f73be2b5999d81dc4b48ddcdb", null ],
+      [ "param_ref", "structboost_1_1sqlite_1_1param__ref.html#ad63692247cd26e34a6538b8137ce2101", null ],
+      [ "param_ref", "structboost_1_1sqlite_1_1param__ref.html#a4501158e0be9de17e6ad9ad168ff4132", null ],
+      [ "param_ref", "structboost_1_1sqlite_1_1param__ref.html#a118c143478dd62646257d84997864b93", null ],
+      [ "param_ref", "structboost_1_1sqlite_1_1param__ref.html#a20cf14aa5eed4b81770162d868500171", null ],
+      [ "param_ref", "structboost_1_1sqlite_1_1param__ref.html#ae5ebf58847f84638690e71b848dfb27d", null ],
+      [ "param_ref", "structboost_1_1sqlite_1_1param__ref.html#ae12d640bb856f1a1aa19cf2c57dc56c2", null ],
+      [ "param_ref", "structboost_1_1sqlite_1_1param__ref.html#a3d08f5f76ea5773e943df295f63c7221", null ],
+      [ "apply", "structboost_1_1sqlite_1_1param__ref.html#aad69bc0c0c9a7379f34a73843e1292eb", null ]
+    ] ],
+    [ "boost::sqlite::vtab::recursive_transaction", "structboost_1_1sqlite_1_1vtab_1_1recursive__transaction.html", [
+      [ "release", "structboost_1_1sqlite_1_1vtab_1_1recursive__transaction.html#a82f823e9227333c4d97e8123d2436178", null ],
+      [ "rollback_to", "structboost_1_1sqlite_1_1vtab_1_1recursive__transaction.html#a9c3651794ae5cffe31ae792e2b308f28", null ],
+      [ "savepoint", "structboost_1_1sqlite_1_1vtab_1_1recursive__transaction.html#a0b61f250cfad5bc502d6fb99ac5210b2", null ]
+    ] ],
+    [ "boost::sqlite::vtab::renamable", "structboost_1_1sqlite_1_1vtab_1_1renamable.html", [
+      [ "rename", "structboost_1_1sqlite_1_1vtab_1_1renamable.html#a4179ce72e8f82fd3f0f357ab9ca9530c", null ]
+    ] ],
+    [ "boost::sqlite::resultset", "structboost_1_1sqlite_1_1resultset.html", [
+      [ "iterator", "structboost_1_1sqlite_1_1resultset_1_1iterator.html", null ],
+      [ "begin", "structboost_1_1sqlite_1_1resultset.html#a0e833889e3d03b5d4a2de6715b783d92", null ],
+      [ "column_name", "structboost_1_1sqlite_1_1resultset.html#a9918d1a203822ab80fb7c901d6b3e5d1", null ],
+      [ "column_origin_name", "structboost_1_1sqlite_1_1resultset.html#a31ef38e19c80ef1f6c06a75791d5ffe1", null ],
+      [ "current", "structboost_1_1sqlite_1_1resultset.html#a77f2c82235f31af8c8e591f594f65335", null ],
+      [ "done", "structboost_1_1sqlite_1_1resultset.html#ab1f63280c5e6a1f0d65738042d805786", null ],
+      [ "end", "structboost_1_1sqlite_1_1resultset.html#a356698ab9af07099be5180c2e972ecad", null ],
+      [ "read_next", "structboost_1_1sqlite_1_1resultset.html#a06ab632df9dcebae50701ea732eb4999", null ],
+      [ "read_next", "structboost_1_1sqlite_1_1resultset.html#ac36715b2710d1cbbf2ffe2757e027252", null ],
+      [ "table_name", "structboost_1_1sqlite_1_1resultset.html#a9204357934f9fe91af6b4f6e0e664f66", null ]
+    ] ],
+    [ "boost::sqlite::row", "structboost_1_1sqlite_1_1row.html", [
+      [ "const_iterator", "structboost_1_1sqlite_1_1row_1_1const__iterator.html", null ],
+      [ "at", "structboost_1_1sqlite_1_1row.html#ae2bbb7c0e388f499c91b538f4e6c10de", null ],
+      [ "begin", "structboost_1_1sqlite_1_1row.html#a26d54260faa4c5218d7649e9c7da3ed4", null ],
+      [ "end", "structboost_1_1sqlite_1_1row.html#a1cbed93b9f8c2332724547a8d953cfe7", null ],
+      [ "operator[]", "structboost_1_1sqlite_1_1row.html#aaab460b0285d34c8d8717522535a3b26", null ],
+      [ "size", "structboost_1_1sqlite_1_1row.html#ae576c1fd88f81c6da13f89f746401099", null ]
+    ] ],
+    [ "boost::sqlite::savepoint", "structboost_1_1sqlite_1_1savepoint.html", [
+      [ "savepoint", "structboost_1_1sqlite_1_1savepoint.html#ae4f10fb3febfcbe8fb01a203b8ea6fbb", null ],
+      [ "savepoint", "structboost_1_1sqlite_1_1savepoint.html#a2e26d802ff85ea753c4d3c72c8087dfe", null ],
+      [ "~savepoint", "structboost_1_1sqlite_1_1savepoint.html#a0f8b0bf2c2acaa6d8e55b999cc2666af", null ],
+      [ "commit", "structboost_1_1sqlite_1_1savepoint.html#a2e23227424b836a3d6c13d6f4687c3d4", null ],
+      [ "commit", "structboost_1_1sqlite_1_1savepoint.html#a221365a31c62ccbc65dd405abf282869", null ],
+      [ "name", "structboost_1_1sqlite_1_1savepoint.html#af39a9a5c13be43eb231fe025191e7ddd", null ],
+      [ "release", "structboost_1_1sqlite_1_1savepoint.html#a0a70855c27c4812243bc56eee714861f", null ],
+      [ "release", "structboost_1_1sqlite_1_1savepoint.html#a4479c4af8af9ab1003ae5fed0166d9ce", null ],
+      [ "rollback", "structboost_1_1sqlite_1_1savepoint.html#a67af25164a47ccd9233f74bdda7d19e8", null ],
+      [ "rollback", "structboost_1_1sqlite_1_1savepoint.html#af28665eaf8f239727e060ffb39f4d456", null ]
+    ] ],
+    [ "boost::sqlite::statement", "structboost_1_1sqlite_1_1statement.html", [
+      [ "declared_type", "structboost_1_1sqlite_1_1statement.html#ab68c45fe09f35db63538310b75b157eb", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#a1aaee5e05b1019cbd57f3d4446756d68", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#ad323cef59c1b285571af76249e6c3d96", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#a33d941f8ed33615d45c4c14e9b9fa48a", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#acf9dcbb008a70a1476bb771f4cd3918e", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#a34989fae5d7c722801009f15e9dadff9", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#a7230fc90bdcb36abc631dd0b8267ce1f", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#ae1a7a611c192b76bf8291c97a16e8ebe", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#a0b7b0e468010d8bf49fb1681f6c87ef5", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#ad116a2c26b8d85982170b27f9d829cde", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#a7cb784aa6775ed5e12f8e69ec111c52c", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#a816cde6b8135e98afc8dfe584ff38146", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#a12bdd88d33f31fdc799d3aa1d1ef7bfc", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#a3d6a500542abcb039a1b0d5314df9dce", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#adf1760ce8de680ffa9fcf60021c4af11", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#a55fbd9da33e11174d33bec583e10a6a8", null ],
+      [ "execute", "structboost_1_1sqlite_1_1statement.html#a5abea68ce92ca96dbc7bec7e794d5433", null ],
+      [ "expanded_sql", "structboost_1_1sqlite_1_1statement.html#a82e70a3637c0f83a9eff8eea9d78e0ee", null ],
+      [ "sql", "structboost_1_1sqlite_1_1statement.html#a1958c1d5f4f3d1f188cd44268f25e214", null ]
+    ] ],
+    [ "boost::sqlite::static_resultset< T >", "structboost_1_1sqlite_1_1static__resultset.html", [
+      [ "iterator", "structboost_1_1sqlite_1_1static__resultset_1_1iterator.html", null ],
+      [ "begin", "structboost_1_1sqlite_1_1static__resultset.html#a5f32a5a36561dc3043d2f827d56bfc1e", null ],
+      [ "column_name", "structboost_1_1sqlite_1_1static__resultset.html#a188365756bcd7db40fcbaf63e9b56859", null ],
+      [ "column_origin_name", "structboost_1_1sqlite_1_1static__resultset.html#a88cc1f268821399170eb1ffcd13636ee", null ],
+      [ "current", "structboost_1_1sqlite_1_1static__resultset.html#a5ecdd49ba9dfcc34ac086e3e5b1abe94", null ],
+      [ "done", "structboost_1_1sqlite_1_1static__resultset.html#a8a18f96207f707976ec6810f57f3bd98", null ],
+      [ "end", "structboost_1_1sqlite_1_1static__resultset.html#aa696fc3151d4207e14cb4927fb3451b4", null ],
+      [ "read_next", "structboost_1_1sqlite_1_1static__resultset.html#a267ae7723d28bd85f693a72b63ade408", null ],
+      [ "read_next", "structboost_1_1sqlite_1_1static__resultset.html#a2adb2bf825e69bb6740995943535399c", null ],
+      [ "table_name", "structboost_1_1sqlite_1_1static__resultset.html#acd192985a941cfc952455cc6d54d59a9", null ]
+    ] ],
+    [ "boost::sqlite::transaction", "structboost_1_1sqlite_1_1transaction.html", [
+      [ "behaviour", "structboost_1_1sqlite_1_1transaction.html#aa9aab15adb25dc6d640b84f736edc6a4", null ],
+      [ "transaction", "structboost_1_1sqlite_1_1transaction.html#af42f6adcb086dbea3dbf5c17f9dc1bda", null ],
+      [ "transaction", "structboost_1_1sqlite_1_1transaction.html#a2ba81d64aaa2b4ce327a96ee8702f3a1", null ],
+      [ "transaction", "structboost_1_1sqlite_1_1transaction.html#a2cc3a6ed174f9b899a134ac805ef8c45", null ],
+      [ "~transaction", "structboost_1_1sqlite_1_1transaction.html#af846a71224cfe4fb7462a30c2b9ec184", null ],
+      [ "commit", "structboost_1_1sqlite_1_1transaction.html#ac537f4407d5c40007f7513bed19d04b5", null ],
+      [ "commit", "structboost_1_1sqlite_1_1transaction.html#a9293ec50793f90fa6d226d057ef9e1da", null ],
+      [ "rollback", "structboost_1_1sqlite_1_1transaction.html#a15885d7b38c025f1f52005d04f688d32", null ],
+      [ "rollback", "structboost_1_1sqlite_1_1transaction.html#a9faea2dbd95d8d0243bb0984043967d1", null ]
+    ] ],
+    [ "boost::sqlite::vtab::transaction", "structboost_1_1sqlite_1_1vtab_1_1transaction.html", [
+      [ "begin", "structboost_1_1sqlite_1_1vtab_1_1transaction.html#a3f8f67de9ae79d212cc863a8976672d7", null ],
+      [ "commit", "structboost_1_1sqlite_1_1vtab_1_1transaction.html#a3f68f69c602ed5d3685714f11cb042d7", null ],
+      [ "rollback", "structboost_1_1sqlite_1_1vtab_1_1transaction.html#ac2e4da3e8d73d52ca7748daaba1bee0c", null ],
+      [ "sync", "structboost_1_1sqlite_1_1vtab_1_1transaction.html#a27c69ff94667d0b18c13c96e80675263", null ]
+    ] ],
+    [ "boost::sqlite::value", "structboost_1_1sqlite_1_1value.html", [
+      [ "handle_type", "structboost_1_1sqlite_1_1value.html#a5652e21fa847c8464b2798a2c12ab914", null ],
+      [ "value", "structboost_1_1sqlite_1_1value.html#abdf3e268f66a902825f3266b05a9c531", null ],
+      [ "from_bind", "structboost_1_1sqlite_1_1value.html#a30339700920e82923296595c85160c60", null ],
+      [ "get_blob", "structboost_1_1sqlite_1_1value.html#ac0c6545a877c06518ae10715d1db83af", null ],
+      [ "get_double", "structboost_1_1sqlite_1_1value.html#a3b9b0918ba77e8a7022cc5a5cead17a8", null ],
+      [ "get_int", "structboost_1_1sqlite_1_1value.html#acd37c12692bb94d83858943cef3569d7", null ],
+      [ "get_int64", "structboost_1_1sqlite_1_1value.html#a35bc60e28267479253a9d9f1343eef9b", null ],
+      [ "get_pointer", "structboost_1_1sqlite_1_1value.html#a7e9542ba7a9aae851f86594ffbd36061", null ],
+      [ "get_text", "structboost_1_1sqlite_1_1value.html#a5b193cda00a07e2bb88f4b4dfe250247", null ],
+      [ "handle", "structboost_1_1sqlite_1_1value.html#ac0dc0f5b5d35307bbe728574b11ce899", null ],
+      [ "is_null", "structboost_1_1sqlite_1_1value.html#abe39cf2768ebdb1cb35fa47d9a611d8f", null ],
+      [ "nochange", "structboost_1_1sqlite_1_1value.html#a479bf102a1ef9a3e6528fa1aea8e164f", null ],
+      [ "numeric_type", "structboost_1_1sqlite_1_1value.html#a5eb39de9167926c9ade1d500eb7085c6", null ],
+      [ "operator bool", "structboost_1_1sqlite_1_1value.html#a7035a45661fbb59f1c86df45cfb3e377", null ],
+      [ "subtype", "structboost_1_1sqlite_1_1value.html#aee697fb23df549f5b9c28b13c443f033", null ],
+      [ "type", "structboost_1_1sqlite_1_1value.html#a64876af836f1d477595eb5a785d65862", null ]
+    ] ],
+    [ "BOOST_SQLITE_EXTENSION", "group__reference.html#ga5fcce434a49622839d917d3c41b3c513", null ],
+    [ "boost::sqlite::value_type", "group__reference.html#ga54803a0f6eb577b3e3938ca6dc3f6818", [
+      [ "boost::sqlite::value_type::integer", "group__reference.html#gga54803a0f6eb577b3e3938ca6dc3f6818a157db7df530023575515d366c9b672e8", null ],
+      [ "boost::sqlite::value_type::floating", "group__reference.html#gga54803a0f6eb577b3e3938ca6dc3f6818a374515b23d6f106696387776a6077d17", null ],
+      [ "boost::sqlite::value_type::text", "group__reference.html#gga54803a0f6eb577b3e3938ca6dc3f6818a1cb251ec0d568de6a929b520c4aed8d1", null ],
+      [ "boost::sqlite::value_type::blob", "group__reference.html#gga54803a0f6eb577b3e3938ca6dc3f6818aee26908bf9629eeb4b37dac350f4754a", null ],
+      [ "boost::sqlite::value_type::null", "group__reference.html#gga54803a0f6eb577b3e3938ca6dc3f6818a37a6259cc0c1dae299a7866489dff0bd", null ]
+    ] ],
+    [ "boost::sqlite::zero_blob", "group__reference.html#ga3210fa5fa6bd536bb7f13c3395acb37d", null ],
+    [ "boost::sqlite::as_json", "group__reference.html#gafbdfd1c62e8a60280c46078e7688bc50", null ],
+    [ "boost::sqlite::as_json", "group__reference.html#ga2a9b377a749d90f66de60a4eba475aa4", null ],
+    [ "boost::sqlite::backup", "group__reference.html#ga9812c9be1c81e68a47ad353def65aedb", null ],
+    [ "boost::sqlite::backup", "group__reference.html#gaf9c566ff352177a56abd29a121982b4b", null ],
+    [ "boost::sqlite::commit_hook", "group__reference.html#ga21b7c565949a46cde0ab93dd86acdd62", null ],
+    [ "boost::sqlite::create_aggregate_function", "group__reference.html#ga499445c0c090dc2089e602d3df3aa41f", null ],
+    [ "boost::sqlite::create_aggregate_function", "group__reference.html#gad518e22393ac440795f7e130c4dad0a7", null ],
+    [ "boost::sqlite::create_collation", "group__reference.html#gae5e2b60295262616e22e804d0c0de36b", null ],
+    [ "boost::sqlite::create_collation", "group__reference.html#ga4b78f9ea6818419127459b88326929ed", null ],
+    [ "boost::sqlite::create_module", "group__reference.html#ga6970e74adf1b067a03ad409740368102", null ],
+    [ "boost::sqlite::create_scalar_function", "group__reference.html#ga3182b1030babe955b941032f8eab5073", null ],
+    [ "boost::sqlite::create_scalar_function", "group__reference.html#ga78a6f35f2e7b808198bfec06d7561b0a", null ],
+    [ "boost::sqlite::create_window_function", "group__reference.html#ga3b84144fd7505a7c6e591bea38b57be8", null ],
+    [ "boost::sqlite::create_window_function", "group__reference.html#ga2108799f4500ee992e27c2aa09711655", null ],
+    [ "boost::sqlite::is_json", "group__reference.html#ga34786d37ee936540a702d9a59555bd3b", null ],
+    [ "boost::sqlite::is_json", "group__reference.html#ga3facf3a9aa92c5f27d195131ff824248", null ],
+    [ "boost::sqlite::preupdate_hook", "group__reference.html#gafc5e42f969f2e40a628bf38b0019977e", null ],
+    [ "boost::sqlite::rollback_hook", "group__reference.html#gadaa638eab7f7af9d3005e318023366ac", null ],
+    [ "boost::sqlite::update_hook", "group__reference.html#gad92994a103b679f4ba893e7aacc9b5d1", null ]
+];

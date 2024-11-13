@@ -101,16 +101,55 @@ $(function(){initNavTree('structboost_1_1sqlite_1_1blob.html',''); initResizable
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structboost_1_1sqlite_1_1blob-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">boost::sqlite::blob Struct Reference<div class="ingroups"><a class="el" href="group__reference.html">Reference</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>An object that owns a binary large object.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="blob_8hpp_source.html">include/boost/sqlite/blob.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2509482ae14a74f3e1841d4d345d09c1" id="r_a2509482ae14a74f3e1841d4d345d09c1"><td class="memItemLeft" align="right" valign="top"><a id="a2509482ae14a74f3e1841d4d345d09c1" name="a2509482ae14a74f3e1841d4d345d09c1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>blob</b> (<a class="el" href="structboost_1_1sqlite_1_1blob__view.html">blob_view</a> bv)</td></tr>
+<tr class="memdesc:a2509482ae14a74f3e1841d4d345d09c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a blob from a <a class="el" href="structboost_1_1sqlite_1_1blob__view.html" title="a view to a binary large object">blob_view</a>. <br /></td></tr>
+<tr class="separator:a2509482ae14a74f3e1841d4d345d09c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94623795b4c891400fd655d18f771b27" id="r_a94623795b4c891400fd655d18f771b27"><td class="memItemLeft" align="right" valign="top"><a id="a94623795b4c891400fd655d18f771b27" name="a94623795b4c891400fd655d18f771b27"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>blob</b> (std::size_t n)</td></tr>
+<tr class="memdesc:a94623795b4c891400fd655d18f771b27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an empty blob with size <code>n</code>. <br /></td></tr>
+<tr class="separator:a94623795b4c891400fd655d18f771b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5f99eac01e2b0dbb3f17a44d044d65a" id="r_ac5f99eac01e2b0dbb3f17a44d044d65a"><td class="memItemLeft" align="right" valign="top"><a id="ac5f99eac01e2b0dbb3f17a44d044d65a" name="ac5f99eac01e2b0dbb3f17a44d044d65a"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> () const</td></tr>
+<tr class="memdesc:ac5f99eac01e2b0dbb3f17a44d044d65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data in the blob. <br /></td></tr>
+<tr class="separator:ac5f99eac01e2b0dbb3f17a44d044d65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b366b2e2d1be9486248e7794243a47" id="r_a88b366b2e2d1be9486248e7794243a47"><td class="memItemLeft" align="right" valign="top"><a id="a88b366b2e2d1be9486248e7794243a47" name="a88b366b2e2d1be9486248e7794243a47"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> () &amp;&amp;</td></tr>
+<tr class="memdesc:a88b366b2e2d1be9486248e7794243a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release &amp; take ownership of the blob. <br /></td></tr>
+<tr class="separator:a88b366b2e2d1be9486248e7794243a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34d59944f5605f28f682cfd029646fe" id="r_aa34d59944f5605f28f682cfd029646fe"><td class="memItemLeft" align="right" valign="top"><a id="aa34d59944f5605f28f682cfd029646fe" name="aa34d59944f5605f28f682cfd029646fe"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="memdesc:aa34d59944f5605f28f682cfd029646fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the data int he blob, in bytes. <br /></td></tr>
+<tr class="separator:aa34d59944f5605f28f682cfd029646fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An object that owns a binary large object. </p>
+
+<p class="definition">Definition at line <a class="el" href="blob_8hpp_source.html#l00047">47</a> of file <a class="el" href="blob_8hpp_source.html">blob.hpp</a>.</p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>boost/sqlite/<a class="el" href="blob_8hpp_source.html">blob.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1blob.html">blob</a></li>
-    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:50:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

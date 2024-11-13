@@ -101,16 +101,32 @@ $(function(){initNavTree('structboost_1_1sqlite_1_1cstring__ref.html',''); initR
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="structboost_1_1sqlite_1_1cstring__ref-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">boost::sqlite::cstring_ref Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Small wrapper for a null-terminated string that can be directly passed to C APIS.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="cstring__ref_8hpp_source.html">include/boost/sqlite/cstring_ref.hpp</a>&gt;</code></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Small wrapper for a null-terminated string that can be directly passed to C APIS. </p>
+<p>This ref can only be modified by moving the front pointer. It does not store the size, but can detect values that can directly be passed to system APIs.</p>
+<p>It can be constructed from a <code>char*</code> pointer or any class that has a <code>c_str()</code> member function, e.g. std::string or boost::static_string. </p>
+
+<p class="definition">Definition at line <a class="el" href="cstring__ref_8hpp_source.html#l00029">29</a> of file <a class="el" href="cstring__ref_8hpp_source.html">cstring_ref.hpp</a>.</p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>boost/sqlite/<a class="el" href="cstring__ref_8hpp_source.html">cstring_ref.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a></li>
-    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:50:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

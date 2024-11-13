@@ -101,16 +101,83 @@ $(function(){initNavTree('structboost_1_1sqlite_1_1field.html',''); initResizabl
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structboost_1_1sqlite_1_1field-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">boost::sqlite::field Struct Reference<div class="ingroups"><a class="el" href="group__reference.html">Reference</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A holder for a sqlite field, i.e. something returned from a query.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="field_8hpp_source.html">include/boost/sqlite/field.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aea3bd2ab3312611c54b7e7f5d712d55e" id="r_aea3bd2ab3312611c54b7e7f5d712d55e"><td class="memItemLeft" align="right" valign="top"><a id="aea3bd2ab3312611c54b7e7f5d712d55e" name="aea3bd2ab3312611c54b7e7f5d712d55e"></a>
+<a class="el" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><b>column_name</b> () const</td></tr>
+<tr class="memdesc:aea3bd2ab3312611c54b7e7f5d712d55e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the column. <br /></td></tr>
+<tr class="separator:aea3bd2ab3312611c54b7e7f5d712d55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8b16c92bbc70a1339ef9c984e76aeb" id="r_a6c8b16c92bbc70a1339ef9c984e76aeb"><td class="memItemLeft" align="right" valign="top"><a id="a6c8b16c92bbc70a1339ef9c984e76aeb" name="a6c8b16c92bbc70a1339ef9c984e76aeb"></a>
+<a class="el" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><b>column_origin_name</b> () const</td></tr>
+<tr class="memdesc:a6c8b16c92bbc70a1339ef9c984e76aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the original data source. <br /></td></tr>
+<tr class="separator:a6c8b16c92bbc70a1339ef9c984e76aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c6b286770abfe6a9c45dd0d1dc6130" id="r_af9c6b286770abfe6a9c45dd0d1dc6130"><td class="memItemLeft" align="right" valign="top"><a id="af9c6b286770abfe6a9c45dd0d1dc6130" name="af9c6b286770abfe6a9c45dd0d1dc6130"></a>
+<a class="el" href="structboost_1_1sqlite_1_1blob__view.html">blob_view</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_blob</b> () const</td></tr>
+<tr class="memdesc:af9c6b286770abfe6a9c45dd0d1dc6130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value as blob, i.e. raw memory. Note that this value may be invalidated`. <br /></td></tr>
+<tr class="separator:af9c6b286770abfe6a9c45dd0d1dc6130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a604fc632fc836b7d1e75076f62f37fe4" id="r_a604fc632fc836b7d1e75076f62f37fe4"><td class="memItemLeft" align="right" valign="top"><a id="a604fc632fc836b7d1e75076f62f37fe4" name="a604fc632fc836b7d1e75076f62f37fe4"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>get_double</b> () const</td></tr>
+<tr class="memdesc:a604fc632fc836b7d1e75076f62f37fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value as an <code>double</code>. <br /></td></tr>
+<tr class="separator:a604fc632fc836b7d1e75076f62f37fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72fb47881e4ad1d689800cb70fb6406" id="r_aa72fb47881e4ad1d689800cb70fb6406"><td class="memItemLeft" align="right" valign="top"><a id="aa72fb47881e4ad1d689800cb70fb6406" name="aa72fb47881e4ad1d689800cb70fb6406"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>get_int</b> () const</td></tr>
+<tr class="memdesc:aa72fb47881e4ad1d689800cb70fb6406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value as regular <code>int</code>. <br /></td></tr>
+<tr class="separator:aa72fb47881e4ad1d689800cb70fb6406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7221cb4638ad6b0992cff6b5e90bdbab" id="r_a7221cb4638ad6b0992cff6b5e90bdbab"><td class="memItemLeft" align="right" valign="top"><a id="a7221cb4638ad6b0992cff6b5e90bdbab" name="a7221cb4638ad6b0992cff6b5e90bdbab"></a>
+sqlite3_int64&#160;</td><td class="memItemRight" valign="bottom"><b>get_int64</b> () const</td></tr>
+<tr class="memdesc:a7221cb4638ad6b0992cff6b5e90bdbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value as an <code>int64</code>. <br /></td></tr>
+<tr class="separator:a7221cb4638ad6b0992cff6b5e90bdbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ddabf9e516f7110cfd2f1095aa87210" id="r_a4ddabf9e516f7110cfd2f1095aa87210"><td class="memItemLeft" align="right" valign="top"><a id="a4ddabf9e516f7110cfd2f1095aa87210" name="a4ddabf9e516f7110cfd2f1095aa87210"></a>
+<a class="el" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_text</b> () const</td></tr>
+<tr class="memdesc:a4ddabf9e516f7110cfd2f1095aa87210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value as text, i.e. a string_view. Note that this value may be invalidated`. <br /></td></tr>
+<tr class="separator:a4ddabf9e516f7110cfd2f1095aa87210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd8054f3277ab190a64fec4bebf5b69" id="r_aefd8054f3277ab190a64fec4bebf5b69"><td class="memItemLeft" align="right" valign="top"><a id="aefd8054f3277ab190a64fec4bebf5b69" name="aefd8054f3277ab190a64fec4bebf5b69"></a>
+<a class="el" href="structboost_1_1sqlite_1_1value.html">value</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_value</b> () const</td></tr>
+<tr class="memdesc:aefd8054f3277ab190a64fec4bebf5b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the field as a value. <br /></td></tr>
+<tr class="separator:aefd8054f3277ab190a64fec4bebf5b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad337ec2cf5017dc3b8234541fba956fd" id="r_ad337ec2cf5017dc3b8234541fba956fd"><td class="memItemLeft" align="right" valign="top"><a id="ad337ec2cf5017dc3b8234541fba956fd" name="ad337ec2cf5017dc3b8234541fba956fd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_null</b> () const</td></tr>
+<tr class="memdesc:ad337ec2cf5017dc3b8234541fba956fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the held value null. <br /></td></tr>
+<tr class="separator:ad337ec2cf5017dc3b8234541fba956fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a166ed4f296bf66519b8c171b5650974a" id="r_a166ed4f296bf66519b8c171b5650974a"><td class="memItemLeft" align="right" valign="top"><a id="a166ed4f296bf66519b8c171b5650974a" name="a166ed4f296bf66519b8c171b5650974a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>operator bool</b> () const</td></tr>
+<tr class="memdesc:a166ed4f296bf66519b8c171b5650974a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the held value is not null. <br /></td></tr>
+<tr class="separator:a166ed4f296bf66519b8c171b5650974a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e14405de3b38982016f1cdd6c8f18a2" id="r_a0e14405de3b38982016f1cdd6c8f18a2"><td class="memItemLeft" align="right" valign="top"><a id="a0e14405de3b38982016f1cdd6c8f18a2" name="a0e14405de3b38982016f1cdd6c8f18a2"></a>
+<a class="el" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><b>table_name</b> () const</td></tr>
+<tr class="memdesc:a0e14405de3b38982016f1cdd6c8f18a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the table. <br /></td></tr>
+<tr class="separator:a0e14405de3b38982016f1cdd6c8f18a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a02d159d4c5decb7142f97db8717f28" id="r_a3a02d159d4c5decb7142f97db8717f28"><td class="memItemLeft" align="right" valign="top"><a id="a3a02d159d4c5decb7142f97db8717f28" name="a3a02d159d4c5decb7142f97db8717f28"></a>
+<a class="el" href="group__reference.html#ga54803a0f6eb577b3e3938ca6dc3f6818">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const</td></tr>
+<tr class="memdesc:a3a02d159d4c5decb7142f97db8717f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the value. <br /></td></tr>
+<tr class="separator:a3a02d159d4c5decb7142f97db8717f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A holder for a sqlite field, i.e. something returned from a query. </p>
+
+<p class="definition">Definition at line <a class="el" href="field_8hpp_source.html#l00021">21</a> of file <a class="el" href="field_8hpp_source.html">field.hpp</a>.</p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>boost/sqlite/<a class="el" href="field_8hpp_source.html">field.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1field.html">field</a></li>
-    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:50:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

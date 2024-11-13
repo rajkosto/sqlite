@@ -101,16 +101,89 @@ $(function(){initNavTree('structboost_1_1sqlite_1_1row.html',''); initResizable(
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structboost_1_1sqlite_1_1row-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">boost::sqlite::row Struct Reference<div class="ingroups"><a class="el" href="group__reference.html">Reference</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Representation of a row in a database.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="row_8hpp_source.html">include/boost/sqlite/row.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1sqlite_1_1row_1_1const__iterator.html">const_iterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random access iterator used to iterate over the columns.  <a href="structboost_1_1sqlite_1_1row_1_1const__iterator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae2bbb7c0e388f499c91b538f4e6c10de" id="r_ae2bbb7c0e388f499c91b538f4e6c10de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1sqlite_1_1field.html">field</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2bbb7c0e388f499c91b538f4e6c10de">at</a> (std::size_t idx) const</td></tr>
+<tr class="memdesc:ae2bbb7c0e388f499c91b538f4e6c10de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the field at <code>idx</code>,.  <br /></td></tr>
+<tr class="separator:ae2bbb7c0e388f499c91b538f4e6c10de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d54260faa4c5218d7649e9c7da3ed4" id="r_a26d54260faa4c5218d7649e9c7da3ed4"><td class="memItemLeft" align="right" valign="top"><a id="a26d54260faa4c5218d7649e9c7da3ed4" name="a26d54260faa4c5218d7649e9c7da3ed4"></a>
+<a class="el" href="structboost_1_1sqlite_1_1row_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
+<tr class="memdesc:a26d54260faa4c5218d7649e9c7da3ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the begin of the column-range. <br /></td></tr>
+<tr class="separator:a26d54260faa4c5218d7649e9c7da3ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cbed93b9f8c2332724547a8d953cfe7" id="r_a1cbed93b9f8c2332724547a8d953cfe7"><td class="memItemLeft" align="right" valign="top"><a id="a1cbed93b9f8c2332724547a8d953cfe7" name="a1cbed93b9f8c2332724547a8d953cfe7"></a>
+<a class="el" href="structboost_1_1sqlite_1_1row_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
+<tr class="memdesc:a1cbed93b9f8c2332724547a8d953cfe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the end of the column-range. <br /></td></tr>
+<tr class="separator:a1cbed93b9f8c2332724547a8d953cfe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab460b0285d34c8d8717522535a3b26" id="r_aaab460b0285d34c8d8717522535a3b26"><td class="memItemLeft" align="right" valign="top"><a id="aaab460b0285d34c8d8717522535a3b26" name="aaab460b0285d34c8d8717522535a3b26"></a>
+<a class="el" href="structboost_1_1sqlite_1_1field.html">field</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (std::size_t idx) const</td></tr>
+<tr class="memdesc:aaab460b0285d34c8d8717522535a3b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the field at <code>idx</code>. <br /></td></tr>
+<tr class="separator:aaab460b0285d34c8d8717522535a3b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae576c1fd88f81c6da13f89f746401099" id="r_ae576c1fd88f81c6da13f89f746401099"><td class="memItemLeft" align="right" valign="top"><a id="ae576c1fd88f81c6da13f89f746401099" name="ae576c1fd88f81c6da13f89f746401099"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="memdesc:ae576c1fd88f81c6da13f89f746401099"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the row. <br /></td></tr>
+<tr class="separator:ae576c1fd88f81c6da13f89f746401099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Representation of a row in a database. </p>
+<p>Is a random-access range.</p>
+<p>All values that are obtained by view are valid until the next row is read. </p>
+
+<p class="definition">Definition at line <a class="el" href="row_8hpp_source.html#l00020">20</a> of file <a class="el" href="row_8hpp_source.html">row.hpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae2bbb7c0e388f499c91b538f4e6c10de" name="ae2bbb7c0e388f499c91b538f4e6c10de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2bbb7c0e388f499c91b538f4e6c10de">&#9670;&#160;</a></span>at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structboost_1_1sqlite_1_1field.html">field</a> boost::sqlite::row::at </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>idx</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the field at <code>idx</code>,. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::out_of_range</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>boost/sqlite/<a class="el" href="row_8hpp_source.html">row.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1row.html">row</a></li>
-    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:50:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

@@ -101,16 +101,190 @@ $(function(){initNavTree('structboost_1_1sqlite_1_1param__ref.html',''); initRes
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structboost_1_1sqlite_1_1param__ref-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">boost::sqlite::param_ref Struct Reference<div class="ingroups"><a class="el" href="group__reference.html">Reference</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A reference to a value to temporary bind for an execute statement. Most values are captures by reference.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="statement_8hpp_source.html">include/boost/sqlite/statement.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad7b17f1616c4b456b8595fda7db7d790" id="r_ad7b17f1616c4b456b8595fda7db7d790"><td class="memItemLeft" align="right" valign="top"><a id="ad7b17f1616c4b456b8595fda7db7d790" name="ad7b17f1616c4b456b8595fda7db7d790"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>param_ref</b> ()=default</td></tr>
+<tr class="memdesc:ad7b17f1616c4b456b8595fda7db7d790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default construct a parameter, gives <code>null</code>. <br /></td></tr>
+<tr class="separator:ad7b17f1616c4b456b8595fda7db7d790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d99bb0f73be2b5999d81dc4b48ddcdb" id="r_a5d99bb0f73be2b5999d81dc4b48ddcdb"><td class="memItemLeft" align="right" valign="top"><a id="a5d99bb0f73be2b5999d81dc4b48ddcdb" name="a5d99bb0f73be2b5999d81dc4b48ddcdb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>param_ref</b> (<a class="el" href="structboost_1_1sqlite_1_1blob__view.html">blob_view</a> <a class="el" href="structboost_1_1sqlite_1_1blob.html">blob</a>)</td></tr>
+<tr class="memdesc:a5d99bb0f73be2b5999d81dc4b48ddcdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a blob. <br /></td></tr>
+<tr class="separator:a5d99bb0f73be2b5999d81dc4b48ddcdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4501158e0be9de17e6ad9ad168ff4132" id="r_a4501158e0be9de17e6ad9ad168ff4132"><td class="memItemLeft" align="right" valign="top"><a id="a4501158e0be9de17e6ad9ad168ff4132" name="a4501158e0be9de17e6ad9ad168ff4132"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>param_ref</b> (double <a class="el" href="structboost_1_1sqlite_1_1value.html">value</a>)</td></tr>
+<tr class="memdesc:a4501158e0be9de17e6ad9ad168ff4132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a floating point value. <br /></td></tr>
+<tr class="separator:a4501158e0be9de17e6ad9ad168ff4132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedae915fc82cf9f6291e32d168cf4b45" id="r_aedae915fc82cf9f6291e32d168cf4b45"><td class="memTemplParams" colspan="2"><a id="aedae915fc82cf9f6291e32d168cf4b45" name="aedae915fc82cf9f6291e32d168cf4b45"></a>
+template&lt;typename I , typename  = typename std::enable_if&lt;std::is_integral&lt;I&gt;::value&gt;::type&gt; </td></tr>
+<tr class="memitem:aedae915fc82cf9f6291e32d168cf4b45"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>param_ref</b> (I <a class="el" href="structboost_1_1sqlite_1_1value.html">value</a>)</td></tr>
+<tr class="memdesc:aedae915fc82cf9f6291e32d168cf4b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind an integer. <br /></td></tr>
+<tr class="separator:aedae915fc82cf9f6291e32d168cf4b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a422c02029a2ff71b7e7fc00e12ed53dc" id="r_a422c02029a2ff71b7e7fc00e12ed53dc"><td class="memItemLeft" align="right" valign="top"><a id="a422c02029a2ff71b7e7fc00e12ed53dc" name="a422c02029a2ff71b7e7fc00e12ed53dc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>param_ref</b> (std::nullptr_t)</td></tr>
+<tr class="memdesc:a422c02029a2ff71b7e7fc00e12ed53dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind null. <br /></td></tr>
+<tr class="separator:a422c02029a2ff71b7e7fc00e12ed53dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20cf14aa5eed4b81770162d868500171" id="r_a20cf14aa5eed4b81770162d868500171"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a20cf14aa5eed4b81770162d868500171"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a20cf14aa5eed4b81770162d868500171">param_ref</a> (std::unique_ptr&lt; T &gt; ptr)</td></tr>
+<tr class="memdesc:a20cf14aa5eed4b81770162d868500171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind pointer value to the parameter.  <br /></td></tr>
+<tr class="separator:a20cf14aa5eed4b81770162d868500171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12d640bb856f1a1aa19cf2c57dc56c2" id="r_ae12d640bb856f1a1aa19cf2c57dc56c2"><td class="memTemplParams" colspan="2">template&lt;typename T , typename Deleter &gt; </td></tr>
+<tr class="memitem:ae12d640bb856f1a1aa19cf2c57dc56c2"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae12d640bb856f1a1aa19cf2c57dc56c2">param_ref</a> (std::unique_ptr&lt; T, Deleter &gt; ptr, typename std::enable_if&lt; std::is_empty&lt; Deleter &gt;::value &amp;&amp;std::is_default_constructible&lt; Deleter &gt;::value, int &gt;::type *=nullptr)</td></tr>
+<tr class="memdesc:ae12d640bb856f1a1aa19cf2c57dc56c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind pointer value with a function custom deleter to the parameter. The deleter needs to be default constructible.  <br /></td></tr>
+<tr class="separator:ae12d640bb856f1a1aa19cf2c57dc56c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5ebf58847f84638690e71b848dfb27d" id="r_ae5ebf58847f84638690e71b848dfb27d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae5ebf58847f84638690e71b848dfb27d"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ae5ebf58847f84638690e71b848dfb27d">param_ref</a> (std::unique_ptr&lt; T, void(*)(T *)&gt; ptr)</td></tr>
+<tr class="memdesc:ae5ebf58847f84638690e71b848dfb27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind pointer value with a function as deleter to the parameter.  <br /></td></tr>
+<tr class="separator:ae5ebf58847f84638690e71b848dfb27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad63692247cd26e34a6538b8137ce2101" id="r_ad63692247cd26e34a6538b8137ce2101"><td class="memItemLeft" align="right" valign="top"><a id="ad63692247cd26e34a6538b8137ce2101" name="ad63692247cd26e34a6538b8137ce2101"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>param_ref</b> (string_view <a class="el" href="group__reference.html#gga54803a0f6eb577b3e3938ca6dc3f6818a1cb251ec0d568de6a929b520c4aed8d1">text</a>)</td></tr>
+<tr class="memdesc:ad63692247cd26e34a6538b8137ce2101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a string. <br /></td></tr>
+<tr class="separator:ad63692247cd26e34a6538b8137ce2101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d08f5f76ea5773e943df295f63c7221" id="r_a3d08f5f76ea5773e943df295f63c7221"><td class="memTemplParams" colspan="2"><a id="a3d08f5f76ea5773e943df295f63c7221" name="a3d08f5f76ea5773e943df295f63c7221"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3d08f5f76ea5773e943df295f63c7221"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>param_ref</b> (T &amp;&amp;t, decltype(variant2::visit(make_visitor(), std::forward&lt; T &gt;(t))) *=nullptr)</td></tr>
+<tr class="memdesc:a3d08f5f76ea5773e943df295f63c7221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a> from a variant. <br /></td></tr>
+<tr class="separator:a3d08f5f76ea5773e943df295f63c7221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe60ed94f6e6fecab9b33be62716170b" id="r_afe60ed94f6e6fecab9b33be62716170b"><td class="memItemLeft" align="right" valign="top"><a id="afe60ed94f6e6fecab9b33be62716170b" name="afe60ed94f6e6fecab9b33be62716170b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>param_ref</b> (variant2::monostate)</td></tr>
+<tr class="memdesc:afe60ed94f6e6fecab9b33be62716170b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind null. <br /></td></tr>
+<tr class="separator:afe60ed94f6e6fecab9b33be62716170b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a118c143478dd62646257d84997864b93" id="r_a118c143478dd62646257d84997864b93"><td class="memItemLeft" align="right" valign="top"><a id="a118c143478dd62646257d84997864b93" name="a118c143478dd62646257d84997864b93"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>param_ref</b> (<a class="el" href="group__reference.html#ga3210fa5fa6bd536bb7f13c3395acb37d">zero_blob</a> zb)</td></tr>
+<tr class="memdesc:a118c143478dd62646257d84997864b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a zero_blob value, i.e. a blob that initialized by zero. <br /></td></tr>
+<tr class="separator:a118c143478dd62646257d84997864b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad69bc0c0c9a7379f34a73843e1292eb" id="r_aad69bc0c0c9a7379f34a73843e1292eb"><td class="memItemLeft" align="right" valign="top"><a id="aad69bc0c0c9a7379f34a73843e1292eb" name="aad69bc0c0c9a7379f34a73843e1292eb"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (sqlite3_stmt *stmt, int c) const</td></tr>
+<tr class="memdesc:aad69bc0c0c9a7379f34a73843e1292eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the <a class="el" href="structboost_1_1sqlite_1_1param__ref.html" title="A reference to a value to temporary bind for an execute statement. Most values are captures by refere...">param_ref</a> to a statement. <br /></td></tr>
+<tr class="separator:aad69bc0c0c9a7379f34a73843e1292eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A reference to a value to temporary bind for an execute statement. Most values are captures by reference. </p>
+
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00027">27</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a20cf14aa5eed4b81770162d868500171" name="a20cf14aa5eed4b81770162d868500171"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20cf14aa5eed4b81770162d868500171">&#9670;&#160;</a></span>param_ref() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::sqlite::param_ref::param_ref </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bind pointer value to the parameter. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://www.sqlite.org/bindptr.html">https://www.sqlite.org/bindptr.html</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00071">71</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae5ebf58847f84638690e71b848dfb27d" name="ae5ebf58847f84638690e71b848dfb27d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5ebf58847f84638690e71b848dfb27d">&#9670;&#160;</a></span>param_ref() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::sqlite::param_ref::param_ref </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; T, void(*)(T *)&gt;</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bind pointer value with a function as deleter to the parameter. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://www.sqlite.org/bindptr.html">https://www.sqlite.org/bindptr.html</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00082">82</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ae12d640bb856f1a1aa19cf2c57dc56c2" name="ae12d640bb856f1a1aa19cf2c57dc56c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae12d640bb856f1a1aa19cf2c57dc56c2">&#9670;&#160;</a></span>param_ref() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename Deleter &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::sqlite::param_ref::param_ref </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; T, Deleter &gt;</td>          <td class="paramname"><span class="paramname"><em>ptr</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::enable_if&lt; std::is_empty&lt; Deleter &gt;::value &amp;&amp;std::is_default_constructible&lt; Deleter &gt;::value, int &gt;::type *</td>          <td class="paramname"><span class="paramname"><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Bind pointer value with a function custom deleter to the parameter. The deleter needs to be default constructible. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://www.sqlite.org/bindptr.html">https://www.sqlite.org/bindptr.html</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="statement_8hpp_source.html#l00094">94</a> of file <a class="el" href="statement_8hpp_source.html">statement.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>boost/sqlite/<a class="el" href="statement_8hpp_source.html">statement.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1param__ref.html">param_ref</a></li>
-    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:50:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

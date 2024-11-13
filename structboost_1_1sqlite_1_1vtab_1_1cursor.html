@@ -101,16 +101,60 @@ $(function(){initNavTree('structboost_1_1sqlite_1_1vtab_1_1cursor.html',''); ini
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structboost_1_1sqlite_1_1vtab_1_1cursor-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">boost::sqlite::vtab::cursor&lt; ColumnType &gt; Struct Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__reference.html">Reference</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Cursor needs the following member.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="vtable_8hpp_source.html">include/boost/sqlite/vtable.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac97449b84c0c7b4579651862a178974d" id="r_ac97449b84c0c7b4579651862a178974d"><td class="memItemLeft" align="right" valign="top"><a id="ac97449b84c0c7b4579651862a178974d" name="ac97449b84c0c7b4579651862a178974d"></a>
+virtual result&lt; column_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>column</b> (int idx, bool no_change)=0</td></tr>
+<tr class="memdesc:ac97449b84c0c7b4579651862a178974d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the result of a value. It will use the set_result functionality to create a an sqlite function. see <a href="https://www.sqlite.org/c3ref/vtab_nochange.html">vtab_no_change</a> <br /></td></tr>
+<tr class="separator:ac97449b84c0c7b4579651862a178974d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260631df3ebaeb85cb84aabb32ef96ff" id="r_a260631df3ebaeb85cb84aabb32ef96ff"><td class="memItemLeft" align="right" valign="top"><a id="a260631df3ebaeb85cb84aabb32ef96ff" name="a260631df3ebaeb85cb84aabb32ef96ff"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>eof</b> ()=0</td></tr>
+<tr class="memdesc:a260631df3ebaeb85cb84aabb32ef96ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the cursor is and the end. <br /></td></tr>
+<tr class="separator:a260631df3ebaeb85cb84aabb32ef96ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f3aef91ccb5798ffef28bf564fc68a" id="r_a61f3aef91ccb5798ffef28bf564fc68a"><td class="memItemLeft" align="right" valign="top"><a id="a61f3aef91ccb5798ffef28bf564fc68a" name="a61f3aef91ccb5798ffef28bf564fc68a"></a>
+virtual result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>filter</b> (int index, const char *index_data, boost::span&lt; <a class="el" href="structboost_1_1sqlite_1_1value.html">sqlite::value</a> &gt; values)</td></tr>
+<tr class="memdesc:a61f3aef91ccb5798ffef28bf564fc68a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a filter to the cursor. Required when best_index is implemented. <br /></td></tr>
+<tr class="separator:a61f3aef91ccb5798ffef28bf564fc68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ed65ee522acbf11452a0e366650d08" id="r_a49ed65ee522acbf11452a0e366650d08"><td class="memItemLeft" align="right" valign="top"><a id="a49ed65ee522acbf11452a0e366650d08" name="a49ed65ee522acbf11452a0e366650d08"></a>
+virtual result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>next</b> ()=0</td></tr>
+<tr class="memdesc:a49ed65ee522acbf11452a0e366650d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the next row. <br /></td></tr>
+<tr class="separator:a49ed65ee522acbf11452a0e366650d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb3593e48e7d8874d26885fa6b52d93" id="r_a4fb3593e48e7d8874d26885fa6b52d93"><td class="memItemLeft" align="right" valign="top"><a id="a4fb3593e48e7d8874d26885fa6b52d93" name="a4fb3593e48e7d8874d26885fa6b52d93"></a>
+virtual result&lt; sqlite3_int64 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>row_id</b> ()=0</td></tr>
+<tr class="memdesc:a4fb3593e48e7d8874d26885fa6b52d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the id of the current row. <br /></td></tr>
+<tr class="separator:a4fb3593e48e7d8874d26885fa6b52d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f98eb9f795929e0e54dafd8a0ce7f6" id="r_af4f98eb9f795929e0e54dafd8a0ce7f6"><td class="memItemLeft" align="right" valign="top"><a id="af4f98eb9f795929e0e54dafd8a0ce7f6" name="af4f98eb9f795929e0e54dafd8a0ce7f6"></a>
+<a class="el" href="structboost_1_1sqlite_1_1vtab_1_1table.html">vtab::table</a>&lt; <a class="el" href="structboost_1_1sqlite_1_1vtab_1_1cursor.html">cursor</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>table</b> ()</td></tr>
+<tr class="memdesc:af4f98eb9f795929e0e54dafd8a0ce7f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the table the cursor is pointing to. <br /></td></tr>
+<tr class="separator:af4f98eb9f795929e0e54dafd8a0ce7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename ColumnType = void&gt;<br />
+struct boost::sqlite::vtab::cursor&lt; ColumnType &gt;</div><p>Cursor needs the following member. </p>
+
+<p class="definition">Definition at line <a class="el" href="vtable_8hpp_source.html#l00417">417</a> of file <a class="el" href="vtable_8hpp_source.html">vtable.hpp</a>.</p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>boost/sqlite/<a class="el" href="vtable_8hpp_source.html">vtable.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><b>vtab</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1vtab_1_1cursor.html">cursor</a></li>
-    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:50:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

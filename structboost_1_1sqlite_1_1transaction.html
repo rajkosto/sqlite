@@ -101,16 +101,200 @@ $(function(){initNavTree('structboost_1_1sqlite_1_1transaction.html',''); initRe
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structboost_1_1sqlite_1_1transaction-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">boost::sqlite::transaction Struct Reference<div class="ingroups"><a class="el" href="group__reference.html">Reference</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A simple transaction guard implementing RAAI for transactions.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="transaction_8hpp_source.html">include/boost/sqlite/transaction.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa9aab15adb25dc6d640b84f736edc6a4" id="r_aa9aab15adb25dc6d640b84f736edc6a4"><td class="memItemLeft" align="right" valign="top"><a id="aa9aab15adb25dc6d640b84f736edc6a4" name="aa9aab15adb25dc6d640b84f736edc6a4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9aab15adb25dc6d640b84f736edc6a4">behaviour</a> </td></tr>
+<tr class="memdesc:aa9aab15adb25dc6d640b84f736edc6a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mode of the transaction. <br /></td></tr>
+<tr class="separator:aa9aab15adb25dc6d640b84f736edc6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2ba81d64aaa2b4ce327a96ee8702f3a1" id="r_a2ba81d64aaa2b4ce327a96ee8702f3a1"><td class="memItemLeft" align="right" valign="top"><a id="a2ba81d64aaa2b4ce327a96ee8702f3a1" name="a2ba81d64aaa2b4ce327a96ee8702f3a1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>transaction</b> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn)</td></tr>
+<tr class="memdesc:a2ba81d64aaa2b4ce327a96ee8702f3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create transaction guard and initiate a transaction. <br /></td></tr>
+<tr class="separator:a2ba81d64aaa2b4ce327a96ee8702f3a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af42f6adcb086dbea3dbf5c17f9dc1bda" id="r_af42f6adcb086dbea3dbf5c17f9dc1bda"><td class="memItemLeft" align="right" valign="top"><a id="af42f6adcb086dbea3dbf5c17f9dc1bda" name="af42f6adcb086dbea3dbf5c17f9dc1bda"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>transaction</b> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, adopt_transaction_t)</td></tr>
+<tr class="memdesc:af42f6adcb086dbea3dbf5c17f9dc1bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create transaction guard on an existing transaction. <br /></td></tr>
+<tr class="separator:af42f6adcb086dbea3dbf5c17f9dc1bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc3a6ed174f9b899a134ac805ef8c45" id="r_a2cc3a6ed174f9b899a134ac805ef8c45"><td class="memItemLeft" align="right" valign="top"><a id="a2cc3a6ed174f9b899a134ac805ef8c45" name="a2cc3a6ed174f9b899a134ac805ef8c45"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>transaction</b> (<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a> &amp;conn, <a class="el" href="#aa9aab15adb25dc6d640b84f736edc6a4">behaviour</a> b)</td></tr>
+<tr class="memdesc:a2cc3a6ed174f9b899a134ac805ef8c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create transaction guard and initiate a transaction with the defined behaviour. <br /></td></tr>
+<tr class="separator:a2cc3a6ed174f9b899a134ac805ef8c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af846a71224cfe4fb7462a30c2b9ec184" id="r_af846a71224cfe4fb7462a30c2b9ec184"><td class="memItemLeft" align="right" valign="top"><a id="af846a71224cfe4fb7462a30c2b9ec184" name="af846a71224cfe4fb7462a30c2b9ec184"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~transaction</b> () noexcept(false)</td></tr>
+<tr class="memdesc:af846a71224cfe4fb7462a30c2b9ec184"><td class="mdescLeft">&#160;</td><td class="mdescRight">rollback the transaction if not committed. <br /></td></tr>
+<tr class="separator:af846a71224cfe4fb7462a30c2b9ec184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ac537f4407d5c40007f7513bed19d04b5" id="r_ac537f4407d5c40007f7513bed19d04b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac537f4407d5c40007f7513bed19d04b5">commit</a> ()</td></tr>
+<tr class="separator:ac537f4407d5c40007f7513bed19d04b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9293ec50793f90fa6d226d057ef9e1da" id="r_a9293ec50793f90fa6d226d057ef9e1da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9293ec50793f90fa6d226d057ef9e1da">commit</a> (system::error_code &amp;ec, <a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;ei)</td></tr>
+<tr class="separator:a9293ec50793f90fa6d226d057ef9e1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a15885d7b38c025f1f52005d04f688d32" id="r_a15885d7b38c025f1f52005d04f688d32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15885d7b38c025f1f52005d04f688d32">rollback</a> ()</td></tr>
+<tr class="separator:a15885d7b38c025f1f52005d04f688d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9faea2dbd95d8d0243bb0984043967d1" id="r_a9faea2dbd95d8d0243bb0984043967d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9faea2dbd95d8d0243bb0984043967d1">rollback</a> (system::error_code &amp;ec, <a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;ei)</td></tr>
+<tr class="separator:a9faea2dbd95d8d0243bb0984043967d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A simple transaction guard implementing RAAI for transactions. </p>
+<dl class="section user"><dt>Example</dt><dd><div class="fragment"><div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line">conn.<a class="code hl_function" href="structboost_1_1sqlite_1_1connection.html#ac713792c43418f16a3f652759f56cc65">connect</a>(<span class="stringliteral">&quot;./my-database.db&quot;</span>);</div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_struct" href="structboost_1_1sqlite_1_1transaction.html">sqlite::transaction</a> t{conn};</div>
+<div class="line">conn.prepare(<span class="stringliteral">&quot;insert into log (text) values ($1)&quot;</span>).execute(std::make_tuple(<span class="stringliteral">&quot;booting up&quot;</span>));</div>
+<div class="line">t.<a class="code hl_function" href="#ac537f4407d5c40007f7513bed19d04b5">commit</a>();</div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html">boost::sqlite::connection</a></div><div class="ttdoc">main object for a connection to a database.</div><div class="ttdef"><b>Definition</b> <a href="connection_8hpp_source.html#l00031">connection.hpp:32</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html_ac713792c43418f16a3f652759f56cc65"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html#ac713792c43418f16a3f652759f56cc65">boost::sqlite::connection::connect</a></div><div class="ttdeci">void connect(cstring_ref filename, int flags=SQLITE_OPEN_READWRITE|SQLITE_OPEN_CREATE)</div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1transaction_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1transaction.html">boost::sqlite::transaction</a></div><div class="ttdoc">A simple transaction guard implementing RAAI for transactions.</div><div class="ttdef"><b>Definition</b> <a href="transaction_8hpp_source.html#l00029">transaction.hpp:30</a></div></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1transaction_html_ac537f4407d5c40007f7513bed19d04b5"><div class="ttname"><a href="#ac537f4407d5c40007f7513bed19d04b5">boost::sqlite::transaction::commit</a></div><div class="ttdeci">void commit()</div><div class="ttdef"><b>Definition</b> <a href="transaction_8hpp_source.html#l00071">transaction.hpp:71</a></div></div>
+</div><!-- fragment --> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="transaction_8hpp_source.html#l00029">29</a> of file <a class="el" href="transaction_8hpp_source.html">transaction.hpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac537f4407d5c40007f7513bed19d04b5" name="ac537f4407d5c40007f7513bed19d04b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac537f4407d5c40007f7513bed19d04b5">&#9670;&#160;</a></span>commit() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void boost::sqlite::transaction::commit </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Commit the transaction. </p>
+
+<p class="definition">Definition at line <a class="el" href="transaction_8hpp_source.html#l00071">71</a> of file <a class="el" href="transaction_8hpp_source.html">transaction.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9293ec50793f90fa6d226d057ef9e1da" name="a9293ec50793f90fa6d226d057ef9e1da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9293ec50793f90fa6d226d057ef9e1da">&#9670;&#160;</a></span>commit() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void boost::sqlite::transaction::commit </td>
+          <td>(</td>
+          <td class="paramtype">system::error_code &amp;</td>          <td class="paramname"><span class="paramname"><em>ec</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ei</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Commit the transaction. </p>
+
+<p class="definition">Definition at line <a class="el" href="transaction_8hpp_source.html#l00077">77</a> of file <a class="el" href="transaction_8hpp_source.html">transaction.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a15885d7b38c025f1f52005d04f688d32" name="a15885d7b38c025f1f52005d04f688d32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15885d7b38c025f1f52005d04f688d32">&#9670;&#160;</a></span>rollback() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void boost::sqlite::transaction::rollback </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Rollback the transaction explicitly. </p>
+
+<p class="definition">Definition at line <a class="el" href="transaction_8hpp_source.html#l00086">86</a> of file <a class="el" href="transaction_8hpp_source.html">transaction.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9faea2dbd95d8d0243bb0984043967d1" name="a9faea2dbd95d8d0243bb0984043967d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9faea2dbd95d8d0243bb0984043967d1">&#9670;&#160;</a></span>rollback() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void boost::sqlite::transaction::rollback </td>
+          <td>(</td>
+          <td class="paramtype">system::error_code &amp;</td>          <td class="paramname"><span class="paramname"><em>ec</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ei</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Rollback the transaction explicitly. </p>
+
+<p class="definition">Definition at line <a class="el" href="transaction_8hpp_source.html#l00092">92</a> of file <a class="el" href="transaction_8hpp_source.html">transaction.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>boost/sqlite/<a class="el" href="transaction_8hpp_source.html">transaction.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1transaction.html">transaction</a></li>
-    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:50:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

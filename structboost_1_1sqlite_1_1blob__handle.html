@@ -101,16 +101,90 @@ $(function(){initNavTree('structboost_1_1sqlite_1_1blob__handle.html',''); initR
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structboost_1_1sqlite_1_1blob__handle-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">boost::sqlite::blob_handle Struct Reference<div class="ingroups"><a class="el" href="group__reference.html">Reference</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>an object that holds a binary large object. Can be obtained by using <a class="el" href="structboost_1_1sqlite_1_1blob__handle.html">blob_handle</a>.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="blob_8hpp_source.html">include/boost/sqlite/blob.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a69e0c7c70a382ba52b2b8b3628cab5c5" id="r_a69e0c7c70a382ba52b2b8b3628cab5c5"><td class="memItemLeft" align="right" valign="top"><a id="a69e0c7c70a382ba52b2b8b3628cab5c5" name="a69e0c7c70a382ba52b2b8b3628cab5c5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>handle_type</b> = sqlite3_blob*</td></tr>
+<tr class="memdesc:a69e0c7c70a382ba52b2b8b3628cab5c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The handle of the blob. <br /></td></tr>
+<tr class="separator:a69e0c7c70a382ba52b2b8b3628cab5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0b8170f525f6e25989cd37b4e81fa192" id="r_a0b8170f525f6e25989cd37b4e81fa192"><td class="memItemLeft" align="right" valign="top"><a id="a0b8170f525f6e25989cd37b4e81fa192" name="a0b8170f525f6e25989cd37b4e81fa192"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>blob_handle</b> ()=default</td></tr>
+<tr class="memdesc:a0b8170f525f6e25989cd37b4e81fa192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:a0b8170f525f6e25989cd37b4e81fa192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d9b1d569fa9f44ff25212af5ef6256" id="r_a36d9b1d569fa9f44ff25212af5ef6256"><td class="memItemLeft" align="right" valign="top"><a id="a36d9b1d569fa9f44ff25212af5ef6256" name="a36d9b1d569fa9f44ff25212af5ef6256"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>blob_handle</b> (sqlite3_blob *<a class="el" href="structboost_1_1sqlite_1_1blob.html">blob</a>)</td></tr>
+<tr class="memdesc:a36d9b1d569fa9f44ff25212af5ef6256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a handle. Takes owner ship. <br /></td></tr>
+<tr class="separator:a36d9b1d569fa9f44ff25212af5ef6256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7891fad110a30d8be5f8ad17e91d437" id="r_aa7891fad110a30d8be5f8ad17e91d437"><td class="memItemLeft" align="right" valign="top"><a id="aa7891fad110a30d8be5f8ad17e91d437" name="aa7891fad110a30d8be5f8ad17e91d437"></a>
+<a class="el" href="#a69e0c7c70a382ba52b2b8b3628cab5c5">handle_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b> ()</td></tr>
+<tr class="memdesc:aa7891fad110a30d8be5f8ad17e91d437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the handle of the blob. <br /></td></tr>
+<tr class="separator:aa7891fad110a30d8be5f8ad17e91d437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cac13d0ede1e352822a33cc3036f51a" id="r_a2cac13d0ede1e352822a33cc3036f51a"><td class="memItemLeft" align="right" valign="top"><a id="a2cac13d0ede1e352822a33cc3036f51a" name="a2cac13d0ede1e352822a33cc3036f51a"></a>
+<a class="el" href="#a69e0c7c70a382ba52b2b8b3628cab5c5">handle_type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> () &amp;&amp;</td></tr>
+<tr class="memdesc:a2cac13d0ede1e352822a33cc3036f51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the owned handle. <br /></td></tr>
+<tr class="separator:a2cac13d0ede1e352822a33cc3036f51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebebfff3c30490393e2e5a870258890" id="r_abebebfff3c30490393e2e5a870258890"><td class="memItemLeft" align="right" valign="top"><a id="abebebfff3c30490393e2e5a870258890" name="abebebfff3c30490393e2e5a870258890"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="memdesc:abebebfff3c30490393e2e5a870258890"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the blob. <br /></td></tr>
+<tr class="separator:abebebfff3c30490393e2e5a870258890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ada3aa86fba44d7f38cf949c84fe86d12" id="r_ada3aa86fba44d7f38cf949c84fe86d12"><td class="memItemLeft" align="right" valign="top"><a id="ada3aa86fba44d7f38cf949c84fe86d12" name="ada3aa86fba44d7f38cf949c84fe86d12"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reopen</b> (sqlite3_int64 row_id, system::error_code &amp;ec)</td></tr>
+<tr class="memdesc:ada3aa86fba44d7f38cf949c84fe86d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reopen on another row. <br /></td></tr>
+<tr class="separator:ada3aa86fba44d7f38cf949c84fe86d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59cd54442c3f6bc30bbc6212b3be96e2" id="r_a59cd54442c3f6bc30bbc6212b3be96e2"><td class="memItemLeft" align="right" valign="top"><a id="a59cd54442c3f6bc30bbc6212b3be96e2" name="a59cd54442c3f6bc30bbc6212b3be96e2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reopen</b> (sqlite3_int64 row_id)</td></tr>
+<tr class="memdesc:a59cd54442c3f6bc30bbc6212b3be96e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reopen on another row. <br /></td></tr>
+<tr class="separator:a59cd54442c3f6bc30bbc6212b3be96e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a37e5af23fb15a5948ff0476d09e90fcd" id="r_a37e5af23fb15a5948ff0476d09e90fcd"><td class="memItemLeft" align="right" valign="top"><a id="a37e5af23fb15a5948ff0476d09e90fcd" name="a37e5af23fb15a5948ff0476d09e90fcd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>read_at</b> (void *data, int len, int offset, system::error_code &amp;ec)</td></tr>
+<tr class="memdesc:a37e5af23fb15a5948ff0476d09e90fcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the blob. <br /></td></tr>
+<tr class="separator:a37e5af23fb15a5948ff0476d09e90fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33e74737150f7341af0299a6d35c625" id="r_ac33e74737150f7341af0299a6d35c625"><td class="memItemLeft" align="right" valign="top"><a id="ac33e74737150f7341af0299a6d35c625" name="ac33e74737150f7341af0299a6d35c625"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>read_at</b> (void *data, int len, int offset)</td></tr>
+<tr class="memdesc:ac33e74737150f7341af0299a6d35c625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the blob. <br /></td></tr>
+<tr class="separator:ac33e74737150f7341af0299a6d35c625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a8ee439869690cbbe8ae4f90e2ca2e258" id="r_a8ee439869690cbbe8ae4f90e2ca2e258"><td class="memItemLeft" align="right" valign="top"><a id="a8ee439869690cbbe8ae4f90e2ca2e258" name="a8ee439869690cbbe8ae4f90e2ca2e258"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>write_at</b> (const void *data, int len, int offset, system::error_code &amp;ec)</td></tr>
+<tr class="memdesc:a8ee439869690cbbe8ae4f90e2ca2e258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the blob. <br /></td></tr>
+<tr class="separator:a8ee439869690cbbe8ae4f90e2ca2e258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59653a47879a5a6619c1742016669ce9" id="r_a59653a47879a5a6619c1742016669ce9"><td class="memItemLeft" align="right" valign="top"><a id="a59653a47879a5a6619c1742016669ce9" name="a59653a47879a5a6619c1742016669ce9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>write_at</b> (const void *data, int len, int offset)</td></tr>
+<tr class="memdesc:a59653a47879a5a6619c1742016669ce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to the blob. <br /></td></tr>
+<tr class="separator:a59653a47879a5a6619c1742016669ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>an object that holds a binary large object. Can be obtained by using <a class="el" href="structboost_1_1sqlite_1_1blob__handle.html">blob_handle</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="blob_8hpp_source.html#l00073">73</a> of file <a class="el" href="blob_8hpp_source.html">blob.hpp</a>.</p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>boost/sqlite/<a class="el" href="blob_8hpp_source.html">blob.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1blob__handle.html">blob_handle</a></li>
-    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:50:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

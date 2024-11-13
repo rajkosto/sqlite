@@ -101,16 +101,76 @@ $(function(){initNavTree('structboost_1_1sqlite_1_1error__info.html',''); initRe
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structboost_1_1sqlite_1_1error__info-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">boost::sqlite::error_info Struct Reference<div class="ingroups"><a class="el" href="group__reference.html">Reference</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Additional information about error conditions stored in an sqlite-allocate string.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="error_8hpp_source.html">include/boost/sqlite/error.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa4f00ef8f5b14b74c5d94dd3991f0560" id="r_aa4f00ef8f5b14b74c5d94dd3991f0560"><td class="memItemLeft" align="right" valign="top"><a id="aa4f00ef8f5b14b74c5d94dd3991f0560" name="aa4f00ef8f5b14b74c5d94dd3991f0560"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>error_info</b> ()=default</td></tr>
+<tr class="memdesc:aa4f00ef8f5b14b74c5d94dd3991f0560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:aa4f00ef8f5b14b74c5d94dd3991f0560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad454f4b8dc41f5631c5976a8c50d81a0" id="r_ad454f4b8dc41f5631c5976a8c50d81a0"><td class="memItemLeft" align="right" valign="top"><a id="ad454f4b8dc41f5631c5976a8c50d81a0" name="ad454f4b8dc41f5631c5976a8c50d81a0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>error_info</b> (core::string_view msg) noexcept</td></tr>
+<tr class="memdesc:ad454f4b8dc41f5631c5976a8c50d81a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization constructor. <br /></td></tr>
+<tr class="separator:ad454f4b8dc41f5631c5976a8c50d81a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90bf8bef0c02780b10facc04ce45c42" id="r_ae90bf8bef0c02780b10facc04ce45c42"><td class="memItemLeft" align="right" valign="top"><a id="ae90bf8bef0c02780b10facc04ce45c42" name="ae90bf8bef0c02780b10facc04ce45c42"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>capacity</b> () const</td></tr>
+<tr class="memdesc:ae90bf8bef0c02780b10facc04ce45c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the allocated memory. <br /></td></tr>
+<tr class="separator:ae90bf8bef0c02780b10facc04ce45c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c971ed5552069322b4ef6c1eba46a6f" id="r_a1c971ed5552069322b4ef6c1eba46a6f"><td class="memItemLeft" align="right" valign="top"><a id="a1c971ed5552069322b4ef6c1eba46a6f" name="a1c971ed5552069322b4ef6c1eba46a6f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> () noexcept</td></tr>
+<tr class="memdesc:a1c971ed5552069322b4ef6c1eba46a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the object to its initial state. <br /></td></tr>
+<tr class="separator:a1c971ed5552069322b4ef6c1eba46a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1701768d0c2cb750bd3cb1ea0fcf12f3" id="r_a1701768d0c2cb750bd3cb1ea0fcf12f3"><td class="memItemLeft" align="right" valign="top"><a id="a1701768d0c2cb750bd3cb1ea0fcf12f3" name="a1701768d0c2cb750bd3cb1ea0fcf12f3"></a>
+<a class="el" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><b>format</b> (<a class="el" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a> fmt,...)</td></tr>
+<tr class="memdesc:a1701768d0c2cb750bd3cb1ea0fcf12f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">use sqlite_mprintf to generate a message <br /></td></tr>
+<tr class="separator:a1701768d0c2cb750bd3cb1ea0fcf12f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3efa2c9771ce1b00260a687e89684e08" id="r_a3efa2c9771ce1b00260a687e89684e08"><td class="memItemLeft" align="right" valign="top"><a id="a3efa2c9771ce1b00260a687e89684e08" name="a3efa2c9771ce1b00260a687e89684e08"></a>
+<a class="el" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><b>message</b> () const noexcept</td></tr>
+<tr class="memdesc:a3efa2c9771ce1b00260a687e89684e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the error message. <br /></td></tr>
+<tr class="separator:a3efa2c9771ce1b00260a687e89684e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567cb0446bca4f5af7d009ec37048c77" id="r_a567cb0446bca4f5af7d009ec37048c77"><td class="memItemLeft" align="right" valign="top"><a id="a567cb0446bca4f5af7d009ec37048c77" name="a567cb0446bca4f5af7d009ec37048c77"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reserve</b> (std::size_t sz)</td></tr>
+<tr class="memdesc:a567cb0446bca4f5af7d009ec37048c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">reserve data in the buffer i.e. allocate <br /></td></tr>
+<tr class="separator:a567cb0446bca4f5af7d009ec37048c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a263f541545aba2fb716691fb4d998221" id="r_a263f541545aba2fb716691fb4d998221"><td class="memItemLeft" align="right" valign="top"><a id="a263f541545aba2fb716691fb4d998221" name="a263f541545aba2fb716691fb4d998221"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> (char *c=nullptr)</td></tr>
+<tr class="memdesc:a263f541545aba2fb716691fb4d998221"><td class="mdescLeft">&#160;</td><td class="mdescRight">transfer ownership into the message <br /></td></tr>
+<tr class="separator:a263f541545aba2fb716691fb4d998221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93ef76235523f14d0fc7dafc06a3271b" id="r_a93ef76235523f14d0fc7dafc06a3271b"><td class="memItemLeft" align="right" valign="top"><a id="a93ef76235523f14d0fc7dafc06a3271b" name="a93ef76235523f14d0fc7dafc06a3271b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_message</b> (core::string_view msg)</td></tr>
+<tr class="memdesc:a93ef76235523f14d0fc7dafc06a3271b"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the message by copy <br /></td></tr>
+<tr class="separator:a93ef76235523f14d0fc7dafc06a3271b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627f10ee26b06f77c7c936b896a6771b" id="r_a627f10ee26b06f77c7c936b896a6771b"><td class="memItemLeft" align="right" valign="top"><a id="a627f10ee26b06f77c7c936b896a6771b" name="a627f10ee26b06f77c7c936b896a6771b"></a>
+<a class="el" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a>&#160;</td><td class="memItemRight" valign="bottom"><b>snformat</b> (<a class="el" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a> fmt,...)</td></tr>
+<tr class="memdesc:a627f10ee26b06f77c7c936b896a6771b"><td class="mdescLeft">&#160;</td><td class="mdescRight">use sqlite_snprintf to generate a message <br /></td></tr>
+<tr class="separator:a627f10ee26b06f77c7c936b896a6771b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Additional information about error conditions stored in an sqlite-allocate string. </p>
+<p>Contains an error message describing what happened. Not all error conditions are able to generate this extended information - those that can't have an empty error message. </p>
+
+<p class="definition">Definition at line <a class="el" href="error_8hpp_source.html#l00032">32</a> of file <a class="el" href="error_8hpp_source.html">error.hpp</a>.</p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>boost/sqlite/<a class="el" href="error_8hpp_source.html">error.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1error__info.html">error_info</a></li>
-    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:50:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

@@ -101,16 +101,82 @@ $(function(){initNavTree('structboost_1_1sqlite_1_1vtab_1_1function__setter.html
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structboost_1_1sqlite_1_1vtab_1_1function__setter-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">boost::sqlite::vtab::function_setter Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Helper type to set a function through the xFindFunction callback.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="vtable_8hpp_source.html">include/boost/sqlite/vtable.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3950ad6a993b3f883ed29ae1467137bf" id="r_a3950ad6a993b3f883ed29ae1467137bf"><td class="memTemplParams" colspan="2">template&lt;typename Func &gt; </td></tr>
+<tr class="memitem:a3950ad6a993b3f883ed29ae1467137bf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3950ad6a993b3f883ed29ae1467137bf">set</a> (Func &amp;func)</td></tr>
+<tr class="separator:a3950ad6a993b3f883ed29ae1467137bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Helper type to set a function through the xFindFunction callback. </p>
+
+<p class="definition">Definition at line <a class="el" href="vtable_8hpp_source.html#l00031">31</a> of file <a class="el" href="vtable_8hpp_source.html">vtable.hpp</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3950ad6a993b3f883ed29ae1467137bf" name="a3950ad6a993b3f883ed29ae1467137bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3950ad6a993b3f883ed29ae1467137bf">&#9670;&#160;</a></span>set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Func &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void boost::sqlite::vtab::function_setter::set </td>
+          <td>(</td>
+          <td class="paramtype">Func &amp;</td>          <td class="paramname"><span class="paramname"><em>func</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the function</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Func</td><td>The function type (either a lambda by ref or a pointer by copy) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>The function to be used</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The function can either take a single argument, a <code>span&lt;<a class="el" href="structboost_1_1sqlite_1_1value.html" title="A holder for a sqlite values used for internal APIs.">sqlite::value</a>, N&gt;</code> for scalar functions, or a <code>context&lt;Args...&gt;</code> as first, and the span as second for aggegrate functions. </p>
+
+<p class="definition">Definition at line <a class="el" href="vtable_8hpp_source.html#l00044">44</a> of file <a class="el" href="vtable_8hpp_source.html">vtable.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>boost/sqlite/<a class="el" href="vtable_8hpp_source.html">vtable.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><b>vtab</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1vtab_1_1function__setter.html">function_setter</a></li>
-    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:50:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

@@ -101,16 +101,87 @@ $(function(){initNavTree('structboost_1_1sqlite_1_1context.html',''); initResiza
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structboost_1_1sqlite_1_1context-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">boost::sqlite::context&lt; Args &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__reference.html">Reference</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A context that can be passed into scalar functions.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="function_8hpp_source.html">include/boost/sqlite/function.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae141c9013cf3d83f3105d141e62a2687" id="r_ae141c9013cf3d83f3105d141e62a2687"><td class="memTemplParams" colspan="2"><a id="ae141c9013cf3d83f3105d141e62a2687" name="ae141c9013cf3d83f3105d141e62a2687"></a>
+template&lt;std::size_t Idx&gt; </td></tr>
+<tr class="memitem:ae141c9013cf3d83f3105d141e62a2687"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get</b> () -&gt; element&lt; Idx &gt; &amp;</td></tr>
+<tr class="memdesc:ae141c9013cf3d83f3105d141e62a2687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value in the context at position <code>Idx</code>. Throws if the value isn't set. <br /></td></tr>
+<tr class="separator:ae141c9013cf3d83f3105d141e62a2687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add00e55ac25c4b9c796d501e7dd8f03c" id="r_add00e55ac25c4b9c796d501e7dd8f03c"><td class="memItemLeft" align="right" valign="top"><a id="add00e55ac25c4b9c796d501e7dd8f03c" name="add00e55ac25c4b9c796d501e7dd8f03c"></a>
+<a class="el" href="structboost_1_1sqlite_1_1connection.html">connection</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_connection</b> () const</td></tr>
+<tr class="memdesc:add00e55ac25c4b9c796d501e7dd8f03c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the connection of the context. <br /></td></tr>
+<tr class="separator:add00e55ac25c4b9c796d501e7dd8f03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f94d292a29e0913e46c3fdf89b316c3" id="r_a5f94d292a29e0913e46c3fdf89b316c3"><td class="memTemplParams" colspan="2"><a id="a5f94d292a29e0913e46c3fdf89b316c3" name="a5f94d292a29e0913e46c3fdf89b316c3"></a>
+template&lt;std::size_t Idx&gt; </td></tr>
+<tr class="memitem:a5f94d292a29e0913e46c3fdf89b316c3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_if</b> () -&gt; element&lt; Idx &gt; *</td></tr>
+<tr class="memdesc:a5f94d292a29e0913e46c3fdf89b316c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value in the context at position <code>Idx</code>. Returns nullptr .value isn't set. <br /></td></tr>
+<tr class="separator:a5f94d292a29e0913e46c3fdf89b316c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65d1c2d7fed2db2f63e03a2cc744d1dc" id="r_a65d1c2d7fed2db2f63e03a2cc744d1dc"><td class="memTemplParams" colspan="2"><a id="a65d1c2d7fed2db2f63e03a2cc744d1dc" name="a65d1c2d7fed2db2f63e03a2cc744d1dc"></a>
+template&lt;std::size_t Idx&gt; </td></tr>
+<tr class="memitem:a65d1c2d7fed2db2f63e03a2cc744d1dc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>set</b> (element&lt; Idx &gt; <a class="el" href="structboost_1_1sqlite_1_1value.html">value</a>)</td></tr>
+<tr class="memdesc:a65d1c2d7fed2db2f63e03a2cc744d1dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value in the context at position <code>Idx</code> <br /></td></tr>
+<tr class="separator:a65d1c2d7fed2db2f63e03a2cc744d1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6245ee2db2baf90d0a606bd034836c2b" id="r_a6245ee2db2baf90d0a606bd034836c2b"><td class="memItemLeft" align="right" valign="top"><a id="a6245ee2db2baf90d0a606bd034836c2b" name="a6245ee2db2baf90d0a606bd034836c2b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_error</b> (<a class="el" href="structboost_1_1sqlite_1_1cstring__ref.html">cstring_ref</a> message, int code=SQLITE_ERROR)</td></tr>
+<tr class="memdesc:a6245ee2db2baf90d0a606bd034836c2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the an error through the context, instead of throwing it. <br /></td></tr>
+<tr class="separator:a6245ee2db2baf90d0a606bd034836c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a888bdb187ad299318ceb2e0ef7a95a41" id="r_a888bdb187ad299318ceb2e0ef7a95a41"><td class="memTemplParams" colspan="2"><a id="a888bdb187ad299318ceb2e0ef7a95a41" name="a888bdb187ad299318ceb2e0ef7a95a41"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a888bdb187ad299318ceb2e0ef7a95a41"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>set_result</b> (T &amp;&amp;val)</td></tr>
+<tr class="memdesc:a888bdb187ad299318ceb2e0ef7a95a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the result through the context, instead of returning it. <br /></td></tr>
+<tr class="separator:a888bdb187ad299318ceb2e0ef7a95a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename ... Args&gt;<br />
+struct boost::sqlite::context&lt; Args &gt;</div><p>A context that can be passed into scalar functions. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Args</td><td>The argument that can be stored in the context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <a class="code hl_struct" href="structboost_1_1sqlite_1_1connection.html">sqlite::connection</a> conn;</div>
+<div class="line"> </div>
+<div class="line">sqlite::create_function(</div>
+<div class="line">  conn, <span class="stringliteral">&quot;my_sum,,</span></div>
+<div class="line"><span class="stringliteral">  [](sqlite::context&lt;std::size_t&gt; ctx,</span></div>
+<div class="line"><span class="stringliteral">     boost::span&lt;sqlite::value, 1u&gt; args) -&gt; std::size_t</span></div>
+<div class="line"><span class="stringliteral">  {</span></div>
+<div class="line"><span class="stringliteral">      auto value = args[0].get_int64();</span></div>
+<div class="line"><span class="stringliteral">      auto p = ctx.get_if&lt;0&gt;();</span></div>
+<div class="line"><span class="stringliteral">      if (p != nullptr) // increment the counter</span></div>
+<div class="line"><span class="stringliteral">          return (*p) += value;</span></div>
+<div class="line"><span class="stringliteral">      else // set the initial value</span></div>
+<div class="line"><span class="stringliteral">          ctx.set&lt;0&gt;(value);</span></div>
+<div class="line"><span class="stringliteral">      return value;</span></div>
+<div class="line"><span class="stringliteral">  });</span></div>
+<div class="ttc" id="astructboost_1_1sqlite_1_1connection_html"><div class="ttname"><a href="structboost_1_1sqlite_1_1connection.html">boost::sqlite::connection</a></div><div class="ttdoc">main object for a connection to a database.</div><div class="ttdef"><b>Definition</b> <a href="connection_8hpp_source.html#l00031">connection.hpp:32</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="function_8hpp_source.html#l00053">53</a> of file <a class="el" href="function_8hpp_source.html">function.hpp</a>.</p>
+</div><hr/>The documentation for this struct was generated from the following files:<ul>
+<li>boost/sqlite/detail/<a class="el" href="scalar__function_8hpp_source.html">scalar_function.hpp</a></li>
+<li>boost/sqlite/<a class="el" href="function_8hpp_source.html">function.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1context.html">context</a></li>
-    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:50:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

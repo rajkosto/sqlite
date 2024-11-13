@@ -101,16 +101,47 @@ $(function(){initNavTree('structboost_1_1sqlite_1_1vtab_1_1recursive__transactio
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structboost_1_1sqlite_1_1vtab_1_1recursive__transaction-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">boost::sqlite::vtab::recursive_transaction Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__reference.html">Reference</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Support for recursive transactions.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="vtable_8hpp_source.html">include/boost/sqlite/vtable.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a82f823e9227333c4d97e8123d2436178" id="r_a82f823e9227333c4d97e8123d2436178"><td class="memItemLeft" align="right" valign="top"><a id="a82f823e9227333c4d97e8123d2436178" name="a82f823e9227333c4d97e8123d2436178"></a>
+virtual result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (int i)=0</td></tr>
+<tr class="memdesc:a82f823e9227333c4d97e8123d2436178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all saves states down to <code>i</code> <br /></td></tr>
+<tr class="separator:a82f823e9227333c4d97e8123d2436178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3651794ae5cffe31ae792e2b308f28" id="r_a9c3651794ae5cffe31ae792e2b308f28"><td class="memItemLeft" align="right" valign="top"><a id="a9c3651794ae5cffe31ae792e2b308f28" name="a9c3651794ae5cffe31ae792e2b308f28"></a>
+virtual result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>rollback_to</b> (int i)=0</td></tr>
+<tr class="memdesc:a9c3651794ae5cffe31ae792e2b308f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Roll the transaction back to <code>i</code>. <br /></td></tr>
+<tr class="separator:a9c3651794ae5cffe31ae792e2b308f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b61f250cfad5bc502d6fb99ac5210b2" id="r_a0b61f250cfad5bc502d6fb99ac5210b2"><td class="memItemLeft" align="right" valign="top"><a id="a0b61f250cfad5bc502d6fb99ac5210b2" name="a0b61f250cfad5bc502d6fb99ac5210b2"></a>
+virtual result&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>savepoint</b> (int i)=0</td></tr>
+<tr class="memdesc:a0b61f250cfad5bc502d6fb99ac5210b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the current state with to <code>i</code> <br /></td></tr>
+<tr class="separator:a0b61f250cfad5bc502d6fb99ac5210b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Support for recursive transactions. </p>
+
+<p class="definition">Definition at line <a class="el" href="vtable_8hpp_source.html#l00524">524</a> of file <a class="el" href="vtable_8hpp_source.html">vtable.hpp</a>.</p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>boost/sqlite/<a class="el" href="vtable_8hpp_source.html">vtable.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>boost</b></li><li class="navelem"><b>sqlite</b></li><li class="navelem"><b>vtab</b></li><li class="navelem"><a class="el" href="structboost_1_1sqlite_1_1vtab_1_1recursive__transaction.html">recursive_transaction</a></li>
-    <li class="footer">Generated on Mon Nov 11 2024 12:58:48 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Thu Nov 14 2024 00:50:55 for boost_sqlite by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>
